@@ -38,7 +38,7 @@ return [
     'home_header_title'=>'Promote Your App with SoftLand',
     'home_header_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
     'home_header_button'=>'Get Started',
-    'gotoapp_button'=>'Go To App',
+    'gotoapp_button'=>'اذهب الى الموقع',
     'tools_home_title'=>'',
     'tool1_title'=>'',
     'tool1_text'=>'',
