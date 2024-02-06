@@ -14,14 +14,14 @@ return [
     */
 
    //  navbar
-   'home' => 'Home',
-   'features'=>'Features',
-   'pricing'=>'Pricing',
-   'products'=>'Products',
+   'home' => 'الرئيسية',
+   'features'=>'السمات',
+   'pricing'=>'الأسعار',
+   'products'=>'المنتجات',
    'knowledgebase'=>'KnowledgeBase',
-   'contactus'=>'Contact Us',
-   'termsandconditions'=>'Terms and Conditions',
-   'privacypolicy'=>'Privacy Policy',
+   'contactus'=>'اتصل بنا',
+   'termsandconditions'=>'الأحكام والشروط',
+   'privacypolicy'=>'سياسة الخصوصية',
 
 
    //footer
