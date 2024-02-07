@@ -15,20 +15,7 @@
             <div class="col-md-4 mb-4 mb-md-0">
               <h3>{{ __('main.navigation') }}</h3>
               <ul class="list-unstyled">
-                <li class="dropdown">
-                    <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    @if(App::getLocale()=="ar")
-                    العربية
-                    @else
-                    English
-                    @endif
-                    </a>
 
-                    <ul class="dropdown-menu">
-                    <li><a  href="{{ route('setLocale','en') }}">English</a></li>
-                    <li><a  href="{{ route('setLocale','ar') }}">العربية</a></li>
-                    </ul>
-                </li>
                 <li><a href="{{ route('pricing') }}">{{ __('main.pricing') }}</a></li>
                 <li><a href="{{ route('features') }}">{{ __('main.features') }}</a></li>
                 <li><a href="{{ route('contact') }}">{{ __('main.contactus') }}</a></li>
@@ -45,7 +32,7 @@
 
               </ul>
             </div>
-            {{-- <div class="col-md-4 mb-4 mb-md-0 dropdown">
+            <div class="col-md-4 mb-4 mb-md-0 dropdown">
 
                 <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     @if(App::getLocale()=="ar")
@@ -60,7 +47,7 @@
                 <li><a  href="{{ route('setLocale','ar') }}">العربية</a></li>
                 </ul>
 
-            </div> --}}
+            </div>
           </div>
         </div>
       </div>
