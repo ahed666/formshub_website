@@ -1,5 +1,9 @@
 <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="keywords" content="Forms Hub App,Feedback web app in UAE,Feedback software,Customer satisfaction tool,Online feedback form,Feedback management system,Feedback app for businesses,
+  Feedback survey tool,Best feedback tool,Feedback tool comparison,Feedback tool features,Customer feedback analytics,Real-time feedback tool,
+  Feedback tool integration,Feedback tool pricing,Feedback tool for small businesses,Enterprise feedback management,Mobile feedback app,
+  Web-based feedback tool,Feedback tool for websites,Anonymous feedback tool,Feedback tool for employee engagement">
 
   <title>{{ env('APP_NAME') }}</title>
   <meta content="" name="description">
