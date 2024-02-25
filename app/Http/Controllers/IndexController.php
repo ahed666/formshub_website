@@ -32,6 +32,10 @@ class IndexController extends Controller
     }
 
     public function index(){
+        if (substr($request->url(), -1) === '/') {
+            // Redirect to the URL without the trailing slash
+            return Redirect::to(rtrim($request->url(), '/'), 301);
+        }
         $gallaryImagesCount=$this->getAllImagesInFolder();
 
         return view('index',compact('gallaryImagesCount'));
