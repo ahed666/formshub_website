@@ -7,7 +7,7 @@
 
   <title>{{ env('APP_NAME') }}</title>
   <meta content="" name="description">
-  <meta content="" name="keywords">
+
 
   <!-- Favicons -->
   <link href="{{ asset('assets/img/logos/favicon.ico') }}" rel="icon">
