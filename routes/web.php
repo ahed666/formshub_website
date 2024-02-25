@@ -7,7 +7,7 @@ use App\http\Controllers\KnowledgeBaseController;
 use App\http\Controllers\ContactController;
 use App\http\Controllers\ProductController;
 use App\Http\Controllers\LocaleController;
-
+use Illuminate\Support\Facades\Redirect;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -58,3 +58,9 @@ Route::get('/privacypolicy',function()
     return view('privacypolicy');
 }
 )->name('privacypolicy');
+
+
+
+Route::get("sitemap.xml" , function () {
+    return \Illuminate\Support\Facades\Redirect::to('sitemap.xml');
+     });
