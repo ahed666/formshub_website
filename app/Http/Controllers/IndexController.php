@@ -31,7 +31,7 @@ class IndexController extends Controller
         return 0;
     }
 
-    public function index(){
+    public function index(Request $request){
         if (substr($request->url(), -1) === '/') {
             // Redirect to the URL without the trailing slash
             return Redirect::to(rtrim($request->url(), '/'), 301);
