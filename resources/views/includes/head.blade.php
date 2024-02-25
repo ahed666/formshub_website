@@ -9,7 +9,7 @@
   <meta name="description" content="Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers" >
   <meta property="og:title" content="{{ env('APP_NAME') }}">
   <meta property="og:description" content="Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers">
-  <meta property="og:image" content="{{ asset('/images/website_images/home_image1.png') }}">
+  <meta property="og:image" content="{{ asset('assets/img/logos/logo.png') }}">
   <meta property="og:url" content="{{ URL::current() }}">
   <meta property="og:type" content="website">
 
