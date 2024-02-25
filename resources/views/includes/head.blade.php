@@ -5,7 +5,7 @@
   Feedback tool integration,Feedback tool pricing,Feedback tool for small businesses,Enterprise feedback management,Mobile feedback app,
   Web-based feedback tool,Feedback tool for websites,Anonymous feedback tool,Feedback tool for employee engagement">
 
-  <title>{{ env('APP_NAME') }}</title>
+  <title>{{ env('APP_NAME') }}-@yield('title', 'Default Title')</title>
   <meta name="description" content="Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers" >
   <meta property="og:title" content="{{ env('APP_NAME') }}">
   <meta property="og:description" content="Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers">
