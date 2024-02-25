@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Features')
+@section('title', 'Features - discovere our features ')
 
 @section('content')
 <!-- ======= Features Section ======= -->

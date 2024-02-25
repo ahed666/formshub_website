@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Terms & Conditions')
+@section('title', 'Terms & Conditions | All Terms')
 
 
   <!-- ======= Header ======= -->

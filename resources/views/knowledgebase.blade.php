@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'KnowledgeBase')
+@section('title', 'KnowledgeBase - find your question here')
 
 
   <!-- ======= Header ======= -->

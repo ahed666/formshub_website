@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Privacy Policy')
+@section('title', 'Privacy Policy of our website')
 
 
   <!-- ======= Header ======= -->
