@@ -1,4 +1,4 @@
-<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="keywords" content="Forms Hub App,Feedback web app in UAE,Feedback software,Customer satisfaction tool,Online feedback form,Feedback management system,Feedback app for businesses,
   Feedback survey tool,Best feedback tool,Feedback tool comparison,Feedback tool features,Customer feedback analytics,Real-time feedback tool,
@@ -6,8 +6,12 @@
   Web-based feedback tool,Feedback tool for websites,Anonymous feedback tool,Feedback tool for employee engagement">
 
   <title>{{ env('APP_NAME') }}</title>
-  <meta content="" name="description">
-
+  <meta name="description" content="Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers" >
+  <meta property="og:title" content="{{ env('APP_NAME') }}">
+  <meta property="og:description" content="Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers">
+  <meta property="og:image" content="{{ asset('/images/website_images/home_image1.png') }}">
+  <meta property="og:url" content="{{ URL::current() }}">
+  <meta property="og:type" content="website">
 
   <!-- Favicons -->
   <link href="{{ asset('assets/img/logos/favicon.ico') }}" rel="icon">
