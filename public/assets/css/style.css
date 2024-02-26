@@ -753,7 +753,7 @@ section {
     background: var(--secondary_blue);
     width: 150px;
     text-align: center;
-   
+
     border-radius: 0.375rem;
     color: #fff !important;
     display: block !important;
@@ -1333,4 +1333,78 @@ section {
     .section-title p {
     margin-bottom: 0;
     }
+
+
+
+    .titleitem {
+        font-size: x-large !important;
+        color: #1277D1;
+        text-decoration: underline;
+        margin-top: 30px;
+    }
+    .subtitle {
+        font-size: medium !important;
+
+        margin-top: 16px;
+    }
+    .definitionlist{
+        margin-top: 16px;
+
+    }
+    .definitiondiv{
+        margin-top: 4px;
+
+
+    }
+    .definitionword{
+        white-space: nowrap;
+        font-size: medium !important;
+
+    }
+    .definition{
+
+        font-size: medium !important;
+
+    }
+    .description{
+        margin-top: 4px;
+    }
+
+
+    .hint{
+        font-weight: bold;
+        color: black;
+        margin-top: 4px;
+    }
+    .terms{
+         color: black;
+    }
+    .conclusion{
+        position: relative;
+        top: 80px;
+        margin: 20px;
+        color: black;
+        display: flex;
+        justify-content: center;
+       align-items: center;
+    }
+    @media screen and (max-width: 992px) {
+        .definitionword{
+            font-size: x-small !important;
+
+        }
+        .definition{
+            font-size: x-small !important;
+
+        }
+        .titleitem {
+            font-size: medium !important;
+
+        }
+        .subtitle {
+            font-size: small !important;
+
+        }
+    }
+
 
