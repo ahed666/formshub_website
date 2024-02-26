@@ -64,3 +64,5 @@ Route::get('/privacypolicy',function()
 Route::get("sitemap.xml" , function () {
     return \Illuminate\Support\Facades\Redirect::to('sitemap.xml');
      });
+
+     Route::get('/index.html', function(){ return redirect('http://domain/'); });
