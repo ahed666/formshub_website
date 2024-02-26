@@ -2,12 +2,7 @@
 @section('title', 'KnowledgeBase - find your question here')
 
 
-  <!-- ======= Header ======= -->
 
-  <!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <!-- End Hero -->
   @section('content')
 
   <main id="main">

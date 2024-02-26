@@ -2,12 +2,7 @@
 @section('title', 'Home Page |(formshub homepage) ')
 
 
-  <!-- ======= Header ======= -->
-
-  <!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <!-- End Hero -->
+  
   @section('content')
   <section class="hero-section" id="hero">
 
