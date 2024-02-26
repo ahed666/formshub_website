@@ -13,6 +13,8 @@
   <meta property="og:url" content="{{ URL::current() }}">
   <meta property="og:type" content="website">
 
+  <link rel="canonical" href="{{ url()->current() }}">
+
   <!-- Favicons -->
   <link href="{{ asset('assets/img/logos/favicon.ico') }}" rel="icon">
   <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
