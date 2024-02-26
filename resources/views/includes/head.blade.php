@@ -13,6 +13,9 @@
   <meta property="og:url" content="{{ URL::current() }}">
   <meta property="og:type" content="website">
 
+  @if(Request::url() != url()->current())
+    <link rel="canonical" href="{{ url()->current() }}" />
+@endif
 
   <!-- Favicons -->
   <link href="{{ asset('assets/img/logos/favicon.ico') }}" rel="icon">
