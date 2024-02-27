@@ -2,7 +2,7 @@
     <div class="container d-flex justify-content-between align-items-center navmobile">
 
       <div class="logo">
-       <img  src="{{ asset('assets/img/logos/logo.png') }}" alt="">
+       <img  src="{{ asset('assets/img/logos/logo.png') }}" alt="main logo">
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -33,7 +33,7 @@
                 </div>
 
            </li> --}}
-       
+
 
            <li class="gotoapp_navbar">
 
