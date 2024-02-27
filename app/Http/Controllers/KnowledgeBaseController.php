@@ -18,7 +18,7 @@ class KnowledgeBaseController extends Controller
         {
             if($current_question=FrequencyAskedQuestion::whereid($id)->first())
             {
-                
+
                 return view('knowledgebase',compact('current_question','categoriesWithQuestions'));}
             else
             {
