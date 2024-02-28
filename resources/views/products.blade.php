@@ -18,7 +18,7 @@ $text=trans('main.products_text');
               <p class="mb-4">{{ __('main.kioskinfo_text') }}</p>
             </div>
             <div class="col-md-6" data-aos="fade-right">
-              <img src="{{ asset('assets/img/kiosk.jpg') }}" alt="Image" class="image kiosk">
+              <img src="{{ asset('assets/img/kiosk.jpg') }}" alt="Image" class="img-fluid">
             </div>
           </div>
         </div>
