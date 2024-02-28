@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Home Page |(formshub homepage) ')
+@section('title', 'Feedback Web App |  Feedback kiosk in UAE ')
 
 
 
