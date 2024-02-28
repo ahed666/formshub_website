@@ -10,7 +10,9 @@ $title="Features";
 $text="text";
 @endphp
 @php
-$featuresPage = \Spatie\SchemaOrg\Schema::webPage()
+use Spatie\SchemaOrg\Schema;
+
+$featuresPage = Schema::webPage()
     ->name('Features')
     ->description('Discover the features of our product. Learn how it can help you improve your business.')
     ->url(url()->current());

@@ -14,7 +14,9 @@
         $text= trans('main.kb_text') ;
     @endphp
     @php
-    $knowledgePage = \Spatie\SchemaOrg\Schema::webPage()
+    use Spatie\SchemaOrg\Schema;
+
+    $knowledgePage = Schema::webPage()
         ->name('Knowledge')
         ->description('Explore our knowledge base to learn more about our products and services.')
         ->url(url()->current());

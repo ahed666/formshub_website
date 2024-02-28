@@ -12,7 +12,9 @@
     @endphp
      <x-header_section :title="$title" :text="$text" />
      @php
-     $pricesPage = \Spatie\SchemaOrg\Schema::webPage()
+     use Spatie\SchemaOrg\Schema;
+
+     $pricesPage =Schema::webPage()
          ->name('Prices')
          ->description('View our pricing plans and choose the one that best fits your needs.')
          ->url(url()->current());

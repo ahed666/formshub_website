@@ -8,7 +8,9 @@
   $text="";
 @endphp
 @php
-$privacyPolicyPage = \Spatie\SchemaOrg\Schema::webPage()
+use Spatie\SchemaOrg\Schema;
+
+$privacyPolicyPage = Schema::webPage()
     ->name('Privacy Policy')
     ->description('Read our privacy policy to understand how we collect, use, and protect your personal information.')
     ->url(url()->current());

@@ -10,7 +10,9 @@ $text=trans('main.products_text');
 
 @endphp
 @php
-        $kiosksPage = \Spatie\SchemaOrg\Schema::webPage()
+use Spatie\SchemaOrg\Schema;
+
+        $kiosksPage = Schema::webPage()
             ->name('Kiosks')
             ->description('Explore our kiosks and discover how they can enhance your business.')
             ->url(url()->current());

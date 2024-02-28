@@ -11,7 +11,9 @@ $text="";
 @endphp
 <x-header_section :title="$title" :text="$text" />
 @php
-$termsAndConditionsPage = \Spatie\SchemaOrg\Schema::webPage()
+use Spatie\SchemaOrg\Schema;
+
+$termsAndConditionsPage = Schema::webPage()
     ->name('Terms and Conditions')
     ->description('Read our terms and conditions to understand the rules and guidelines for using our website.')
     ->url(url()->current());

@@ -6,7 +6,9 @@
 
   @section('content')
   @php
-  $indexPage = \Spatie\SchemaOrg\Schema::webPage()
+  use Spatie\SchemaOrg\Schema;
+
+  $indexPage =Schema::webPage()
       ->name('Home')
       ->description('Welcome to our website. Explore our products and services.')
       ->url(url()->current());

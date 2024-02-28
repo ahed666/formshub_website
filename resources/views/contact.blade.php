@@ -9,7 +9,9 @@
     $text=trans('main.contact_text');
     @endphp
     @php
-        $contactPage = \Spatie\SchemaOrg\Schema::webPage()
+    use Spatie\SchemaOrg\Schema;
+
+        $contactPage = Schema::webPage()
             ->name('Contact Us')
             ->description('Contact us to get in touch with our team. Leave us a message and we will get back to you as soon as possible.')
             ->url(url()->current());
