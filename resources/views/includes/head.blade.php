@@ -3,7 +3,16 @@
   <meta name="keywords" content="Forms Hub App,UAE,Feedback web app in UAE,Feedback software,Customer satisfaction tool,Online feedback form,Feedback management system,Feedback app for businesses,
   Feedback survey tool,Best feedback tool,Feedback tool comparison,Feedback tool features,Customer feedback analytics,Real-time feedback tool,
   Feedback tool integration,Feedback tool pricing,Feedback tool for small businesses,Enterprise feedback management,Mobile feedback app,
-  Web-based feedback tool,Feedback tool for websites,Anonymous feedback tool,Feedback tool for employee engagement">
+  Web-based feedback tool,Feedback tool for websites,Feedback tool for employee engagement, الإمارات العربية المتحدة, تطبيق ويب لمراجعة في الإمارات العربية المتحدة
+  , برنامج مراجعة, أداة رضا العملاء, نموذج مراجعة عبر الإنترنت, نظام إدارة المراجعات, تطبيق مراجعة للشركات,
+  أداة استطلاع مراجعة, أفضل أداة للمراجعة, مقارنة أدوات المراجعة, ميزات أدوات المراجعة, تحليلات مراجعة العملاء, أداة مراجعة فورية,
+  تكامل أدوات المراجعة, تسعير أدوات المراجعة, أداة مراجعة للشركات الصغيرة, إدارة المراجعات للشركات الكبيرة, تطبيق مراجعة للهواتف المحمولة,
+  أداة مراجعة على الويب, أداة مراجعة للمواقع الإلكترونية, أداة مراجعة لأداء الموظفين
+
+
+
+
+  ">
 
   <title>{{ env('APP_NAME') }}-@yield('title', 'Default Title')</title>
   <meta name="description" content="Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers">
