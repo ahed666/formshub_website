@@ -43,6 +43,6 @@ class IndexController extends Controller
         ->url(url()->current());
         $gallaryImagesCount=$this->getAllImagesInFolder();
 
-        return view('index',compact('gallaryImagesCount'));
+        return view('index',compact('gallaryImagesCount','schemaMarkup'));
     }
 }
