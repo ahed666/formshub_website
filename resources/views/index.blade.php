@@ -6,6 +6,9 @@
 
   @section('content')
 
+@section('schema_markup')
+    {!! $schemaMarkup->toScript() !!}
+@endsection
   <section class="hero-section" id="hero">
 
     <div class="wave">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Spatie\SchemaOrg\Schema;
 
 class IndexController extends Controller
 {
@@ -36,6 +37,10 @@ class IndexController extends Controller
             // Redirect to the URL without the trailing slash
             return Redirect::to(rtrim($request->url(), '/'), 301);
         }
+        $schemaMarkup=Schema::webPage()
+        ->name('Home')
+        ->description('Welcome to our website. Explore our products and services.')
+        ->url(url()->current());
         $gallaryImagesCount=$this->getAllImagesInFolder();
 
         return view('index',compact('gallaryImagesCount'));
