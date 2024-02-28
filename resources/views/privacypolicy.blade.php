@@ -7,19 +7,7 @@
   $title="Privacy Policy";
   $text="";
 @endphp
-@php
-use Spatie\SchemaOrg\Schema;
 
-$privacyPolicyPage = Schema::webPage()
-    ->name('Privacy Policy')
-    ->description('Read our privacy policy to understand how we collect, use, and protect your personal information.')
-    ->url(url()->current());
-
-$privacyPolicyPage->toScript();
-@endphp
-@section('schema_markup')
-    {!! $privacyPolicyPage->toScript() !!}
-@endsection
 <x-header_section :title="$title" :text="$text" />
 <section class="section">
 

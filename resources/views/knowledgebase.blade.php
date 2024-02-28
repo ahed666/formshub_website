@@ -13,19 +13,7 @@
         $title= trans('main.kb_title') ;
         $text= trans('main.kb_text') ;
     @endphp
-    @php
-    use Spatie\SchemaOrg\Schema;
-
-    $knowledgePage = Schema::webPage()
-        ->name('Knowledge')
-        ->description('Explore our knowledge base to learn more about our products and services.')
-        ->url(url()->current());
-
-    $knowledgePage->toScript();
-@endphp
-@section('schema_markup')
-    {!! $knowledgePage->toScript() !!}
-@endsection
+  
      <x-header_section :title="$title" :text="$text" />
 
     <section class="section p-2">

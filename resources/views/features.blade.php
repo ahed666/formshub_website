@@ -9,19 +9,7 @@
 $title="Features";
 $text="text";
 @endphp
-@php
-use Spatie\SchemaOrg\Schema;
 
-$featuresPage = Schema::webPage()
-    ->name('Features')
-    ->description('Discover the features of our product. Learn how it can help you improve your business.')
-    ->url(url()->current());
-
-$featuresPage->toScript();
-@endphp
-@section('schema_markup')
-    {!! $featuresPage->toScript() !!}
-@endsection
 <x-header_section :title="$title" :text="$text" />
 
 <section class="section pb-0">

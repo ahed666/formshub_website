@@ -9,19 +9,7 @@ $title=trans('main.products_title');
 $text=trans('main.products_text');
 
 @endphp
-@php
-use Spatie\SchemaOrg\Schema;
 
-        $kiosksPage = Schema::webPage()
-            ->name('Kiosks')
-            ->description('Explore our kiosks and discover how they can enhance your business.')
-            ->url(url()->current());
-
-        $kiosksPage->toScript();
-@endphp
-@section('schema_markup')
-    {!! $productsPage->toScript() !!}
-@endsection
 <x-header_section :title="$title" :text="$text" />
 
     <section class="section">

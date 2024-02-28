@@ -32,7 +32,7 @@
 
   <link rel="canonical" href="{{ url()->current() }}" />
 
-  @yield('schema_markup')
+
 
 
   <!-- Favicons -->
