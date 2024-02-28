@@ -6,7 +6,7 @@
   Web-based feedback tool,Feedback tool for websites,Anonymous feedback tool,Feedback tool for employee engagement">
 
   <title>{{ env('APP_NAME') }}-@yield('title', 'Default Title')</title>
-  <meta name="description" content="Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers" >
+  <meta name="description" content="Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers">
   <meta property="og:title" content="{{ env('APP_NAME') }}">
   <meta property="og:description" content="Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers">
   <meta property="og:image" content="{{ asset('assets/img/logos/logo.png') }}">
@@ -14,7 +14,14 @@
   <meta property="og:type" content="website">
 
 
-    <link rel="canonical" href="{{ url()->current() }}" />
+
+  <meta name="twitter:card" content="FormsHub">
+  <meta name="twitter:title" content="FormsHub - Your Feedback Web App">
+  <meta name="twitter:description" content="Gather valuable insights and feedback from your customers with FormsHub, the intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers!">
+  <meta name="twitter:image" content="{{ asset('assets/img/logos/logo.png') }}">
+  <meta name="twitter:site" content="{{ URL::current() }}">
+
+  <link rel="canonical" href="{{ url()->current() }}" />
 
 
   <!-- Favicons -->
@@ -33,4 +40,3 @@
 
   <!-- Template Main CSS File -->
   <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-
