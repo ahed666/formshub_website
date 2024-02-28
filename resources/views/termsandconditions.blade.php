@@ -9,6 +9,17 @@
 $title="Terms & Conditions";
 $text="";
 @endphp
+@php
+        $schemaMarkup = \Spatie\SchemaOrg\Schema::webPage()
+            ->name('Terms and Conditions')
+            ->description('Read our terms and conditions to understand the rules and guidelines for using our website.')
+            ->url(url()->current());
+
+        
+    @endphp
+@section('schema_markup')
+{!! $schemaMarkup->toScript() !!}
+@endsection
 <x-header_section :title="$title" :text="$text" />
 
 

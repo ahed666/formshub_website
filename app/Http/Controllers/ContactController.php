@@ -5,11 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactFormMail;
-
+use Spatie\SchemaOrg\Schema;
 class ContactController extends Controller
 {
     public function index(){
-        return view('contact');
+
+        $schemaMarkup = \Spatie\SchemaOrg\Schema::webPage()
+            ->name('Contact Us')
+            ->description('Contact us to get in touch with our team. Leave us a message and we will get back to you as soon as possible.')
+            ->url(url()->current());
+
+        return view('contact','schemaMarkup');
     }
 
     public function sendEmail(Request $request){

@@ -11,7 +11,9 @@
         $text=trans('main.pricing_text');
     @endphp
      <x-header_section :title="$title" :text="$text" />
-  
+     @section('schema_markup')
+     {!! $schemaMarkup->toScript() !!}
+     @endsection
     <section class="section">
       <div class="container">
 

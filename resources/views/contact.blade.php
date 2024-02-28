@@ -8,7 +8,9 @@
     $title=trans('main.contact_title');
     $text=trans('main.contact_text');
     @endphp
-
+@section('schema_markup')
+{!! $schemaMarkup->toScript() !!}
+@endsection
     <x-header_section :title="$title" :text="$text" />
 
     <section class="section">

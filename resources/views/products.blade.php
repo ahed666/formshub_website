@@ -9,7 +9,9 @@ $title=trans('main.products_title');
 $text=trans('main.products_text');
 
 @endphp
-
+@section('schema_markup')
+{!! $schemaMarkup->toScript() !!}
+@endsection
 <x-header_section :title="$title" :text="$text" />
 
     <section class="section">

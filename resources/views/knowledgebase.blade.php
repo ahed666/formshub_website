@@ -13,7 +13,9 @@
         $title= trans('main.kb_title') ;
         $text= trans('main.kb_text') ;
     @endphp
-  
+  @section('schema_markup')
+  {!! $schemaMarkup->toScript() !!}
+  @endsection
      <x-header_section :title="$title" :text="$text" />
 
     <section class="section p-2">

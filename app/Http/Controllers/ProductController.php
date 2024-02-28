@@ -10,13 +10,20 @@ use App\Models\Order;
 use App\Models\OrderProduct;
 use App\Mail\OrderNotification;
 use Illuminate\Support\Facades\Mail;
+use Spatie\SchemaOrg\Schema;
+
 class ProductController extends Controller
 {
     public function index(){
+
+        $schemaMarkup = Schema::webPage()
+        ->name('Products')
+        ->description('Discover our range of products and find the perfect solution for your needs.')
+        ->url(url()->current());
         $cities=Cities::all();
         $devicesModels=DeviceModel::join('type_of_devices','type_of_devices.model_id','=','devices_models.id')->select('devices_models.*','type_of_devices.*')->get();
 
-        return view('products',compact('cities','devicesModels'));
+        return view('products',compact('cities','devicesModels','schemaMarkup'));
     }
 
 

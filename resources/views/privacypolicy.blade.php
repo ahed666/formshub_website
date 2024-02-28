@@ -7,7 +7,16 @@
   $title="Privacy Policy";
   $text="";
 @endphp
+@php
+        $schemaMarkup = \Spatie\SchemaOrg\Schema::webPage()
+            ->name('Privacy Policy')
+            ->description('Read our privacy policy to understand how we collect, use, and protect your personal information.')
+            ->url(url()->current());
 
+    @endphp
+@section('schema_markup')
+{!! $schemaMarkup->toScript() !!}
+@endsection
 <x-header_section :title="$title" :text="$text" />
 <section class="section">
 
