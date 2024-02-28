@@ -32,6 +32,8 @@
 
   <link rel="canonical" href="{{ url()->current() }}" />
 
+  @yield('schema_markup')
+
 
   <!-- Favicons -->
   <link href="{{ asset('assets/img/logos/favicon.ico') }}" rel="icon">

@@ -11,7 +11,17 @@
         $text=trans('main.pricing_text');
     @endphp
      <x-header_section :title="$title" :text="$text" />
+     @php
+     $pricesPage = \Spatie\SchemaOrg\Schema::webPage()
+         ->name('Prices')
+         ->description('View our pricing plans and choose the one that best fits your needs.')
+         ->url(url()->current());
 
+     $pricesPage->toScript();
+ @endphp
+ @section('schema_markup')
+ {!! $pricesPage->toScript() !!}
+@endsection
     <section class="section">
       <div class="container">
 

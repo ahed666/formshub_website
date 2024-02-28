@@ -5,6 +5,17 @@
 
 
   @section('content')
+  @php
+  $indexPage = \Spatie\SchemaOrg\Schema::webPage()
+      ->name('Home')
+      ->description('Welcome to our website. Explore our products and services.')
+      ->url(url()->current());
+
+  $indexPage->toScript();
+@endphp
+@section('schema_markup')
+    {!! $indexPage->toScript() !!}
+@endsection
   <section class="hero-section" id="hero">
 
     <div class="wave">

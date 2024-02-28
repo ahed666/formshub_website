@@ -8,6 +8,17 @@
     $title=trans('main.contact_title');
     $text=trans('main.contact_text');
     @endphp
+    @php
+        $contactPage = \Spatie\SchemaOrg\Schema::webPage()
+            ->name('Contact Us')
+            ->description('Contact us to get in touch with our team. Leave us a message and we will get back to you as soon as possible.')
+            ->url(url()->current());
+
+        $contactPage->toScript();
+    @endphp
+    @section('schema_markup')
+        {!! $contactPage->toScript() !!}
+    @endsection
     <x-header_section :title="$title" :text="$text" />
 
     <section class="section">
