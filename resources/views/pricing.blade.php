@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Pricing - plans and subscriptions')
+@section('meta_description', 'View our pricing plans and choose the right one for your needs. FormsHub offers flexible pricing options for businesses of all sizes.')
 
 @section('content')
 

@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Features - discovere our features ')
+@section('meta_description', 'Explore the features of our feedback web app. Learn how our platform can help you gather valuable insights from your customers, analyze data, and improve your products and services.')
 
 @section('content')
 <!-- ======= Features Section ======= -->

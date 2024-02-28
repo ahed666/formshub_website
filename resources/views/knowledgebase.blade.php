@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('title', 'KnowledgeBase - find your question here')
 
+@section('meta_description', 'Explore our knowledge base to find answers to common questions, learn about features, and get the most out of FormsHub.')
 
 
   @section('content')

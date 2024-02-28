@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Products - you can order online')
+@section('meta_description', 'Discover our range of interactive kiosks designed to enhance customer engagement. Our kiosks are user-friendly, customizable, and perfect for various industries.')
 
 @section('content')
 

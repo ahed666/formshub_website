@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Privacy Policy of our website')
+@section('meta_description', 'Read our Privacy Policy to understand how we collect, use, and protect your personal information. FormsHub is committed to protecting your privacy.')
 
   @section('content')
   @php

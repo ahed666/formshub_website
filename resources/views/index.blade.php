@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Feedback Web App |  Feedback kiosk in UAE ')
+@section('meta_description', 'Welcome to FormsHub, your go-to feedback web app. Gather valuable insights and feedback from your customers, analyze data, and improve your products and services.')
 
 
 

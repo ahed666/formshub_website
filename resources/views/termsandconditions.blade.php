@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Terms & Conditions | All Terms')
 
+@section('meta_description', 'Read our terms and conditions to understand the rules and guidelines for using our service. Learn about user responsibilities, data usage policies, and more.')
 
 
 @section('content')
