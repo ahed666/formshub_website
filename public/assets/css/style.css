@@ -228,6 +228,7 @@ section {
   box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
   background: #fff;
   padding: 40px;
+  min-height: 250px;
 }
 
 .step .number {
@@ -1405,6 +1406,14 @@ section {
             font-size: small !important;
 
         }
+    }
+    .link{
+        color: #1277D1;
+
+    }
+    .link:hover{
+        color: var(--link);
+
     }
 
 

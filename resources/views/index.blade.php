@@ -50,7 +50,7 @@
 
         <div class="row justify-content-center text-center mb-5">
           <div class="col-md-5" data-aos="fade-up">
-            <h2 class="section-heading">Save your time to using SoftLand</h2>
+            <h2 class="section-heading">{{ __('main.tools_home_title') }}</h2>
           </div>
         </div>
 
@@ -58,28 +58,28 @@
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="">
             <div class="feature-1 text-center">
               <div class="wrap-icon icon-1">
-                <i class="bi bi-people"></i>
+                <i class="bi bi-highlighter"></i>
               </div>
-              <h3 class="mb-3">Explore Your Team</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
+              <h3 class="mb-3">{{ __('main.tool1_title') }}</h3>
+              <p>{{ __('main.tool1_text') }}</p>
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
             <div class="feature-1 text-center">
               <div class="wrap-icon icon-1">
-                <i class="bi bi-brightness-high"></i>
+                <i class="bi bi-clipboard-check"></i>
               </div>
-              <h3 class="mb-3">Digital Whiteboard</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
+              <h3 class="mb-3">{{ __('main.tool2_title') }}</h3>
+              <p>{{ __('main.tool2_text') }}</p>
             </div>
           </div>
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="feature-1 text-center">
               <div class="wrap-icon icon-1">
-                <i class="bi bi-bar-chart"></i>
+                <i class="bi bi-graph-up-arrow"></i>
               </div>
-              <h3 class="mb-3">Design To Development</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
+              <h3 class="mb-3">{{ __('main.tool3_title') }}</h3>
+              <p>{{ __('main.tool3_text') }}</p>
             </div>
           </div>
         </div>
@@ -100,22 +100,22 @@
           <div class="col-md-4">
             <div class="step">
               <span class="number">01</span>
-              <h3>Sign Up</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
+              <h3>{{ __('main.step1_title') }}</h3>
+              <p>{{ __('main.step1_text') }} <a class="link" href="{{ config('app.sub_domain_name') }}">{{ __('main.createone') }}</a> </p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="step">
               <span class="number">02</span>
-              <h3>Create Profile</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
+              <h3>{{ __('main.step2_title') }}</h3>
+              <p>{{ __('main.step2_text') }}<a class="link" href="{{ route('products') }}">{{ __('main.ordernow') }}</a></p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="step">
               <span class="number">03</span>
-              <h3>Enjoy the app</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, optio.</p>
+              <h3>{{ __('main.step3_title') }}</h3>
+              <p>{{ __('main.step3_text') }}<a class="link" href="{{ config('app.sub_domain_name') }}">{{ __('main.readmore') }}</a></p>
             </div>
           </div>
         </div>

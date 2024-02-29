@@ -35,17 +35,28 @@ return [
 
 
    //home
-    'home_header_title'=>'Promote Your App with SoftLand',
-    'home_header_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    'home_header_button'=>'Get Started',
-    'gotoapp_button'=>'اذهب الى الموقع',
-    'tools_home_title'=>'',
-    'tool1_title'=>'',
-    'tool1_text'=>'',
-    'tool2_title'=>'',
-    'tool2_text'=>'',
-    'tool3_title'=>'',
-    'tool3_text'=>'',
+   'home_header_title'=>'حان الوقت لجعلها أنيقة',
+    'home_header_text'=>'استمتع بميزات مختلفة تم إنشاؤها لتحسين عملك، وترقية النماذج الخاصة بك، والتواقيع، والاستطلاعات، وجمع قواعد البيانات، والمزيد',
+    'home_header_button'=>'ابدأ الآن',
+    'gotoapp_button'=>'انتقل إلى التطبيق',
+    'tools_home_title'=>'  وفر وقتك ومالك وجهدك باستخدام منصة فورمز هب',
+    'tool1_title'=>'التوقيع الرقمي',
+    'tool1_text'=>' . أنشئ نموذجًا مخصصًا بالكامل ليتم ملؤه وتوقيعه من قبل عملائك، أو قم بتحميل نموذج  جاهز',
+    'tool2_title'=>'نموذج مخصص',
+    'tool2_text'=>'هل تحتاج إلى استطلاع رأي العملاء؟ تسجيل العملاء؟ أو جمع البيانات؟ لدينا كل ما تحتاجه! أنشئ الخاص بك مع مجموعة متنوعة من أنواع الأسئلة وأكثر من ذلك.',
+    'tool3_title'=>'عرض البيانات',
+    'tool3_text'=>'لماذا تستخدم الكتالوج الورقي؟ قم بتحويله إلى رقمي، قم بتحميل وتحرير وسائطك من جميع أنحاء العالم، لعرضها لعملائك.',
+
+    'step1_title'=>'سجل',
+    'step1_text'=>'سواء كنت ممثلاً لشركة أو فردًا، يمكنك الانضمام إلينا الآن من خلال إنشاء حسابك المجاني.',
+    'step2_title'=>'ربط الجهاز',
+    'step2_text'=>'قم بربط منصة فورمز هب بجهاز  في أقل من دقيقة، ليس لديك واحد؟',
+    'step3_title'=>'استمتع بالمنصة',
+    'step3_text'=>'إدارة وتحرير ومراقبة بياناتك وأجهزتك في جميع أنحاء العالم، من خلال لوحة تحكم سهلة الاستخدام.',
+    'createone'=>'أنشئ واحدًا',
+    'ordernow'=>'اطلب الآن',
+    'readmore'=>'اقرأ المزيد',
+
 
     //features
 
@@ -78,7 +89,6 @@ return [
      'products_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
      'kioskinfo_title'=>'Kiosk Info',
      'kioskinfo_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur at reprehenderit optio, laudantium eius quod, eum maxime molestiae porro omnis. Dolores aspernatur delectus impedit incidunt dolore mollitia esse natus beatae.',
-     'ordernow'=>'Order Now',
      'firstname'=>'First Name',
      'lastname'=>'Last Name',
      'mobilenumber'=>'Mobile Number',

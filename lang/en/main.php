@@ -35,19 +35,36 @@ return [
 
 
 
+
+
+
+
     //home
-     'home_header_title'=>'Promote Your App with SoftLand',
-     'home_header_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+     'home_header_title'=>'It\'s Time To Make It Classy',
+     'home_header_text'=>'Enjoy various features created to improve your business, digitize your forms, signatures, surveys, database collection, and more',
      'home_header_button'=>'Get Started',
      'gotoapp_button'=>'Go To App',
-     'tools_home_title'=>'',
-     'tool1_title'=>'',
-     'tool1_text'=>'',
-     'tool2_title'=>'',
-     'tool2_text'=>'',
-     'tool3_title'=>'',
-     'tool3_text'=>'',
+     'tools_home_title'=>'Save your time, money, and effort using Forms Hub',
+     'tool1_title'=>'Digital Signature',
+     'tool1_text'=>'Create a fully customized form to be filled and signed by your customers, or upload a pre-made PDF form.',
+     'tool2_title'=>'Custom Form',
+     'tool2_text'=>' Need a customer feedback survey? customer registration? or data collection? We got you! create your own with various types of questions and more.',
+     'tool3_title'=>'Data Show',
+     'tool3_text'=>'Why use a paper catalogue? make it digital, upload and edit your media from around the world, for your customers to view.',
 
+
+
+
+
+      'step1_title'=>'Sign Up',
+      'step1_text'=>'Whether you are a business representative or an individual, you can join us now by creating your free account.',
+      'step2_title'=>'Connect Device',
+      'step2_text'=>'Connect Forms Hub kiosk in less than a minute, do not have one? ',
+      'step3_title'=>'Enjoy The Platform',
+      'step3_text'=>'Manage, edit, and monitor your data and devices worldwide, with a user-friendly dashboard. ',
+      'createone'=>' Create One',
+      'ordernow'=>' Order Now',
+      'readmore'=>' Read More',
     //features
 
 
