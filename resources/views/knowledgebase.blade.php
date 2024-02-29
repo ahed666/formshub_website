@@ -28,10 +28,11 @@
                 @endif
                 </h6>
                 @foreach ( $category->questions as $question)
-                    <div>
-                        <button id="question-{{ $question->id }}" onclick="ShowAnswer({{ $question->id }})"  class="accordion">
-                            @if(App::getLocale()=="en")    {{ $question->question }}
-                            @else {{  $question->question_ar }}
+                    <div class="mt-3">
+                        <button id="question-{{ $question->id }}" onclick="ShowAnswer({{ $question->id }})"  class="question">
+                            @if(App::getLocale()=="en")
+                            <span class="accordion">{{ $question->question }}</span>
+                            @else  <span class="accordion">{{ $question->question_ar }}</span>
                             @endif
                         </button>
                         <div id="answer-{{ $question->id }}" class="panel">
@@ -94,7 +95,7 @@
     // }
     function ShowAnswer(id){
              var answers = document.getElementsByClassName("panel");
-             var questions = document.getElementsByClassName("accordion");
+             var questions = document.getElementsByClassName("question");
             for (var j = 0; j < answers.length; j++) {
                 if( answers[j].id!=`answer-${id}`)
                 {answers[j].style.display = "none";

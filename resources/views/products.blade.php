@@ -55,13 +55,13 @@ $text=trans('main.products_text');
                                     <div class="col-md-6 col-12">
                                         <div class="form-group">
                                             <label for="fname">{{ __('main.firstname') }}</label>
-                                            <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required>
+                                            <input type="text" class="form-control" id="fname" name="fname" placeholder="" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12">
                                         <div class="form-group">
                                             <label for="lname">{{ __('main.lastname') }}</label>
-                                            <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" required>
+                                            <input type="text" class="form-control" id="lname" name="lname" placeholder="" required>
                                         </div>
                                     </div>
                                 </div>
@@ -72,13 +72,13 @@ $text=trans('main.products_text');
                                     <div class="col-md-6 col-12">
                                         <div class="form-group">
                                             <label for="email">{{ __('main.email') }}</label>
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12">
                                         <div class="form-group">
                                             <label for="mobilenumber">{{ __('main.mobilenumber') }}</label>
-                                            <input pattern="^(05|5)\d{8}$" title="Please enter a valid UAE mobile phone number with either '05xxxxxxxx' or '5xxxxxxxx' " type="text" maxlength="10"  class="form-control" id="mobilenumber" name="mobilenumber" placeholder="5xxxxxxxx" required>
+                                            <input pattern="^(05|5)\d{8}$" title="Please enter a valid UAE mobile phone number with either '05xxxxxxxx' or '5xxxxxxxx' " type="text" maxlength="10"  class="form-control" id="mobilenumber" name="mobilenumber" placeholder="" required>
                                         </div>
                                     </div>
                                 </div>
@@ -107,7 +107,7 @@ $text=trans('main.products_text');
                             <div class="col-md-8 col-12">
                                 <div class="form-group">
                                     <label for="city">{{ __('main.address') }}</label>
-                                    <input type="text" class="form-control" id="address" name="address" placeholder="Address">
+                                    <input type="text" class="form-control" id="address" name="address" placeholder="">
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@ $text=trans('main.products_text');
 
                             {{-- with stand --}}
                             <div class="col-lg-2 col-sm-12 col-md-12  align-items-center mx-2 my-1 my-sm-auto">
-                                <input type="checkbox" class="btn-check" name="items[]" onchange="toggleBorder(this,{{ $device->id }},{{ $device->price }})" value="{{ $device->id }}" id="item_{{ $device->id }}" autocomplete="off" >
+                                <input type="checkbox" class="btn-check" name="items[]" onchange="toggleBorder(this,{{ $device->id }},{{ $device->price }},'{{ $device->name }}')" value="{{ $device->id }}" id="item_{{ $device->id }}" autocomplete="off" >
                                 <label class="btn border border-1 border-dark d-flex justify-content-center items-center" for="item_{{ $device->id }}">
                                     <img width="100" height="100" class="img-fluid" src="{{ asset($device->image) }}" alt="">
                                 </label>
@@ -136,7 +136,7 @@ $text=trans('main.products_text');
                                     <span class="fs-6">{{ $device->price }}{{ __(' AED') }} <span class="vat">{{ __('+VAT') }}</span></span>
                                 </div>
                                 {{-- quantity --}}
-                                <div id="quantityDiv_{{ $device->id }}" class="d-flex justify-content-center my-2 align-items-center d-none">
+                                <div id="quantityDiv_{{ $device->id }}" class="d-flex justify-content-center my-2 align-items-center hidden ">
                                     <label class="fs-6"  for="quantity_with_stand_{{ $device->id }}">{{ __('Quantity: ') }}</label>
                                     <input  class="w-50 mx-2 border border-1  rounded-pill px-3 " type="number" name="quantity_{{ $device->id }}" id="quantity_{{ $device->id }}" value="1" min="1" max="20" onchange="changeQuantity(this,{{ $device->id }})">
                                 </div>
@@ -150,8 +150,15 @@ $text=trans('main.products_text');
                        @endforeach
                     </div>
                     </div>
-                    <div class="d-flex justify-content-center align-items-center  border border-1  rounded my-3 p-2  " style="height: 50px" >
-                     <span class="mx-2">{{ __('main.totalprice') }}</span>   <span id="total_price">0</span><span class="mx-2">{{ __(' AED ') }} <span class="vat">{{ __('+VAT') }}</span></span>
+                    <div class="d-grid justify-content-start align-items-center  border border-1  rounded my-3 p-2  " style="height: auto" >
+                        <div id="invoice_description" class="hidden border-bottom border-1 border-dark">
+
+                        </div>
+
+                      <div class="d-flex justify-content-start align-items-center">
+                        <span class="mx-2">{{ __('main.totalprice') }}</span>
+                        <span id="total_price">0</span><span class="mx-2">{{ __(' AED ') }} <span class="vat">{{ __('+VAT') }}</span></span>
+                      </div>
                     </div>
 
                     <div class="d-flex justify-content-center align-items-center" >
@@ -181,6 +188,7 @@ $text=trans('main.products_text');
     <script>
 
         var selectedItems=[];
+
         $(document).ready(function () {
             $('#contactForm').submit(function () {
                 $('#submitButton').prop('disabled', true);
@@ -193,36 +201,46 @@ $text=trans('main.products_text');
     function changeQuantity(input,id){
         console.log(id);
         selectedItems[id].count=input.value;
-        updatePrice();
+        updateInvoice();
 
     }
     // select un select item
-    function toggleBorder(checkbox,id,price) {
+    function toggleBorder(checkbox,id,price,name) {
         const label = checkbox.nextElementSibling;
         quantityDiv=document.getElementById('quantityDiv_'+id);
         quantityInput=document.getElementById('quantity_'+id);
         if (checkbox.checked) {
             label.classList.remove('border-dark');
             label.classList.add('border-primary');
-            quantityDiv.classList.remove('d-none');
+            quantityDiv.classList.remove('hidden');
             quantityInput.value=1;
-            selectedItems[id]={price:price,count:document.getElementById('quantity_'+id).value};
-            updatePrice();
+
+            selectedItems[id]={price:price,name:name,count:document.getElementById('quantity_'+id).value};
+
+            updateInvoice();
 
         } else {
             label.classList.remove('border-primary');
             label.classList.add('border-dark');
-            quantityDiv.classList.add('d-none');
+            quantityDiv.classList.add('hidden');
             delete selectedItems[id];
-            updatePrice();
+
+            updateInvoice();
 
         }
 }
 
-   function updatePrice(){
+   function updateInvoice(){
     total_price=0;
-    selectedItems.forEach(element => {
-        total_price+=element.price*element.count;
+    desc=document.getElementById('invoice_description');
+    desc.classList.remove('hidden');
+    desc.innerHTML=``;
+    index=0;
+    selectedItems.forEach(function(element,i) {
+            elementprice=element.price*element.count;
+        total_price+=elementprice;
+        desc.innerHTML+=`<div>${index+1}) ${element.name}: ${element.count} * ${element.price}=${elementprice}</div>`;
+        index+=1;
      });
      document.getElementById('total').value=total_price;
      document.getElementById('total_price').innerText=total_price;

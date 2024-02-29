@@ -9,6 +9,7 @@ use App\Models\TypeDevice;
 use App\Models\Order;
 use App\Models\OrderProduct;
 use App\Mail\OrderNotification;
+use App\Mail\OrderCustomerNotification;
 use Illuminate\Support\Facades\Mail;
 use Spatie\SchemaOrg\Schema;
 
@@ -64,8 +65,9 @@ class ProductController extends Controller
 
 
         // Send email notification to sales
-
         Mail::to(env('SALES_EMAIL'))->send(new OrderNotification($orderData));
+        // Send email notification to customer
+        Mail::to($order->email)->send(new OrderCustomerNotification($orderData));
 
         return redirect()->back()->with(
             ['success_title'=>trans('main.orderplaced'),

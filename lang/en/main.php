@@ -41,7 +41,7 @@ return [
 
     //home
      'home_header_title'=>'It\'s Time To Make It Classy',
-     'home_header_text'=>'Enjoy various features created to improve your business, digitize your forms, signatures, surveys, database collection, and more',
+     'home_header_text'=>'Enjoy various features created to improve your business, digitize your forms, signatures, surveys, database collection',
      'home_header_button'=>'Get Started',
      'gotoapp_button'=>'Go To App',
      'tools_home_title'=>'Save your time, money, and effort using Forms Hub',

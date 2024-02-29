@@ -1130,24 +1130,19 @@ section {
     min-height: 1.25rem; /* Equivalent to min-h-[20px] */
     color: #718096; /* Equivalent to text-gray-500 */
   }
+  .question{
+    border: none;
+    background: none;
+  }
   .accordion {
-    background-color: white ;
-    color:var(--secondary_blue);
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: 1px solid var(--secondary_blue);
-    text-align: left;
-    outline: none;
-    font-size: larger;
-    transition: 0.4s;
-    border-radius: 0.5rem;
+
     margin-bottom: 4px;
   margin-top: 4px;
   }
   .title{
     font-size: large;
          font-weight: bold;
+         color: var(--secondary_blue);
   }
   @media screen and (max-width: 992px) {
     .accordion{
@@ -1160,22 +1155,15 @@ section {
       }
     }
 
-  .accordion:hover {
 
-    transform: translateY(0.25rem) scale(1.0025);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
   .active_faq {
-    background-color: var(--secondary_blue);
-
-    color: white;
+    font-weight: bold;
 
   }
 
   .panel {
     padding: 10px 18px;
     display: none;
-    background-color: var(--primary_blue);
     overflow: hidden;
     color: black;
    border: 1px solid var(--secondary_blue);
@@ -1423,6 +1411,13 @@ section {
     .link:hover{
         color: var(--link);
 
+    }
+    .show{
+        opacity: 1;
+
+    }
+    .hidden{
+        opacity: 0;
     }
 
 

@@ -29,7 +29,7 @@
           <div class="row">
             <div class="col-lg-8 text-center text-lg-start">
               <h1 data-aos="fade-right">{{ __('main.home_header_title') }}</h1>
-              <p class="mb-5" data-aos="fade-right" data-aos-delay="100">{{ __('main.home_header_text') }}</p>
+              <p class="mb-5" data-aos="fade-right" data-aos-delay="100">{{ __('main.home_header_text') }}<a class="" style="color:white;margin-left:2px; margin-right:2px;"  href="{{ config('app.sub_domain_name') }}">{{ __('main.readmore') }}</a></p>
               <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="{{ config('app.sub_domain_name') }}" class="btn btn-outline-white">{{ __('main.home_header_button') }}</a></p>
             </div>
             <div class="col-lg-4 iphone-wrap">
