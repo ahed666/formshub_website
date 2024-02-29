@@ -41,7 +41,7 @@ Route::post('/orderproduct', [App\Http\Controllers\ProductController::class,'ord
 
 
   // change language
-  Route::get('setlocale/{locale}',[App\Http\Controllers\LocaleController::class, 'setLocale'])->name('setLocale');
+  Route::post('setlocale/{locale}',[App\Http\Controllers\LocaleController::class, 'setLocale'])->name('setLocale');
 
 //terms and conditions
 Route::get('/termsandconditions',function()

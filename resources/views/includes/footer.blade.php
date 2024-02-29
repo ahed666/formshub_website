@@ -43,8 +43,18 @@
                 </a>
 
                 <ul class="dropdown-menu">
-                <li><a  href="{{ route('setLocale','en') }}">English</a></li>
-                <li><a  href="{{ route('setLocale','ar') }}">العربية</a></li>
+
+                     <form method="POST" action="{{ route('setLocale','en') }}">
+                        @csrf
+                         <button class="buttonlang" type="submit">English</button>
+                    </form>
+
+                    <form method="POST" action="{{ route('setLocale','ar') }}">
+                        @csrf
+                       <button class="buttonlang" type="submit">العربية</button>
+                    </form>
+
+
                 </ul>
 
             </div>

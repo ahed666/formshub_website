@@ -240,6 +240,15 @@ section {
   margin-bottom: 10px;
   display: block;
 }
+.buttonlang{
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.buttonlang:hover{
+   background-color: var(--secondary_blue);
+   color: white;
+}
 
 .step p:last-child {
   margin-bottom: 0px;
