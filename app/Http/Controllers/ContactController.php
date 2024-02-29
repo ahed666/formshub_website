@@ -15,7 +15,7 @@ class ContactController extends Controller
             ->description('Contact us to get in touch with our team. Leave us a message and we will get back to you as soon as possible.')
             ->url(url()->current());
 
-        return view('contact','schemaMarkup');
+        return view('contact',compact('schemaMarkup'));
     }
 
     public function sendEmail(Request $request){

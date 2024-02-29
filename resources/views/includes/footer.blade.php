@@ -44,9 +44,9 @@
 
                 <ul class="dropdown-menu">
 
-                     <form method="POST" action="{{ route('setLocale','en') }}">
+                    <form method="POST" action="{{ route('setLocale','en') }}">
                         @csrf
-                         <button class="buttonlang" type="submit">English</button>
+                        <button class="buttonlang" type="submit">English</button>
                     </form>
 
                     <form method="POST" action="{{ route('setLocale','ar') }}">
