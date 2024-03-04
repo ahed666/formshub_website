@@ -66,7 +66,8 @@ return [
       'ordernow'=>' Order Now',
       'readmore'=>' Read More',
     //features
-
+    'features_title'=>'Features',
+    'features_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
 
 
     //pricing
@@ -133,5 +134,12 @@ return [
     'successmessagesend'=>'Email sent successfully.',
     'errorsendmessage'=>'Failed to send email.',
 
+    //privacy policy
+    'privacypolicy_title'=>'Privacy Policy',
+    'privacypolicy_text'=>'',
+
+    //terms and conditions
+    'termsandconditions_title'=>'Terms and Conditions',
+    'termsandconditions_text'=>'',
 
 ];

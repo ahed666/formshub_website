@@ -24,8 +24,6 @@ class IndexController extends Controller
             });
 
             // Now $imageFiles contains the list of image files in the folder
-
-
             return count($imageFiles);
         }
 

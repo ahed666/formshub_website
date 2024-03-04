@@ -6,8 +6,8 @@
 
 @section('content')
 @php
-$title="Terms & Conditions";
-$text="";
+$title={{ __('main.termsandconditions_title') }};
+$text={{ __('main.termsandconditions_text') }};
 @endphp
 @php
         $schemaMarkup = \Spatie\SchemaOrg\Schema::webPage()
@@ -15,7 +15,7 @@ $text="";
             ->description('Read our terms and conditions to understand the rules and guidelines for using our website.')
             ->url(url()->current());
 
-        
+
     @endphp
 @section('schema_markup')
 {!! $schemaMarkup->toScript() !!}

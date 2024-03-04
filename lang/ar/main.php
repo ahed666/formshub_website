@@ -25,13 +25,13 @@ return [
 
 
    //footer
-   'aboutformshub'=>'About Formshub',
-   'aboutformshub_text'=>'About Formshub',
-   'navigation'=>'Navigation',
-   'services'=>'Services',
-   'copyright'=>' Copyright :name. All Rights Reserved',
-   'designedby'=>'Designed by',
 
+    'aboutformshub'=>'حول فورمز هاب',
+    'aboutformshub_text'=>'حول فورمز هاب',
+    'navigation'=>'شريط التنقل',
+    'services'=>'الخدمات',
+    'copyright'=>' حقوق الطبع والنشر: :name. كل الحقوق محفوظة',
+    'designedby'=>'تصميم بواسطة',
 
 
    //home
@@ -62,9 +62,9 @@ return [
 
     //pricing
 
-    'pricing_title'=>'Pricing',
+    'pricing_title'=>'الأسعار',
     'pricing_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    'chooseplan_title'=>'Choose A Plan',
+    'chooseplan_title'=>'اختر خطة',
     'chooseplan_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere illum obcaecati inventore velit laborum earum.',
 
     'professionaldash'=>'لوحة التحكم والإحصائيات المتقدمة',
@@ -85,22 +85,23 @@ return [
 
 
      //products
-     'products_title'=>'Products',
-     'products_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-     'kioskinfo_title'=>'Kiosk Info',
-     'kioskinfo_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur at reprehenderit optio, laudantium eius quod, eum maxime molestiae porro omnis. Dolores aspernatur delectus impedit incidunt dolore mollitia esse natus beatae.',
-     'firstname'=>'First Name',
-     'lastname'=>'Last Name',
-     'mobilenumber'=>'Mobile Number',
-     'city'=>'City',
-     'customerinfo'=>'Customer Info',
-     'orderinfo'=>'Order Info',
-     'quantity'=>'Quantity',
-     'totalprice'=>'Total',
-     'sendorder'=>'Send Order',
-     'items_required'=>'Please select at least one product.',
-     'ordersendsuccess'=>'Thank you for placing your order. We have received it and our sales team will be contacting you shortly.',
-     'orderplaced'=>'Order Placed',
+
+    'products_title'=>'المنتجات',
+    'products_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    'kioskinfo_title'=>'معلومات الجهاز',
+    'kioskinfo_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur at reprehenderit optio, laudantium eius quod, eum maxime molestiae porro omnis. Dolores aspernatur delectus impedit incidunt dolore mollitia esse natus beatae.',
+    'firstname'=>'الاسم الأول',
+    'lastname'=>'اسم العائلة',
+    'mobilenumber'=>'رقم الجوال',
+    'city'=>'المدينة',
+    'customerinfo'=>'معلومات العميل',
+    'orderinfo'=>'معلومات الطلب',
+    'quantity'=>'الكمية',
+    'totalprice'=>'الإجمالي',
+    'sendorder'=>'إرسال الطلب',
+    'items_required'=>'الرجاء تحديد على الأقل منتج واحد.',
+    'ordersendsuccess'=>'شكرًا لك على تقديم طلبك. لقد تلقيناه وسيراجعه فريق المبيعات لدينا قريبًا.',
+    'orderplaced'=>'تم تقديم الطلب',
 
      //kb
      'kb_title'=>'KnowledgeBase',
@@ -108,21 +109,30 @@ return [
 
 
      //contact us
-     'contact_title'=>'Get in touch',
+     'contact_title'=>'ابقى على تواصل',
      'contact_text'=>'',
-     'form_title'=>'Contact Form',
+     'form_title'=>'اكتب رسالتك',
      'form_text'=>'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis explicabo inventore.',
-     'name'=>'Name',
-     'email'=>'Email',
-     'subject'=>'Subject',
-     'message'=>'Message',
-     'sendmessage'=>'Send Message',
-     'address'=>'Address',
+     'name'=>'الأسم',
+     'email'=>'البريد الإلكتروني',
+     'subject'=>'الموضوع',
+     'message'=>'الرسالة',
+     'sendmessage'=>'إرسال الرسالة',
+     'address'=>'العنوان',
      'address_value'=>'203 Fake St. Mountain View, San Francisco, California, USA',
-     'phone'=>'Phone',
+     'phone'=>'الهاتف ',
      'email_value'=>'youremail@domain.com',
-     'success'=>'Success',
-     'error'=>'Error',
-     'successmessagesend'=>'Email sent successfully.',
-     'errorsendmessage'=>'Failed to send email.',
+     'success'=>'تمت العملية بنجاح',
+     'error'=>'فشلت العملية',
+     'successmessagesend'=>'تم إرسال البريد الإلكتروني بنجاح',
+     'errorsendmessage'=>'فشل إرسال البريد الإلكتروني',
+
+
+     //privacy policy
+    'privacypolicy_title'=>'سياسة الخصوصية',
+    'privacypolicy_text'=>'',
+
+    //terms and conditions
+    'termsandconditions_title'=>'الشروط و الأحكام',
+    'termsandconditions_text'=>'',
 ];
