@@ -4,8 +4,8 @@
 
   @section('content')
   @php
-  $title={{ __('main.privacypolicy_title') }};
-  $text={{ __('main.privacypolicy_text') }};
+  $title=trans('main.privacypolicy_title');
+  $text=trans('main.privacypolicy_text') ;
 @endphp
 @php
         $schemaMarkup = \Spatie\SchemaOrg\Schema::webPage()

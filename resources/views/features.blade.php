@@ -6,8 +6,8 @@
 <!-- ======= Features Section ======= -->
 
 @php
-$title={{ __('main.features_title') }};
-$text={{ __('main.features_text') }};
+$title=trans('main.features_title');
+$text=trans('main.features_text') ;
 @endphp
 @php
         $schemaMarkup = \Spatie\SchemaOrg\Schema::webPage()

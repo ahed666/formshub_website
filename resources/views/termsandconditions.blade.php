@@ -6,8 +6,8 @@
 
 @section('content')
 @php
-$title={{ __('main.termsandconditions_title') }};
-$text={{ __('main.termsandconditions_text') }};
+$title=trans('main.termsandconditions_title') ;
+$text=trans('main.termsandconditions_text');
 @endphp
 @php
         $schemaMarkup = \Spatie\SchemaOrg\Schema::webPage()
