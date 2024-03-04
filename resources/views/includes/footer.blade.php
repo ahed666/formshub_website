@@ -67,7 +67,7 @@
     </div>
     <div  class="row justify-content-center text-center copyright-section">
         <div class="col-md-7">
-          <p class="copyright">&copy; {{ __('main.copyright',['name'=>'Formshub']) }}</p>
+          <p class="copyright">&copy; {{ __('main.copyright',['name'=>__('main.formshub')]) }}</p>
           <div class="credits">
             <!--
             All the links in the footer should remain intact.
@@ -75,7 +75,7 @@
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=SoftLand
           -->
-            {{ __('main.designedby') }}<a href="http://www.netcore.ae/"> Netcore IT Solutions</a>
+            {{ __('main.designedby') }}<a href="http://www.netcore.ae/"> {{ __('main.netcoreitsolutions') }}</a>
           </div>
         </div>
     </div>

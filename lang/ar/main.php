@@ -12,6 +12,9 @@ return [
     | these language lines according to your application's requirements.
     |
     */
+    //general
+    'formshub'=>'فورمز هاب',
+    'netcoreitsolutions'=>'نت كور اي تي سولوشنز',
 
    //  navbar
    'home' => 'الرئيسية',

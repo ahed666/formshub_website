@@ -12,7 +12,9 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-
+  //general
+  'formshub'=>'FormsHub',
+  'netcoreitsolutions'=>'Netcore IT Solutions',
 
      //  navbar
     'home' => 'Home',
