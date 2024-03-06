@@ -27,14 +27,14 @@
         <div class="row">
           <div class="col-md-4 ms-auto order-2" data-aos="fade-up">
             <ul class="list-unstyled">
-              {{-- <li class="mb-3">
+              <li class="mb-3">
                 <strong class="d-block mb-1">{{ __('main.address') }}</strong>
                 <span>{{ __('main.address_value') }}</span>
-              </li> --}}
-              <li class="mb-3">
+              </li>
+              {{-- <li class="mb-3">
                 <strong class="d-block mb-1">{{ __('main.phone') }}</strong>
                 <span>{{ __('055 830 7721') }}</span>
-              </li>
+              </li> --}}
               <li class="mb-3">
                 <strong class="d-block mb-1">{{ __('main.email') }}</strong>
                 <span>{{ __('info@formshub.net') }}</span>
