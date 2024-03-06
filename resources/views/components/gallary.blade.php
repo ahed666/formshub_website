@@ -25,13 +25,14 @@
 <div class="gallery-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"">
     <div class="swiper-wrapper" style="padding: 40px 0px">
 
-        @for($i = 1; $i <= $counter; $i++)
+        @foreach ( $GallaryImages as $image )
+
         <div class="swiper-slide">
-            <a href="{{ asset('images/gallary/'.$i.'.png') }}" class="glightbox">
-             <img class="img-fluid" src="{{ asset('images/gallary/'.$i.'.png') }}" alt="">
+            <a href="{{ asset($image->src) }}" class="glightbox">
+             <img class="img-fluid" src="{{ asset($image->src) }}" title="{{ $image->title }}" alt="{{ $image->alt }}">
             </a>
         </div>
-        @endfor
+        @endforeach
 
       <!-- Add more slides as needed -->
     </div>

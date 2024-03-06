@@ -124,7 +124,7 @@
     </section>
 
      <section class="section">
-    <x-gallary  :counter="$gallaryImagesCount" />
+    <x-gallary  :counter="$gallaryImages" />
      </section>
 
 

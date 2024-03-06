@@ -11,10 +11,9 @@ $text=trans('main.features_text') ;
 @endphp
 @php
         $schemaMarkup = \Spatie\SchemaOrg\Schema::webPage()
-            ->name('Features')
-            ->description('Discover the features of our product. Learn how it can help you improve your business.')
-            ->url(url()->current());
-
+        ->name('Features')
+        ->description('Discover the features of our product. Learn how it can help you improve your business.')
+        ->url(url()->current());
 
 @endphp
 @section('schema_markup')
