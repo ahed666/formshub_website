@@ -112,6 +112,7 @@ return [
     'ordersendsuccess'=>'Thank you for placing your order. We have received it and our sales team will be contacting you shortly.',
     'orderplaced'=>'Order Placed',
 
+
     //kb
     'kb_title'=>'KnowledgeBase',
     'kb_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',

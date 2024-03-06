@@ -114,7 +114,7 @@ $text=trans('main.products_text');
                     </div>
                     {{-- order info section --}}
                     <div class="my-2 fs-3 text-black  d-flex justify-content-start align-items-start">
-                       {{ __('Order Info') }}
+                       {{ __('main.orderinfo') }}
                     </div>
                     {{-- devices --}}
                     <div class="container">
