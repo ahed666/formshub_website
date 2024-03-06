@@ -25,7 +25,7 @@
 <div class="gallery-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"">
     <div class="swiper-wrapper" style="padding: 40px 0px">
 
-        @foreach ( $GallaryImages as $image )
+        @foreach ( $gallaryimages as $image )
 
         <div class="swiper-slide">
             <a href="{{ asset($image->src) }}" class="glightbox">
