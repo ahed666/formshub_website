@@ -1181,6 +1181,8 @@ section {
     background-color: #ccc; /* Divider color */
     margin-top: 10px; /* Margin between div and divider */
     margin-bottom: 10px; /* Margin between div and divider */
+    box-shadow: 0 10px 20px --var; /* Adds a shadow */
+
 
     transform: skewX(-20deg); /* Skew the divider */
 
