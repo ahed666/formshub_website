@@ -21,7 +21,7 @@ return [
    'features'=>'السمات',
    'pricing'=>'الأسعار',
    'products'=>'المنتجات',
-   'knowledgebase'=>'KnowledgeBase',
+   'knowledgebase'=>'قاعدة المعرفة',
    'contactus'=>'اتصل بنا',
    'termsandconditions'=>'الأحكام والشروط',
    'privacypolicy'=>'سياسة الخصوصية',
