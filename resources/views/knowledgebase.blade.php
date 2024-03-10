@@ -19,7 +19,7 @@
      <x-header_section :title="$title" :text="$text" />
 
     <section class="section p-2">
-
+        <div class="container">
         @foreach ( $categoriesWithQuestions as $category )
             <div id="cat-{{ $category->id }}" class="faq_cateogry">
                 <h6 class="title">
@@ -47,7 +47,7 @@
                 @endforeach
             </div>
         @endforeach
-
+        </div>
 
 
     </section>
