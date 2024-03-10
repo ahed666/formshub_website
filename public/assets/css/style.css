@@ -1180,6 +1180,10 @@ section {
     height: 1px;
     background-color: #ccc; /* Divider color */
     margin-top: 10px; /* Margin between div and divider */
+    margin-bottom: 10px; /* Margin between div and divider */
+
+    transform: skewX(-20deg); /* Skew the divider */
+
 }
 
   /* order */
