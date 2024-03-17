@@ -41,7 +41,7 @@
                                 $text = str_replace('__CONTACT_ROUTE__',route('contact'), $question->answer);
 
                             @endphp
-                            @if(App::getLocale()=="en"){!! $question->answer !!}
+                            @if(App::getLocale()=="en"){!! $text !!}
                             @else {{  $question->answer_ar }}
                             @endif
                         </p>
