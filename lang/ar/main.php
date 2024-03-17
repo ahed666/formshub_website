@@ -68,8 +68,8 @@ return [
 
     'pricing_title'=>'الأسعار',
     'pricing_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    'chooseplan_title'=>'اختر خطة',
-    'chooseplan_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere illum obcaecati inventore velit laborum earum.',
+    'chooseplan_title'=>'قارن الاشتراكات',
+    'chooseplan_text'=>'مهما كنت تبحث عنه، لدينا ما تحتاجه! قم بفتح القيود الآن وقم بالترقية إلى الاشتراك البريميوم. قارن بين الاشتراك الحر والاشتراك البريميوم، واختر ما يناسبك.',
 
     'professionaldash'=>'لوحة التحكم والإحصائيات المتقدمة',
     'customformlogo'=>'شعار النموذج المخصص',

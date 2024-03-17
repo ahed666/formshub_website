@@ -75,8 +75,8 @@ return [
     //pricing
     'pricing_title'=>'Pricing',
     'pricing_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    'chooseplan_title'=>'Choose A Plan',
-    'chooseplan_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere illum obcaecati inventore velit laborum earum.',
+    'chooseplan_title'=>'Compare Subscriptions',
+    'chooseplan_text'=>'Whatever you are looking for, we\'ve got you! unlock the limitation now and upgrade to the premium subscription. compared with the free subscription, and make your choice.',
 
     'createuptodoforms'=>'Create up to :num forms',
     'connectuptokiosks'=>'Connect up to :num kiosks',

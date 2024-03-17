@@ -130,7 +130,7 @@ $text=trans('main.termsandconditions_text');
 
 
     <x-title :title="'Pricing And Subscriptions'" />
-    <x-description :desc="'At its sole discretion, the Company reserves the right to modify or change the price of products, services, or plans provided without prior notice or liability. The Company reserves the right to cancel free products, services, or plans at any time without prior notice or liability.'"/>
+    <x-description :desc="'At its sole discretion, the Company reserves the right to modify or change the price of products, services, or subscriptions provided without prior notice or liability. The Company reserves the right to cancel free products, services, or subscriptions at any time without prior notice or liability.'"/>
 
     <x-title :title="'Changes To This Agreement'" />
     <x-description :desc="'At its sole discretion, the Company reserves the right to modify or replace this Agreement at any time. If a revision is material, we will revise the updated date at the top of this page, and we may send you an email to notify you if possible. We may also provide notice to you in other ways at our discretion, such as through the contact information you have provided, but it is always the responsibility of the Users to periodically check the Agreement and search for any changes.'"/>
