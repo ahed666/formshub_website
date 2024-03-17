@@ -39,7 +39,7 @@
                         <p>
                             @php
                                 $text = str_replace('__CONTACT_ROUTE__',route('contact'), $question->answer);
-                                  dd($text);
+
                             @endphp
                             @if(App::getLocale()=="en")
                             {!! $text !!}
