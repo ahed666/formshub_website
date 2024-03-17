@@ -38,7 +38,7 @@
                         <div id="answer-{{ $question->id }}" class="panel">
                         <p>
                             @php
-                                $text = str_replace('__CONTACT_ROUTE__', {{ route('contact') }}, $question->answer);
+                                $text = str_replace('__CONTACT_ROUTE__',route('contact'), $question->answer);
 
                             @endphp
                             @if(App::getLocale()=="en"){!! $question->answer !!}
