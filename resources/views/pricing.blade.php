@@ -131,7 +131,13 @@
                     </ul>
                     <div class="price-cta">
                         <strong class="price">{{ $type->price }}{{ __(' AED') }}</strong>
-                        <p><a href="{{ config('app.sub_domain_subscriptions_name') }}" class="btn btn-white" target="_blank">Choose Plan</a></p>
+
+                        @if($type->subscription_type=="Free")
+                        <p><a href="{{ config('app.sub_domain_name') }}" class="btn btn-white" target="_blank">{{ __('main.start') }}</a></p>
+                        @else
+                        <p><a href="{{ config('app.sub_domain_subscriptions_name') }}" class="btn btn-white" target="_blank">{{ __('main.getpremium') }}</a></p>
+
+                        @endif
                     </div>
                     </div>
                 </div>

@@ -86,6 +86,9 @@ return [
     'accesstodomanager' => 'الوصول إلى مدير المهام',
     'selectnumofresponses' => ' حدد عدد الردود في العام :',
 
+    'start'=>'البدء',
+    'getpremium'=>'الإشتراك الأن',
+
 
 
      //products

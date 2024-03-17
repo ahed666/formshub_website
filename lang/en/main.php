@@ -92,6 +92,8 @@ return [
     'professionaldash'=>'Professional dashboard & statistics ',
     'customformlogo'=>'Custom form logo',
     'signpdf'=>'Sign PDF',
+    'start'=>'Start',
+    'getpremium'=>'Get Premium',
 
     //products
     'products_title'=>'Products',
