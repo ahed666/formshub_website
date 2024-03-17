@@ -11,7 +11,7 @@
 
     @php
         $title= trans('main.kb_title') ;
-        $text= trans('main.kb_text') ;
+        $text='' ;
     @endphp
   @section('schema_markup')
   {!! $schemaMarkup->toScript() !!}

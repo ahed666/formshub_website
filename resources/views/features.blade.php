@@ -7,7 +7,7 @@
 
 @php
 $title=trans('main.features_title');
-$text=trans('main.features_text') ;
+$text='' ;
 @endphp
 @php
         $schemaMarkup = \Spatie\SchemaOrg\Schema::webPage()

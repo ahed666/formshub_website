@@ -8,7 +8,7 @@
     <!-- ======= FeatPricingures Section ======= -->
     @php
         $title=trans('main.pricing_title');
-        $text=trans('main.pricing_text');
+        $text='' ;
     @endphp
      <x-header_section :title="$title" :text="$text" />
      @section('schema_markup')

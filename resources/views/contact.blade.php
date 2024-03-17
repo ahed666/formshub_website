@@ -6,7 +6,7 @@
 
     @php
     $title=trans('main.contact_title');
-    $text=trans('main.contact_text');
+    $text='' ;
     @endphp
 @section('schema_markup')
 {!! $schemaMarkup !!}

@@ -6,7 +6,7 @@
 
 @php
 $title=trans('main.products_title');
-$text=trans('main.products_text');
+$text='';
 
 @endphp
 @section('schema_markup')
