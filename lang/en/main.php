@@ -116,6 +116,7 @@ return [
     //kb
     'kb_title'=>'KnowledgeBase',
     'kb_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    'helpquestion'=>'Do you need help? ',
 
 
     //contact us
