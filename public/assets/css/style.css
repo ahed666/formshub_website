@@ -1187,9 +1187,7 @@ section {
     transform: skewX(-20deg); /* Skew the divider */
 
 }
-.about-text-footer{
-    font-size: small;
-}
+
 
   /* order */
   .order-form  {
@@ -1242,6 +1240,7 @@ section {
     .gotoapp_navbar{
         left: 125px;
     }
+
     @keyframes pulse-animation {
         0% {
           box-shadow: 0 0 0 0px rgba(255, 215, 0, 0.3);
@@ -1404,7 +1403,13 @@ section {
         justify-content: center;
        align-items: center;
     }
+    .about-text-footer{
+        font-size:small;
+    }
     @media screen and (max-width: 992px) {
+        .about-text-footer{
+            font-size: x-small;
+        }
         .definitionword{
             font-size: x-small !important;
 
