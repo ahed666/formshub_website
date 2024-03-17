@@ -3,7 +3,7 @@
       <div class="row">
         <div class="col-md-4 mb-4 mb-md-0">
           <h3>{{ __('main.aboutformshub') }}</h3>
-          <p>{{ __('main.aboutformshub_text') }}</p>
+          <p class="about-text-footer">{{ __('main.aboutformshub_text') }}</p>
           {{-- <p class="social">
             <a href="#"><span class="bi bi-facebook"></span></a>
             <a href="#"><span class="bi bi-instagram"></span></a>

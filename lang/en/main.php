@@ -29,7 +29,7 @@ return [
 
     //footer
     'aboutformshub'=>'About Formshub',
-    'aboutformshub_text'=>'About Formshub',
+    'aboutformshub_text'=>'Launched in March 2024, Forms Hub was created by a UAE-based software company that empowers businesses to streamline data collection and improve customer interactions. our digital kiosk system allows for easy creation, editing, and analysis of custom forms for various purposes, including customer feedback, registrations, and data collection. The kiosk\'s remote manageability ensures effortless operation from anywhere',
     'navigation'=>'Navigation',
     'services'=>'Services',
     'copyright'=>' Copyright :name. All Rights Reserved',
