@@ -44,7 +44,7 @@
                                 $text = str_replace('__PRODUCTS_ROUTE__',route('pricing'), $question->answer);
                                 $text = str_replace('__PRICING_ROUTE__',route('products'), $question->answer);
                                 $text = str_replace('__KB_ROUTE__',route('knowledgebase'), $question->answer);
-                                $text = str_replace('__TERMS_ROUTE__',route('termsandconditions'), $question->answer);
+                                $text = str_replace('__TERMS_ROUTE__',route('terms_conditions'), $question->answer);
                                 $text = str_replace('__PP_ROUTE__',route('privacypolicy'), $question->answer);
 
                             @endphp
@@ -55,7 +55,7 @@
                                 $text = str_replace('__PRODUCTS_ROUTE__',route('pricing'), $question->answer_ar);
                                 $text = str_replace('__PRICING_ROUTE__',route('products'), $question->answer_ar);
                                 $text = str_replace('__KB_ROUTE__',route('knowledgebase'), $question->answer_ar);
-                                $text = str_replace('__TERMS_ROUTE__',route('termsandconditions'), $question->answer_ar);
+                                $text = str_replace('__TERMS_ROUTE__',route('terms_conditions'), $question->answer_ar);
                                 $text = str_replace('__PP_ROUTE__',route('privacypolicy'), $question->answer_ar);
                             @endphp
                             {!! $text !!}
