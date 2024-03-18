@@ -41,11 +41,11 @@
                             @if(App::getLocale()=="en")
                             @php
                                 $text = str_replace('__CONTACT_ROUTE__',route('contact'), $question->answer);
-                                $text = str_replace('__PRODUCTS_ROUTE__',route('pricing'), $question->answer);
-                                $text = str_replace('__PRICING_ROUTE__',route('products'), $question->answer);
-                                $text = str_replace('__KB_ROUTE__',route('knowledgebase'), $question->answer);
-                                $text = str_replace('__TERMS_ROUTE__',route('terms_conditions'), $question->answer);
-                                $text = str_replace('__PP_ROUTE__',route('privacypolicy'), $question->answer);
+                                // $text = str_replace('__PRODUCTS_ROUTE__',route('pricing'), $question->answer);
+                                // $text = str_replace('__PRICING_ROUTE__',route('products'), $question->answer);
+                                // $text = str_replace('__KB_ROUTE__',route('knowledgebase'), $question->answer);
+                                // $text = str_replace('__TERMS_ROUTE__',route('terms_conditions'), $question->answer);
+                                // $text = str_replace('__PP_ROUTE__',route('privacypolicy'), $question->answer);
 
                             @endphp
                             {!! $text !!}
