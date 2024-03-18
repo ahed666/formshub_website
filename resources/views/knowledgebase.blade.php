@@ -67,7 +67,7 @@
                 @endforeach
             </div>
         @endforeach
-        <div class="d-flex justify-content-center items-align-center {{ App::getLocale()=="en"?"text-left":"text-right" }} ">
+        <div dir="{{ App::getLocale()=="en"?"ltr":"rtl" }}" class="d-flex justify-content-center items-align-center  ">
             {{ __('main.helpquestion') }}     <a class="text-link" href="{{ route('contact') }}">{{ __('main.contactusnow') }}</a>
 
         </div>
