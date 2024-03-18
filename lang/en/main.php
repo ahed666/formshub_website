@@ -139,6 +139,7 @@ return [
     'error'=>'Error',
     'successmessagesend'=>'Email sent successfully.',
     'errorsendmessage'=>'Failed to send email.',
+    'contactusnow'=>'Contact us now',
 
     //privacy policy
     'privacypolicy_title'=>'Privacy Policy',

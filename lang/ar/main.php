@@ -134,6 +134,7 @@ return [
      'error'=>'فشلت العملية',
      'successmessagesend'=>'تم إرسال البريد الإلكتروني بنجاح',
      'errorsendmessage'=>'فشل إرسال البريد الإلكتروني',
+     'contactusnow'=>'تواصل معنا الأن',
 
 
      //privacy policy

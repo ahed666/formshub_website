@@ -68,7 +68,7 @@
             </div>
         @endforeach
         <div class="d-flex justify-content-center items-align-center">
-            {{ __('main.helpquestion') }}     <a class="text-link" href="{{ route('contact') }}">formshub.net/contact</a>
+            {{ __('main.helpquestion') }}     <a class="text-link" href="{{ route('contact') }}">{{ __('main.contactusnow') }}</a>
 
         </div>
         </div>
