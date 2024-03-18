@@ -41,22 +41,22 @@
                             @if(App::getLocale()=="en")
                             @php
                                 $text = str_replace('__CONTACT_ROUTE__',route('contact'), $question->answer);
-                                $text = str_replace('__PRODUCTS_ROUTE__',route('pricing'), $question->answer);
-                                // $text = str_replace('__PRICING_ROUTE__',route('products'), $question->answer);
-                                // $text = str_replace('__KB_ROUTE__',route('knowledgebase'), $question->answer);
-                                // $text = str_replace('__TERMS_ROUTE__',route('terms_conditions'), $question->answer);
-                                // $text = str_replace('__PP_ROUTE__',route('privacypolicy'), $question->answer);
+                                $text = str_replace('__PRODUCTS_ROUTE__',route('pricing'), $text);
+                                $text = str_replace('__PRICING_ROUTE__',route('products'), $text);
+                                $text = str_replace('__KB_ROUTE__',route('knowledgebase'), $text);
+                                $text = str_replace('__TERMS_ROUTE__',route('terms_conditions'), $text);
+                                $text = str_replace('__PP_ROUTE__',route('privacypolicy'), $text);
 
                             @endphp
                             {!! $text !!}
                             @else
                             @php
                                 $text = str_replace('__CONTACT_ROUTE__',route('contact'), $question->answer_ar);
-                                $text = str_replace('__PRODUCTS_ROUTE__',route('pricing'), $question->answer_ar);
-                                $text = str_replace('__PRICING_ROUTE__',route('products'), $question->answer_ar);
-                                $text = str_replace('__KB_ROUTE__',route('knowledgebase'), $question->answer_ar);
-                                $text = str_replace('__TERMS_ROUTE__',route('terms_conditions'), $question->answer_ar);
-                                $text = str_replace('__PP_ROUTE__',route('privacypolicy'), $question->answer_ar);
+                                $text = str_replace('__PRODUCTS_ROUTE__',route('pricing'), $text);
+                                $text = str_replace('__PRICING_ROUTE__',route('products'), $text);
+                                $text = str_replace('__KB_ROUTE__',route('knowledgebase'), $text);
+                                $text = str_replace('__TERMS_ROUTE__',route('terms_conditions'), $text);
+                                $text = str_replace('__PP_ROUTE__',route('privacypolicy'), $text);
                             @endphp
                             {!! $text !!}
                             @endif
