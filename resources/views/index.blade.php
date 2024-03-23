@@ -35,8 +35,8 @@
             <div class="col-lg-4 iphone-wrap">
               {{-- <img src="assets/img/phone_1.png" alt="Image" class="phone-1" data-aos="fade-right">
               <img src="assets/img/phone_2.png" alt="Image" class="phone-2" data-aos="fade-right" data-aos-delay="200"> --}}
-              {{-- <img src="/images/website_images/home_image1.png" class="phone-1" alt="home image 1"> --}}
-                <x-homepageimage />
+              <img src="/images/website_images/home_image1.png" class="phone-1" alt="home image 1">
+                {{-- <x-homepageimage /> --}}
             </div>
           </div>
         </div>
