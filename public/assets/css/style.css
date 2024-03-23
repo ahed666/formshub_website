@@ -701,6 +701,9 @@ section {
 */
 .navbar {
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar ul {
@@ -913,7 +916,7 @@ section {
   overflow: hidden;
   position: absolute;
   z-index: 1;
-  bottom: -150px;
+  bottom: -160px;
 }
 
 @media screen and (max-width: 992px) {
@@ -939,7 +942,7 @@ section {
 
 .hero-section.inner-page .hero-text {
   transform: translateY(-150px);
-  margin-top: -180px;
+  margin-top: -190px;
 }
 
 @media screen and (max-width: 992px) {
@@ -1238,7 +1241,8 @@ section {
     /* go to app button */
 
     .gotoapp_navbar{
-        left: 125px;
+      margin-left: 20px;
+      margin-right: 20px;
     }
 
     @keyframes pulse-animation {
