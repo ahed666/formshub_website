@@ -126,7 +126,7 @@ $text='';
                             <div class="col-lg-2 col-sm-12 col-md-12  align-items-center mx-2 my-1 my-sm-auto">
                                 <input type="checkbox" class="btn-check" name="items[]" onchange="toggleBorder(this,{{ $device->id }},{{ $device->price }},'{{ $device->name }}')" value="{{ $device->id }}" id="item_{{ $device->id }}" autocomplete="off" >
                                 <label class="btn border border-1 border-dark d-flex justify-content-center items-center" for="item_{{ $device->id }}">
-                                    <img width="100" height="100" class="img-fluid" src="{{ asset($device->image) }}" alt="">
+                                    <img width="100" height="100" class="orderkiosk_image" src="{{ asset($device->image) }}" alt="">
                                 </label>
                                 <div data-bs-toggle="tooltip"  data-bs-html="true" title="{{$device->device_model}} {{$device->name }}" class="custom-element  d-flex justify-content-center align-items-center   ">
                                     <span class="fs-5 text-nowrap overflow-hidden ">{{$device->device_model  }} {{ $device->name }}</span>

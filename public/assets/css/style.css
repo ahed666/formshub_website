@@ -1195,6 +1195,11 @@ section {
 
 
   /* order */
+  .orderkiosk_image{
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+  }
   .order-form  {
     color: #4c4c4c;
     padding: 20px;
