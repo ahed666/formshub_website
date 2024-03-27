@@ -113,7 +113,7 @@ return [
      //kb
      'kb_title'=>'KnowledgeBase',
      'kb_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-     'helpquestion'=>' هل هذا لم يساعد ؟',
+     'helpquestion'=>' هل هذا لم يساعدك ؟',
 
 
      //contact us
