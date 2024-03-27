@@ -118,7 +118,7 @@ return [
     //kb
     'kb_title'=>'KnowledgeBase',
     'kb_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    'helpquestion'=>'Do you need help? ',
+    'helpquestion'=>'That did not help? ',
 
 
     //contact us
@@ -139,7 +139,7 @@ return [
     'error'=>'Error',
     'successmessagesend'=>'Email sent successfully.',
     'errorsendmessage'=>'Failed to send email.',
-    'contactusnow'=>'Contact us now',
+    'contactusnow'=>'Contact us',
 
     //privacy policy
     'privacypolicy_title'=>'Privacy Policy',
