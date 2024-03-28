@@ -1207,12 +1207,14 @@ section {
     background-color: #dae0e5;
     color: black;
     padding: 0px;
+    border-radius: 25%;
+    border: none;
   }
-  .btn-minus,.btn-plus :hover{
+  .btn-minus:hover,
+.btn-plus:hover {
     background-color: #1277D1;
     color: white;
-
-  }
+}
 
   .inline-group .form-control {
     text-align: right;
