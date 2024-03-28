@@ -1204,11 +1204,18 @@ section {
     width: 100%;
   }
   .btn-minus,.btn-plus{
+    width: 30px;
+    height: 30px;
+    text-align: center;
     background-color: #dae0e5;
     color: black;
-    padding: 0px;
-    border-radius: 25%;
+    /* padding: 6px; */
+    /* border-radius: 25%; */
     border: none;
+  }
+  .form-control{
+    width: 30px;
+    height: 30px;
   }
   .btn-minus:hover,
 .btn-plus:hover {
