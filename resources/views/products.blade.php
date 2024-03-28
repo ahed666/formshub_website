@@ -219,6 +219,15 @@ $text='';
         updateInvoice();
 
     }
+    document.querySelectorAll('.btn-plus, .btn-minus').forEach(function(element) {
+    element.addEventListener('click', function(e) {
+        const isNegative = e.target.closest('.btn-minus') !== null;
+        const input = e.target.closest('.input-group').querySelector('input');
+        if (input !== null && input.tagName.toLowerCase() === 'input') {
+            isNegative ? input.stepDown() : input.stepUp();
+        }
+    });
+});
     // select un select item
     function toggleBorder(checkbox,id,price,name) {
         const label = checkbox.nextElementSibling;
