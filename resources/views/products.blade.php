@@ -221,11 +221,12 @@ $text='';
     }
     document.querySelectorAll('.btn-plus, .btn-minus').forEach(function(element) {
     element.addEventListener('click', function(e) {
-        const isNegative = e.target.closest('.btn-minus') !== null;
-        const input = e.target.closest('.input-group').querySelector('input');
-        if (input !== null && input.tagName.toLowerCase() === 'input') {
-            isNegative ? input.stepDown() : input.stepUp();
-        }
+        // const isNegative = e.target.closest('.btn-minus') !== null;
+        // const input = e.target.closest('.input-group').querySelector('input');
+        // if (input !== null && input.tagName.toLowerCase() === 'input') {
+        //     isNegative ? input.stepDown() : input.stepUp();
+        // }
+        console.log(e);
     });
 });
     // select un select item
