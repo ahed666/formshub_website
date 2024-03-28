@@ -231,7 +231,7 @@ $text='';
     function downQuantity(id){
         var inputNumber = document.getElementById(`quantity_${id}`);
         var value = parseInt(inputNumber.value, 10); // Convert value to integer
-        if (value > 0) {
+        if (value > 1) {
             inputNumber.value = value - 1; // Decrement value
         } else {
             return;
