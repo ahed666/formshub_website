@@ -146,7 +146,7 @@ $text='';
                                             +
                                           </button>
                                         </div>
-                                        <input  class="product_qty quantity w-50  border border-1   px-3 " type="number" name="quantity_{{ $device->id }}" id="quantity_{{ $device->id }}" value="1" min="1" max="20" onchange="changeQuantity(this,{{ $device->id }})">
+                                        <input  class="product_qty quantity w-30  border border-1    " type="number" name="quantity_{{ $device->id }}" id="quantity_{{ $device->id }}" value="1" min="1" max="20" onchange="changeQuantity(this,{{ $device->id }})">
 
                                         <div class="input-group-append">
                                           <button type="button" onclick="downQuantity({{ $device->id }})" class="btn-plus">
