@@ -221,17 +221,21 @@ $text='';
     }
     function upQuantity(id){
         inputNumber=document.getElementById(`quantity_${id}`);
-        if(inputNumber.value<20)
-        inputNumber.value+=1;
-        else
-        return;
+        var value = parseInt(inputNumber.value, 10); // Convert value to integer
+        if (value <20) {
+            inputNumber.value = value + 1; // Decrement value
+        } else {
+            return;
+        }
     }
     function downQuantity(id){
-        inputNumber=document.getElementById(`quantity_${id}`);
-        if(inputNumber.value>0)
-        inputNumber.value-=1;
-        else
-        return;
+        var inputNumber = document.getElementById(`quantity_${id}`);
+        var value = parseInt(inputNumber.value, 10); // Convert value to integer
+        if (value > 0) {
+            inputNumber.value = value - 1; // Decrement value
+        } else {
+            return;
+        }
 
     }
 
