@@ -1207,6 +1207,10 @@ section {
     background-color: #dae0e5;
     color: black;
   }
+  .btn-minus,.btn-plus :hover{
+    background-color: #afb3b6;
+
+  }
 
   .inline-group .form-control {
     text-align: right;
