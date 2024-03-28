@@ -1224,9 +1224,7 @@ section {
     color: white;
 }
 
-  .inline-group .product_qty {
-    text-align: right;
-  }
+
 
   .product_qty[type="number"]::-webkit-inner-spin-button,
   .product_qty[type="number"]::-webkit-outer-spin-button {
