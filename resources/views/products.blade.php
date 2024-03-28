@@ -128,8 +128,9 @@ $text='';
                                 <label class="btn border border-1 border-dark d-flex justify-content-center items-center" for="item_{{ $device->id }}">
                                     <img width="100" height="100" class="orderkiosk_image" src="{{ asset($device->image) }}" alt="">
                                 </label>
-                                <div data-bs-toggle="tooltip"  data-bs-html="true" title="{{$device->device_model}} {{$device->name }}" class="custom-element  d-flex justify-content-center align-items-center   ">
-                                    <span class="fs-5 text-nowrap overflow-hidden ">{{$device->device_model  }} {{ $device->name }}</span>
+                                <div data-bs-toggle="tooltip"  data-bs-html="true" title="{{$device->device_model}} {{$device->name }}" class="custom-element
+                                    d-flex justify-content-center align-items-center product_name_div   ">
+                                    <span class="fs-5 product_name ">{{$device->device_model  }} {{ $device->name }}</span>
                                 </div>
                                 {{-- price --}}
                                 <div class="d-flex justify-content-center mt-2 align-items-center">

@@ -1195,6 +1195,13 @@ section {
 
 
   /* order */
+  .product_name_div{
+    height: 60px;
+  }
+  .product_name{
+    text-align: center;
+    font-size: medium;
+  }
   .orderkiosk_image{
     width: 100px;
     height: 150px;
@@ -1307,6 +1314,12 @@ section {
         .navmobile{
             padding:0px 25px !important ;
         }
+        .product_name_div{
+            height: 40px;
+          }
+          .product_name{
+            font-size: small;
+          }
 
     }
 
