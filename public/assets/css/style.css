@@ -1209,8 +1209,8 @@ section {
     text-align: center;
     background-color: #dae0e5;
     color: black;
-    /* padding: 6px; */
-    /* border-radius: 25%; */
+    font-size: 20px;
+    font-weight: bold;
     border: none;
   }
   .form-control{
