@@ -1214,6 +1214,7 @@ section {
     border: none;
   }
   .product_qty{
+    text-align: center;
     width: 30px;
     height: 30px;
   }
