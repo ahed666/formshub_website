@@ -1206,9 +1206,11 @@ section {
   .btn-minus,.btn-plus{
     background-color: #dae0e5;
     color: black;
+    padding: 0px;
   }
   .btn-minus,.btn-plus :hover{
-    background-color: #afb3b6;
+    background-color: #1277D1;
+    color: white;
 
   }
 
