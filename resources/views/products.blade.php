@@ -142,14 +142,14 @@ $text='';
 
                                     <div class=" inline-group">
                                         <div class="input-group-prepend">
-                                          <button onclick="upQuantity(this)" class="btn-minus">
+                                          <button onclick="upQuantity($device->id)" class="btn-minus">
                                             +
                                           </button>
                                         </div>
                                         <input  class="product_qty quantity w-50 mx-2 border border-1   px-3 " type="number" name="quantity_{{ $device->id }}" id="quantity_{{ $device->id }}" value="1" min="1" max="20" onchange="changeQuantity(this,{{ $device->id }})">
 
                                         <div class="input-group-append">
-                                          <button onclick="downQuantity(this)" class="btn-plus">
+                                          <button onclick="downQuantity($device->id)" class="btn-plus">
                                             -
                                           </button>
                                         </div>
@@ -219,15 +219,17 @@ $text='';
         updateInvoice();
 
     }
-    function upQuantity(input){
-        if(input.value<20)
-        input.value+=1;
+    function upQuantity(id){
+        inputNumber=document.getElementById(`quantity_${id}`);
+        if(inputNumber.value<20)
+        inputNumber.value+=1;
         else
         return;
     }
-    function downQuantity(input){
-        if(input.value>0)
-        input.value-=1;
+    function downQuantity(id){
+        inputNumber=document.getElementById(`quantity_${id}`);
+        if(inputNumber.value>0)
+        inputNumber.value-=1;
         else
         return;
 
