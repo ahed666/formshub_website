@@ -142,14 +142,14 @@ $text='';
 
                                     <div class=" inline-group">
                                         <div class="input-group-prepend">
-                                          <button onclick="upQuantity($device->id)" class="btn-minus">
+                                          <button type="button" onclick="upQuantity({{ $device->id }})" class="btn-minus">
                                             +
                                           </button>
                                         </div>
                                         <input  class="product_qty quantity w-50 mx-2 border border-1   px-3 " type="number" name="quantity_{{ $device->id }}" id="quantity_{{ $device->id }}" value="1" min="1" max="20" onchange="changeQuantity(this,{{ $device->id }})">
 
                                         <div class="input-group-append">
-                                          <button onclick="downQuantity($device->id)" class="btn-plus">
+                                          <button type="button" onclick="downQuantity({{ $device->id }})" class="btn-plus">
                                             -
                                           </button>
                                         </div>
