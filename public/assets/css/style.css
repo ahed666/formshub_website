@@ -1213,7 +1213,7 @@ section {
     font-weight: bold;
     border: none;
   }
-  .form-control{
+  .product_qty{
     width: 30px;
     height: 30px;
   }
@@ -1223,12 +1223,12 @@ section {
     color: white;
 }
 
-  .inline-group .form-control {
+  .inline-group .product_qty {
     text-align: right;
   }
 
-  .form-control[type="number"]::-webkit-inner-spin-button,
-  .form-control[type="number"]::-webkit-outer-spin-button {
+  .product_qty[type="number"]::-webkit-inner-spin-button,
+  .product_qty[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
