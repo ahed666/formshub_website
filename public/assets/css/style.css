@@ -1198,6 +1198,14 @@ section {
   .inline-group {
     max-width: 9rem;
     padding: .5rem;
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  }
+  .btn-minus,.btn-plus{
+    background-color: #dae0e5;
+    color: black;
   }
 
   .inline-group .form-control {
