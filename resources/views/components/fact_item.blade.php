@@ -1,7 +1,7 @@
 <div class="col-md-3">
 
     <div class="countdiv">
-        <p class="number">{{ $count }}</p>
+        <p class="number">{{ $fact->count }}</p>
     </div>
-    <p>{{ $title }}</p>
+    <p>{{ $fact->title }}</p>
 </div>
