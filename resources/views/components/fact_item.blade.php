@@ -3,7 +3,7 @@
        {!! $svg !!}
     </div>
     <div class="countdiv">
-        <p class="number">{{ $count }}</p>
+        <p class="number stat-count">{{ $count }}</p>
     </div>
     <p>{{ $title }}</p>
 </div>

@@ -124,7 +124,7 @@
 
     </section>
     {{-- facts --}}
-    <section class="section">
+    <section class="section facts_section">
      <x-facts :facts="$facts" />
     </section>
     {{-- gallary --}}
