@@ -1,6 +1,6 @@
 <div class=" factitem">
     <div class="fact-icon">
-       {{ $svg }}
+       {!! $svg !!}
     </div>
     <div class="countdiv">
         <p class="number">{{ $count }}</p>
