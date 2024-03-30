@@ -1208,7 +1208,7 @@ section {
 
    .countdiv{
 
-    color: white;
+    color: var(--secondary_blue);
     justify-content: center;
     align-items: center;
     display: flex;
