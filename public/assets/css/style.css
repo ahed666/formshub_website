@@ -1218,14 +1218,24 @@ display: flex;
 
    .countdiv{
 
-    color: var(--secondary_blue);
+    color: black;
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
     height: 70px;
     text-align: center;
+   }
+   @media screen and (max-width: 992px)
+   {
+    .fact_svg{
+        width: 40px;
+        height: 40px;
+    }
+    .countdiv{
+        font-size:large;
+    }
    }
 
 
