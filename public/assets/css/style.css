@@ -1199,6 +1199,7 @@ section {
     align-items: center;
 
    }
+
    .countdiv{
     border-radius: 100%;
     background-color: var(--secondary_blue);
@@ -1206,8 +1207,9 @@ section {
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
    }
 
 
