@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
              @foreach ($facts as $fact )
-              <x-fact :fact="$fact" />
+              <x-fact_item :fact="$fact" />
 
              @endforeach
         </div>
