@@ -1207,13 +1207,13 @@ section {
    }
 
    .countdiv{
-    border-radius: 100%;
-    background-color: var(--secondary_blue);
+
     color: white;
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 70px;
+    font-size: large;
+    font-weight: bold;
     height: 70px;
     text-align: center;
    }
