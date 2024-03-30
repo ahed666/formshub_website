@@ -1192,6 +1192,15 @@ section {
     transform: skewX(-20deg); /* Skew the divider */
 
 }
+   /*facts*/
+   .countdiv{
+    border-radius: 50%;
+    background-color: var(--secondary_blue);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   }
 
 
   /* order */
