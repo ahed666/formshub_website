@@ -67,6 +67,7 @@ return [
       'createone'=>' Create One',
       'ordernow'=>' Order Now',
       'readmore'=>' Read More',
+      'facts'=>'Facts',
       'signedpdf_count'=>'Signed PDF',
       'responses_count'=>'Responses',
       'createdforms_count'=>'Created Forms',

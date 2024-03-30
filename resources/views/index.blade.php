@@ -125,7 +125,14 @@
     </section>
     {{-- facts --}}
     <section class="section facts_section">
-     <x-facts :facts="$facts" />
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-md-5" data-aos="fade-up">
+                  <h2 class="section-heading">{{ __('main.facts') }}</h2>
+                </div>
+            </div>
+            <x-facts :facts="$facts" />
+        </div>
     </section>
     {{-- gallary --}}
      <section class="section">
