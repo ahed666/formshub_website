@@ -31,11 +31,11 @@ $accounts_svg='<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 
         <div class=" facts">
 
 
-            <x-fact_item :svg="$signed_svg" :count="$facts->signedpdf_count" :title="trans('main.signedpdf_count')" />
-            <x-fact_item :svg="$responses_svg" :count="$facts->responses_count" :title="trans('main.responses_count')" />
-            <x-fact_item :svg="$forms_svg" :count="$facts->createdforms_count" :title="trans('main.createdforms_count')" />
-            <x-fact_item :svg="$kiosk_svg" :count="$facts->linkedkiosks_count" :title="trans('main.linkedkiosks_count')" />
-            <x-fact_item :svg="$accounts_svg" :count="$facts->createdaccount_count" :title="trans('main.createdaccount_count')" />
+            <x-fact_item :animate="'fade-left'" :svg="$signed_svg" :count="$facts->signedpdf_count" :title="trans('main.signedpdf_count')" />
+            <x-fact_item :animate="'fade-left'" :svg="$responses_svg" :count="$facts->responses_count" :title="trans('main.responses_count')" />
+            <x-fact_item :animate="'fade-left'" :svg="$forms_svg" :count="$facts->createdforms_count" :title="trans('main.createdforms_count')" />
+            <x-fact_item :animate="'fade-left'" :svg="$kiosk_svg" :count="$facts->linkedkiosks_count" :title="trans('main.linkedkiosks_count')" />
+            <x-fact_item :animate="'fade-left'" :svg="$accounts_svg" :count="$facts->createdaccount_count" :title="trans('main.createdaccount_count')" />
 
 
 

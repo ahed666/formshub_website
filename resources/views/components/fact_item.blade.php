@@ -1,4 +1,4 @@
-<div class=" factitem">
+<div data-aos="{{ $animate }}" class=" factitem">
     <div class="fact-icon">
        {!! $svg !!}
     </div>
