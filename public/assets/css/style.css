@@ -1222,7 +1222,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size:xx-large;
+    font-size:60px;
     font-weight: bold;
     height: 70px;
     text-align: center;
@@ -1234,7 +1234,7 @@ display: flex;
         height: 40px;
     }
     .countdiv{
-        font-size:large;
+        font-size:xx-large;
     }
    }
 
