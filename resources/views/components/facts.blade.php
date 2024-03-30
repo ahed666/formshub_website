@@ -5,7 +5,7 @@
         <div class="row">
             {{ $facts }}
              @foreach ($facts as $i =>$fact )
-             {{ $fact}}
+            {{ $i  }} {{ $fact }}
              @endforeach
               {{-- <x-fact_item :count="$fact" :title="trans('main.'.$fact)"  /> --}}
 
