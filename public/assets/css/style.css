@@ -1218,11 +1218,11 @@ display: flex;
 
    .countdiv{
 
-    color: black;
+    color: var(--secondary_blue);
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size: x-large;
+    font-size:xx-large;
     font-weight: bold;
     height: 70px;
     text-align: center;
