@@ -67,6 +67,11 @@ return [
       'createone'=>' Create One',
       'ordernow'=>' Order Now',
       'readmore'=>' Read More',
+      'signedpdf_count'=>'Signed PDF',
+      'responses_count'=>'Responses',
+      'createdforms_count'=>'Created Forms',
+      'linkedkiosks_count'=>'Linked Kiosks',
+      'createdaccount_count'=>'Created Accounts',
     //features
     'features_title'=>'Features',
     'features_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',

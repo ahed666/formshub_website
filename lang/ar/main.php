@@ -61,7 +61,11 @@ return [
     'ordernow'=>'اطلب الآن',
     'readmore'=>'اقرأ المزيد',
 
-
+    'signedpdf_count'=>'',
+    'responses_count'=>'',
+    'createdforms_count'=>'',
+    'linkedkiosks_count'=>'',
+    'createdaccount_count'=>'',
     //features
 
     //pricing
