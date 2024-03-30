@@ -29,7 +29,7 @@ class IndexController extends Controller
         ->url(url()->current());
         $gallaryImages=$this->getAllImagesGallary();
         $facts=Fact::first();
-        dd($facts);
+
         return view('index',compact('gallaryImages','schemaMarkup','facts'));
     }
 }
