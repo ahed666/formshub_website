@@ -3,10 +3,13 @@
 <section class="fun-facts text-center">
     <div class="container">
         <div class="row">
-             @foreach ($facts as $fact )
-              <x-fact_item :count="$fact" :title="trans('main.'.$fact)"  />
+            {{ $facts }}
+             @for ($i =0 ; $i <count($facts) ; $i++)
+                   {{ $facts[$i] }}
+             @endfor
+              {{-- <x-fact_item :count="$fact" :title="trans('main.'.$fact)"  /> --}}
 
-             @endforeach
+
         </div>
     </div>
 </section>
