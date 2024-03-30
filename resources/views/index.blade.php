@@ -123,7 +123,11 @@
       </div>
 
     </section>
-
+    {{-- facts --}}
+    <section class="section">
+     <x-facts />
+    </section>
+    {{-- gallary --}}
      <section class="section">
     <x-gallary  :gallaryimages="$gallaryImages" />
      </section>
