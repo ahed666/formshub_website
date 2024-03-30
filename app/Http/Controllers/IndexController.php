@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Spatie\SchemaOrg\Schema;
 use App\Models\GallaryImages;
+use App\Models\Fact;
+
+use Illuminate\Support\Facades\Redirect;
 
 class IndexController extends Controller
 {
@@ -25,7 +28,7 @@ class IndexController extends Controller
         ->description('Welcome to our website. Explore our products and services.')
         ->url(url()->current());
         $gallaryImages=$this->getAllImagesGallary();
-
-        return view('index',compact('gallaryImages','schemaMarkup'));
+        $facts=Fact::first();
+        return view('index',compact('gallaryImages','schemaMarkup','facts'));
     }
 }
