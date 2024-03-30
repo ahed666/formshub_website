@@ -1193,10 +1193,16 @@ section {
 
 }
    /*facts*/
+   .facts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
    .factitem{
     display: grid;
     justify-content: center;
     align-items: center;
+    flex: 1;
 
    }
 

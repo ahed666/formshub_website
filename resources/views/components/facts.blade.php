@@ -2,7 +2,7 @@
 
 <section class="fun-facts text-center">
     <div class="container">
-        <div class="row">
+        <div class=" facts">
 
 
               <x-fact_item :count="$facts->signedpdf_count" :title="trans('main.signedpdf_count')"  />
