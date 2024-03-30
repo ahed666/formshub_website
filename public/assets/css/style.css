@@ -1210,6 +1210,11 @@ display: flex;
  justify-content: center;
     align-items: center;
    }
+   .fact_svg{
+    width: 60px;
+    height: 60px;
+    color: var(--secondary_blue);
+   }
 
    .countdiv{
 
