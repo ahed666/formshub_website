@@ -1205,6 +1205,11 @@ section {
     flex: 1;
 
    }
+   .fact-icon{
+display: flex;
+ justify-content: center;
+    align-items: center;
+   }
 
    .countdiv{
 
