@@ -43,48 +43,52 @@ $accounts_svg='<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 
     </div>
 </section>
 <script>
-    function asd() {
-	"use strict";
-	var i=1;
+   function asd() {
+    "use strict";
+    var i = 1;
 
-	if(i==1){
-	function count($this){
-	var current = parseInt($this.html(), 10);
-	current = current + 10; /* Where 50 is increment */
-	$this.html(++current);
-		if(current > $this.data('count')){
-			$this.html($this.data('count'));
-		} else {
-			setTimeout(function(){count($this)}, 50);
-		}
-	}
-	$(".stat-count").each(function() {
-	  $(this).data('count', parseInt($(this).html(), 10));
-	  $(this).html('0');
-	  count($(this));
-	});}
-  };
+    if (i == 1) {
+        function count($this) {
+            var current = parseInt($this.innerHTML, 10);
+            current = current + 10; /* Where 50 is increment */
+            $this.innerHTML = ++current;
+            if (current > $this.getAttribute('data-count')) {
+                $this.innerHTML = $this.getAttribute('data-count');
+            } else {
+                setTimeout(function () {
+                    count($this)
+                }, 50);
+            }
+        }
 
-$(document).ready(function(){
-	var tester = document.getElementById('facts_section');
+        var elements = document.querySelectorAll(".stat-count");
+        elements.forEach(function ($this) {
+            $this.setAttribute('data-count', parseInt($this.innerHTML, 10));
+            $this.innerHTML = '0';
+            count($this);
+        });
+    }
+};
 
-	var p;
-	var n = 0;
+document.addEventListener('DOMContentLoaded', function () {
+    var tester = document.getElementById('facts_section');
+    var p;
+    var n = 0;
 
-	window.onscroll = function() {
-		p = checkVisible(tester);
+    window.onscroll = function () {
+        p = checkVisible(tester);
 
-		if(p == true && n == 0){
-
-			asd();
-			n = 1;
-		}
-	};
+        if (p && n === 0) {
+            asd();
+            n = 1;
+        }
+    };
 });
 
 function checkVisible(elm) {
-  var rect = elm.getBoundingClientRect();
-  var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
-  return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    var rect = elm.getBoundingClientRect();
+    var viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+    return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
 };
+
 </script>
