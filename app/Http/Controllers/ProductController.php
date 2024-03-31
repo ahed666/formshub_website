@@ -65,7 +65,9 @@ class ProductController extends Controller
 
 
         // Send email notification to sales
-        Mail::to(env('SALES_EMAIL'))->send(new OrderNotification($orderData));
+        $recipientEmail = env('SALES_EMAIL', 'info@formshub.net');
+
+        Mail::to($recipientEmail)->send(new OrderNotification($orderData));
         // Send email notification to customer
         Mail::to($order->email)->send(new OrderCustomerNotification($orderData));
 
