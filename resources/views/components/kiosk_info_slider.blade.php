@@ -1,21 +1,9 @@
 <style>
-    .swiper-container {
-  width: 100%;
-  height: 100%;
-}
 
-    /* .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f5f5f5;
-    color: #333;
 
-    } */
+
 </style>
-<link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css') }}">
+<link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css') }}">
 
 <div class="container" data-aos="fade-up">
 
@@ -47,13 +35,12 @@
 
 
 </div>
-
-<script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js') }}"></script>
+<script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js') }}"></script>
+<script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js') }}"></script>
 
 <script>
-    const carousel = document.querySelector('.owl-carousel');
 
-    carousel.owlCarousel({
+$('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -62,10 +49,10 @@
             items:1
         },
         600:{
-            items:3
+            items:1
         },
         1000:{
-            items:5
+            items:1
         }
     }
 })
