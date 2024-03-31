@@ -58,9 +58,9 @@
             <div class="">
               <img src="{{ asset('images/website_images/second_section_home.png') }}" alt="Image" class="img-second_section_home ">
             </div>
-          </div>
+        </div>
 
-        <div class="row">
+        <div class="row mt-5">
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="">
             <div class="feature-1 text-center">
               <div class="wrap-icon icon-1">
