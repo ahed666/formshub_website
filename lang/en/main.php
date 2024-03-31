@@ -122,7 +122,7 @@ return [
     //products
     'products_title'=>'Kiosk',
     'products_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    'kioskinfo_title'=>'Kiosk',
+    'kioskinfo_title'=>'Kiosk Info',
     'kioskinfo_text'=>'Forms Hub kiosk is designed to meet your business expectations and to be as easy as 1 step setup.
 
     Whether you need customer feedback, data collection, or digitalise your documents, the Forms Hub kiosk will do it for you.
