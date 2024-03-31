@@ -1281,6 +1281,9 @@ display: flex;
     width: 30px;
     height: 30px;
   }
+  .total_price{
+    font-weight: bold;
+  }
   .btn-minus:hover,
 .btn-plus:hover {
     background-color: #1277D1;

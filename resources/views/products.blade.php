@@ -163,7 +163,7 @@ $text='';
 
                       <div class="d-flex justify-content-start align-items-center">
                         <span class="mx-2">{{ __('main.totalprice') }}</span>
-                        <span id="total_price" class="font-weight-bold">0</span><span class="mx-2">{{ __(' AED ') }} <span class="vat">{{ __('+VAT') }}</span></span>
+                        <span id="total_price" class="total_price">0</span><span class="mx-2">{{ __(' AED ') }} <span class="vat">{{ __('+VAT') }}</span></span>
                       </div>
                     </div>
 
