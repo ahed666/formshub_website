@@ -103,7 +103,7 @@ $text='';
                         </div>
                     </div>
                     {{-- order info section --}}
-                    <div class="my-2 fs-3 text-black  d-flex justify-content-start align-items-start">
+                    <div class="mt-10 mb-2 fs-3 text-black  d-flex justify-content-start align-items-start">
                        {{ __('main.orderinfo') }}
                     </div>
                     {{-- devices --}}
@@ -163,7 +163,7 @@ $text='';
 
                       <div class="d-flex justify-content-start align-items-center">
                         <span class="mx-2">{{ __('main.totalprice') }}</span>
-                        <span id="total_price">0</span><span class="mx-2">{{ __(' AED ') }} <span class="vat">{{ __('+VAT') }}</span></span>
+                        <span id="total_price" class="font-weight-bold">0</span><span class="mx-2">{{ __(' AED ') }} <span class="vat">{{ __('+VAT') }}</span></span>
                       </div>
                     </div>
 
@@ -214,7 +214,8 @@ $text='';
         inputNumber=document.getElementById(`quantity_${id}`);
         var value = parseInt(inputNumber.value, 10); // Convert value to integer
         if (value <20) {
-            inputNumber.value = value + 1; // Decrement value
+            inputNumber.value = value + 1;
+            updateInvoice(); // Decrement value
         } else {
             return;
         }
@@ -223,7 +224,8 @@ $text='';
         var inputNumber = document.getElementById(`quantity_${id}`);
         var value = parseInt(inputNumber.value, 10); // Convert value to integer
         if (value > 1) {
-            inputNumber.value = value - 1; // Decrement value
+            inputNumber.value = value - 1;
+            updateInvoice(); // Decrement value
         } else {
             return;
         }
@@ -265,7 +267,7 @@ $text='';
     selectedItems.forEach(function(element,i) {
             elementprice=element.price*element.count;
         total_price+=elementprice;
-        desc.innerHTML+=`<div>${index+1}) ${element.name}: ${element.count} * ${element.price}=${elementprice}</div>`;
+        desc.innerHTML+=`<div class="my-1">${index+1}) ${element.name}: ${element.count} * ${element.price}=${elementprice}</div>`;
         index+=1;
      });
      document.getElementById('total').value=total_price;
