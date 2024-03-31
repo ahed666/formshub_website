@@ -25,29 +25,29 @@
             <p class="mb-4">{{ __('main.kioskinfo_text') }}</p>
           </div>
           <div class="col-md-6" data-aos="fade-right">
-            <img src="{{ asset('assets/img/kiosk.jpg') }}" alt="Image" class="img-fluid">
+            <div class="gallery-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"">
+                <div class="swiper-wrapper" style="padding: 40px 0px">
+
+
+
+                    <div class="swiper-slide">
+
+                        <img class="img-fluid" src="{{ asset('images/website_images/kioskinfo1.png') }}" title="statistics question on kiosk" alt="statistics question on kiosk">
+                        <img class="img-fluid" src="{{ asset('images/website_images/kioskinfo2.png') }}" title="signature pdf example on kiosk" alt="signature pdf example on kiosk">
+
+                    </div>
+
+
+                <!-- Add more slides as needed -->
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+            </div>
           </div>
         </div>
 
 
-    <div class="gallery-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"">
-        <div class="swiper-wrapper" style="padding: 40px 0px">
 
-
-
-            <div class="swiper-slide">
-
-                <img class="img-fluid" src="{{ asset('images/website_images/kioskinfo1.png') }}" title="statistics question on kiosk" alt="statistics question on kiosk">
-                <img class="img-fluid" src="{{ asset('images/website_images/kioskinfo2.png') }}" title="signature pdf example on kiosk" alt="signature pdf example on kiosk">
-
-            </div>
-
-
-        <!-- Add more slides as needed -->
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
-    </div>
 
 </div>
 
