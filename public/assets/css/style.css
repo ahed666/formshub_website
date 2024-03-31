@@ -1245,6 +1245,19 @@ display: flex;
     border-radius: 2%;
   }
 
+
+      @media screen and (max-width: 992px)
+      {
+       .kioskinfoslider{
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-content: center;
+        align-items: center;
+        width: -webkit-fill-available;
+       }
+
+      }
   .inline-group {
     max-width: 9rem;
     padding: .5rem;
