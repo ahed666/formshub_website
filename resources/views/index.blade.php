@@ -47,18 +47,18 @@
 
     <!-- ======= Home Section ======= -->
     <section class="section">
-      <div class="container" style="background-image: url('{{ asset('images/website_images/second_section_home.png') }}');">
+      <div class="container" >
 
         <div class="row justify-content-center text-center mb-5">
           <div class="col-md-5" data-aos="fade-up">
             <h2 class="section-heading">{{ __('main.tools_home_title') }}</h2>
           </div>
         </div>
-        {{-- <div class="row justify-content-center text-center mb-5" data-aos="fade">
-            <div class="col-md-6 mb-5">
-              <img src="{{ asset('images/website_images/second_section_home.png') }}" alt="Image" class="img-fluid">
+        <div class="row justify-content-center text-center mb-5" data-aos="fade">
+            <div class="col-md-12 mb-5 bg-custom" style="background-image: url('{{ asset('images/website_images/second_section_home.png') }}');" >
+              {{-- <img src="{{ asset('images/website_images/second_section_home.png') }}" alt="Image" class="img-fluid"> --}}
             </div>
-          </div> --}}
+          </div>
 
         <div class="row">
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="">

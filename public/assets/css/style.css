@@ -906,6 +906,7 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 .hero-section {
   background: linear-gradient(to bottom, var(--primary_blue) 0%, var(--secondary_blue) 60%), url(../img/hero-bg.jpg);
   position: relative;
@@ -1035,6 +1036,11 @@ section {
     margin-top: 0px;
     margin-left: 100px;
   }
+}
+.bg-custom {
+    background-repeat: no-repeat;
+    background-size: cover; /* Optional: Adjust the background image size */
+    /* Other background properties */
 }
 
 /*--------------------------------------------------------------
