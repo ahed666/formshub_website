@@ -15,7 +15,7 @@ $text='';
 <x-header_section :title="$title" :text="$text" />
 
     <section class="section">
-
+      <x-kiosk_info_slider />
     </section>
       {{-- order products --}}
 
