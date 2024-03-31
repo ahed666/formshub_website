@@ -19,7 +19,7 @@ $text='';
     </section>
       {{-- order products --}}
 
-    <section class="section order-section">
+    <section class="section " id="order-section">
         <div class="row justify-content-center text-center mb-5">
             <div class="col-md-5 aos-init aos-animate" data-aos="fade-up">
               <h2 class="section-heading">{{ __('main.ordernow') }}</h2>
