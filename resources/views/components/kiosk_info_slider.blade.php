@@ -12,7 +12,7 @@
             <h2 class="mb-4">{{ __('main.kioskinfo_title') }}</h2>
             <p class="mb-4">{{ __('main.kioskinfo_text') }}</p>
           </div>
-          <div class="col-md-6" data-aos="fade-right">
+          <div class="col-md-6 kioskinfoslider" data-aos="fade-right">
             <div class="owl-carousel owl-theme">
 
 
