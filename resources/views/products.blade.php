@@ -15,17 +15,7 @@ $text='';
 <x-header_section :title="$title" :text="$text" />
 
     <section class="section">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-4 ms-auto order-2">
-              <h2 class="mb-4">{{ __('main.kioskinfo_title') }}</h2>
-              <p class="mb-4">{{ __('main.kioskinfo_text') }}</p>
-            </div>
-            <div class="col-md-6" data-aos="fade-right">
-              <img src="{{ asset('assets/img/kiosk.jpg') }}" alt="Image" class="img-fluid">
-            </div>
-          </div>
-        </div>
+
     </section>
       {{-- order products --}}
 
