@@ -76,6 +76,24 @@ return [
     //features
     'features_title'=>'Features',
     'features_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    'feature1_title'=>'Simplicity',
+    'feature1_text'=>'We believe simplicity is smart
+    One of our main goals is to keep Forms Hub simple and easy to use, without affecting features and quality, you can start using Forms Hub with easy 4 steps.
+    you do not have to hire professionals to help you manage it, you will have the ability to manage and control your features with just a few clicks.
+    Don\'t worry! we will always make sure you and your team are doing it perfectly.',
+    'feature2_title'=>'Centralized Control',
+    'feature2_text'=>'Centralization is power
+    With the Forms Hub web application, you do not have to think about kiosk control.
+    You can manage kiosks, update forms, switch them on and off, enable and disable, lock, and much more from one device and anywhere worldwide.',
+    'feature3_title'=>'Customized Questions',
+    'feature3_text'=>'Customization is convenient
+    Create your customize question, with more than 8 question types, which can create thousands of variety of questions, it can always fit your needs, your experience is unlimited.
+    Forms Hub question types are quite easy for the audience to understand, and with the custom answers, they are more likely to select the answer they meant.',
+    'feature4_title'=>'Digital (Eco-Friendly)',
+    'feature4_text'=>'Digitalization is eco-friendly
+    Why use a paper form when you can create your own digital form with a digital signature option, as well as the option of a pre-made PDF file signature?
+    With the Forms Hub kiosk, your client can view and read the document/form before he signs, unlike the normal signature pads.
+    Save a digital copy of your signed form, and help the world to be eco-friendly.',
 
 
     //pricing
