@@ -1240,6 +1240,13 @@ display: flex;
 
 
   /* order */
+  .kioskinfoslider{
+    border: 3px solid #1277d1;
+    border-radius: 2%;
+  }
+  .owl-carousel .owl-item img{
+    width: 80% !important;
+  }
   .inline-group {
     max-width: 9rem;
     padding: .5rem;
