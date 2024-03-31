@@ -24,11 +24,11 @@ $text='' ;
 <section class="section pb-0">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-4 me-auto">
+            <div class="col-md-7 me-auto">
                 <h2 class="mb-4">{{ __('main.feature1_title') }}</h2>
                 <p class="mb-4">{{ __('main.feature1_text') }}</p>
             </div>
-            <div class="col-md-6" data-aos="fade-left">
+            <div class="col-md-4" data-aos="fade-left">
                 <img src="{{ asset('images/website_images/svg/simplicity.svg') }}" alt="Image" class="img-fluid">
             </div>
         </div>
@@ -38,12 +38,12 @@ $text='' ;
 <section class="section">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-4 ms-auto order-2">
+            <div class="col-md-7 ms-auto order-2">
                 <h2 class="mb-4">{{ __('main.feature2_title') }}</h2>
                 <p class="mb-4">{{ __('main.feature2_text') }}.</p>
 
             </div>
-            <div class="col-md-6" data-aos="fade-right">
+            <div class="col-md-4" data-aos="fade-right">
                 <img src="{{ asset('images/website_images/svg/centralized_control.svg') }}" alt="Image" class="img-fluid">
             </div>
         </div>
@@ -53,12 +53,12 @@ $text='' ;
 <section class="section pb-0">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-4 me-auto">
+            <div class="col-md-7 me-auto">
                 <h2 class="mb-4">{{ __('main.feature3_title') }}</h2>
                 <p class="mb-4">{{ __('main.feature3_text') }}</p>
 
             </div>
-            <div class="col-md-6" data-aos="fade-left">
+            <div class="col-md-4" data-aos="fade-left">
                 <img src="{{ asset('images/website_images/svg/customized_questions.svg')}}" alt="Image" class="img-fluid">
             </div>
         </div>
@@ -68,11 +68,11 @@ $text='' ;
 <section class="section">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-4 ms-auto order-2">
+            <div class="col-md-7 ms-auto order-2">
                 <h2 class="mb-4">{{ __('main.feature4_title') }}</h2>
                 <p class="mb-4">{{ __('main.feature4_text') }}</p>
             </div>
-            <div class="col-md-6" data-aos="fade-right">
+            <div class="col-md-4" data-aos="fade-right">
                 <img src="{{ asset('images/website_images/svg/eco_friendly.svg') }}" alt="Image" class="img-fluid">
             </div>
         </div>
