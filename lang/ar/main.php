@@ -115,10 +115,12 @@ return [
 
      //products
 
-    'products_title'=>'المنتجات',
-    'products_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    'products_title'=>'الجهاز',
     'kioskinfo_title'=>'معلومات الجهاز',
-    'kioskinfo_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur at reprehenderit optio, laudantium eius quod, eum maxime molestiae porro omnis. Dolores aspernatur delectus impedit incidunt dolore mollitia esse natus beatae.',
+    'kioskinfo_text'=>'تم تصميم كيوسك فورمز هب لتلبية توقعات عملك وليكون سهلًا كخطوة واحدة للإعداد.
+    سواء كنت بحاجة إلى تغذية ردود الفعل من العملاء، أو جمع البيانات، أو ترقية وثائقك إلى الشكل الرقمي، سيقوم كيوسك فورمز هب بذلك من أجلك.
+    يمكنك إعداد كيوسك والاتصال به بواسطة معرف الجهاز الفريد الذي سيتم إنشاؤه تلقائيًا بمجرد تشغيله.
+    بمجرد أن يتم إضافة كيوسكك إلى حسابك، تهانينا!! يمكنك استخدامه من أي مكان في العالم.',
     'firstname'=>'الاسم الأول',
     'lastname'=>'اسم العائلة',
     'mobilenumber'=>'رقم الجوال',

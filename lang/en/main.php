@@ -120,10 +120,16 @@ return [
     'getpremium'=>'Get Premium',
 
     //products
-    'products_title'=>'Products',
+    'products_title'=>'Kiosk',
     'products_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    'kioskinfo_title'=>'Kiosk Info',
-    'kioskinfo_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur at reprehenderit optio, laudantium eius quod, eum maxime molestiae porro omnis. Dolores aspernatur delectus impedit incidunt dolore mollitia esse natus beatae.',
+    'kioskinfo_title'=>'Kiosk',
+    'kioskinfo_text'=>'Forms Hub kiosk is designed to meet your business expectations and to be as easy as 1 step setup.
+
+    Whether you need customer feedback, data collection, or digitalise your documents, the Forms Hub kiosk will do it for you.
+
+    You may set up a kiosk and connect to your account by the unique device ID which will be automatically generated once you power it on.
+
+    Once your kiosk is added to your account, congratulations!! you may use it from around the world.',
     'ordernow'=>'Order Now',
     'firstname'=>'First Name',
     'lastname'=>'Last Name',
