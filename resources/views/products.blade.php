@@ -215,6 +215,8 @@ $text='';
         var value = parseInt(inputNumber.value, 10); // Convert value to integer
         if (value <20) {
             inputNumber.value = value + 1;
+            selectedItems[id].count=inputNumber.value;
+
             updateInvoice(); // Decrement value
         } else {
             return;
@@ -225,6 +227,8 @@ $text='';
         var value = parseInt(inputNumber.value, 10); // Convert value to integer
         if (value > 1) {
             inputNumber.value = value - 1;
+            selectedItems[id].count=inputNumber.value;
+
             updateInvoice(); // Decrement value
         } else {
             return;
