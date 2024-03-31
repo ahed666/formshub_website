@@ -25,8 +25,8 @@
             <p class="mb-4">{{ __('main.kioskinfo_text') }}</p>
           </div>
           <div class="col-md-6" data-aos="fade-right">
-            <div class="gallery-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"">
-                <div class="swiper-wrapper" style="padding: 40px 0px">
+            <div class="gallery-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
+                <div class="swiper-wrapper" style="padding: 20px 20px">
 
 
 
