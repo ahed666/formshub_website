@@ -1042,6 +1042,11 @@ section {
     background-size: cover; /* Optional: Adjust the background image size */
     /* Other background properties */
 }
+.img-second_section_home{
+    object-fit: contain;
+    width: 1100px;
+    height: 450px;
+}
 
 /*--------------------------------------------------------------
 # Footer

@@ -55,8 +55,8 @@
           </div>
         </div>
         <div class="row justify-content-center text-center mb-5" data-aos="fade">
-            <div class="col-md-6 mb-5">
-              <img src="{{ asset('images/website_images/second_section_home.png') }}" alt="Image" class="img-fluid">
+            <div class="">
+              <img src="{{ asset('images/website_images/second_section_home.png') }}" alt="Image" class="img-second_section_home ">
             </div>
           </div>
 
