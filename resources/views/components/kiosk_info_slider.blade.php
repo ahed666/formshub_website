@@ -1,5 +1,38 @@
 <style>
+.owl-carousel-container {
+    position: relative;
+}
 
+.owl-carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.owl-carousel-prev {
+    left: 10px;
+}
+
+.owl-carousel-next {
+    right: 10px;
+}
+
+.owl-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.owl-carousel div {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+}
 
 
 </style>
@@ -12,7 +45,7 @@
             <h2 class="mb-4">{{ __('main.kioskinfo_title') }}</h2>
             <p class="mb-4">{{ __('main.kioskinfo_text') }}</p>
           </div>
-          <div class="col-md-6" data-aos="fade-right">
+          <div class="col-md-6 owl-carousel-container" data-aos="fade-right">
             <div class="owl-carousel owl-theme">
 
 
@@ -28,6 +61,8 @@
 
 
             </div>
+            <button class="owl-carousel-nav owl-carousel-prev">Prev</button>
+            <button class="owl-carousel-nav owl-carousel-next">Next</button>
           </div>
         </div>
 
@@ -45,7 +80,7 @@ $('.owl-carousel').owlCarousel({
     margin:10,
     nav:false,
     autoplay:true,
-    autoplayTimeout:1000,
+    autoplayTimeout:4000,
     autoplayHoverPause:true,
     responsive:{
         0:{
@@ -58,5 +93,71 @@ $('.owl-carousel').owlCarousel({
             items:1
         }
     }
-})
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const carousel = document.querySelector('.owl-carousel');
+    const prevButton = document.querySelector('.owl-carousel-prev');
+    const nextButton = document.querySelector('.owl-carousel-next');
+
+    let isDragging = false;
+    let startPosition = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+
+    let items = document.querySelectorAll('.owl-carousel div');
+    let itemWidth = items[0].offsetWidth;
+
+    items.forEach(item => {
+        item.addEventListener('mousedown', e => {
+            isDragging = true;
+            startPosition = e.pageX - carousel.offsetLeft;
+            prevTranslate = currentTranslate;
+
+            item.style.cursor = 'grabbing';
+        });
+
+        item.addEventListener('mousemove', e => {
+            if (isDragging) {
+                const currentPosition = e.pageX - carousel.offsetLeft;
+                const translate = currentPosition - startPosition;
+
+                currentTranslate = prevTranslate + translate;
+                carousel.style.transform = `translateX(${currentTranslate}px)`;
+            }
+        });
+
+        item.addEventListener('mouseup', () => {
+            isDragging = false;
+
+            item.style.cursor = 'grab';
+        });
+
+        item.addEventListener('mouseleave', () => {
+            isDragging = false;
+
+            item.style.cursor = 'grab';
+        });
+    });
+
+    window.addEventListener('resize', () => {
+        itemWidth = items[0].offsetWidth;
+    });
+
+    prevButton.addEventListener('click', () => {
+        currentTranslate += itemWidth;
+        if (currentTranslate > 0) {
+            currentTranslate = 0;
+        }
+        carousel.style.transform = `translateX(${currentTranslate}px)`;
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentTranslate -= itemWidth;
+        const maxTranslate = -(items.length - 1) * itemWidth;
+        if (currentTranslate < maxTranslate) {
+            currentTranslate = maxTranslate;
+        }
+        carousel.style.transform = `translateX(${currentTranslate}px)`;
+    });
+});
 </script>
