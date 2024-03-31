@@ -60,7 +60,7 @@
             </div>
         </div>
 
-        <div class="row mt-5">
+        <div class="row tools">
           <div class="col-md-4" data-aos="fade-up" data-aos-delay="">
             <div class="feature-1 text-center">
               <div class="wrap-icon icon-1">
