@@ -25,24 +25,20 @@
             <p class="mb-4">{{ __('main.kioskinfo_text') }}</p>
           </div>
           <div class="col-md-6" data-aos="fade-right">
-            <div class="gallery-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events">
-                <div class="swiper-wrapper" style="padding: 20px 20px">
+            <div class="owl-carousel owl-theme">
 
 
 
-                    <div class="swiper-slide">
+                    <div class="item">
                         <img class="img-fluid" src="{{ asset('images/website_images/kioskinfo2.png') }}" title="signature pdf example on kiosk" alt="signature pdf example on kiosk">
                     </div>
-                    <div class="swiper-slide">
+                    <div class="item">
                         <img class="img-fluid" src="{{ asset('images/website_images/kioskinfo1.png') }}" title="statistics question on kiosk" alt="statistics question on kiosk">
 
                     </div>
 
 
-                <!-- Add more slides as needed -->
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+
             </div>
           </div>
         </div>
@@ -55,46 +51,22 @@
 <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js') }}"></script>
 
 <script>
+    const carousel = document.querySelector('.owl-carousel');
 
-        const lightbox = GLightbox({   touchNavigation: true,
-    loop: true,
-    autoplayVideos: true });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        AOS.init({
-            duration: 800, // Adjust as needed
-            easing: 'ease-in-out', // Adjust as needed
-        });
-
-        var swiper = new Swiper('.swiper-container', {
-            speed: 400,
-    loop: true,
-    rtl:true,
-    centeredSlides: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      640: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      992: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      }
+    carousel.owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
     }
-        });
-    });
+})
 </script>
