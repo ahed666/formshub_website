@@ -29,7 +29,7 @@ $text='' ;
                 <p class="mb-4">{{ __('main.feature1_text') }}</p>
             </div>
             <div class="col-md-6" data-aos="fade-left">
-                <img src="assets/img/undraw_svg_2.svg" alt="Image" class="img-fluid">
+                <img src="{{ asset('images/website_images/svg/simplicity.svg') }}" alt="Image" class="img-fluid">
             </div>
         </div>
     </div>
@@ -44,7 +44,7 @@ $text='' ;
 
             </div>
             <div class="col-md-6" data-aos="fade-right">
-                <img src="assets/img/undraw_svg_3.svg" alt="Image" class="img-fluid">
+                <img src="{{ asset('images/website_images/svg/centralized_control.svg') }}" alt="Image" class="img-fluid">
             </div>
         </div>
     </div>
@@ -59,7 +59,7 @@ $text='' ;
 
             </div>
             <div class="col-md-6" data-aos="fade-left">
-                <img src="assets/img/undraw_svg_3.svg" alt="Image" class="img-fluid">
+                <img src="{{ asset('images/website_images/svg/customized_questions.svg')}}" alt="Image" class="img-fluid">
             </div>
         </div>
     </div>
@@ -73,7 +73,7 @@ $text='' ;
                 <p class="mb-4">{{ __('main.feature4_text') }}</p>
             </div>
             <div class="col-md-6" data-aos="fade-right">
-                <img src="assets/img/undraw_svg_4.svg" alt="Image" class="img-fluid">
+                <img src="{{ asset('images/website_images/svg/eco_friendly.svg') }}" alt="Image" class="img-fluid">
             </div>
         </div>
     </div>
