@@ -105,7 +105,7 @@ return [
     'lastname'=>'اسم العائلة',
     'mobilenumber'=>'رقم الجوال',
     'city'=>'المدينة',
-    'customerinfo'=>'معلومات العميل',
+    'delivery info'=>'معلومات التوصيل',
     'orderinfo'=>'معلومات الطلب',
     'quantity'=>'الكمية',
     'totalprice'=>'الإجمالي',

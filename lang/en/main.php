@@ -111,7 +111,7 @@ return [
     'lastname'=>'Last Name',
     'mobilenumber'=>'Mobile Number',
     'city'=>'City',
-    'customerinfo'=>'Customer Info',
+    'delivery info'=>'Delivery Info',
     'orderinfo'=>'Order Info',
     'quantity'=>'Quantity',
     'totalprice'=>'Total : ',

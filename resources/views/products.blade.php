@@ -41,7 +41,7 @@ $text='';
                 <form id="orderForm"  method="POST" action="{{ route('neworder') }}">
                     @csrf
                     <div class="my-2 fs-3 text-black d-flex justify-content-start align-items-start">
-                       {{ __('Customer Info') }}
+                       {{ __('main.delivery info') }}
                     </div>
                     <div class="row align-items-center">
                         <div class="col-md-4 col-12 ms-auto  d-flex justify-content-center">
