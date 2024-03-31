@@ -1284,6 +1284,10 @@ display: flex;
   .total_price{
     font-weight: bold;
   }
+  .info-section{
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
   .btn-minus:hover,
 .btn-plus:hover {
     background-color: #1277D1;

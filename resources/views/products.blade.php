@@ -103,7 +103,7 @@ $text='';
                         </div>
                     </div>
                     {{-- order info section --}}
-                    <div class="mt-10 mb-2 fs-3 text-black  d-flex justify-content-start align-items-start">
+                    <div class="info-section fs-3 text-black  d-flex justify-content-start align-items-start">
                        {{ __('main.orderinfo') }}
                     </div>
                     {{-- devices --}}
