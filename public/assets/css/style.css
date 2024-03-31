@@ -1244,15 +1244,7 @@ display: flex;
     border: 3px solid #1277d1;
     border-radius: 2%;
   }
-  .owl-carousel .owl-item img{
-    width: 80% !important;
-  }
-  .owl-carousel .owl-item .item{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   .inline-group {
     max-width: 9rem;
     padding: .5rem;
