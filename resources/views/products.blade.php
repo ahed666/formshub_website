@@ -19,14 +19,14 @@ $text='';
     </section>
       {{-- order products --}}
 
-    <section class="section">
+    <section class="section order-section">
         <div class="row justify-content-center text-center mb-5">
             <div class="col-md-5 aos-init aos-animate" data-aos="fade-up">
               <h2 class="section-heading">{{ __('main.ordernow') }}</h2>
             </div>
           </div>
         <div class="container">
-          <div class=" order-form">
+          <div class="order-form">
 
                 <form id="orderForm"  method="POST" action="{{ route('neworder') }}">
                     @csrf
@@ -35,7 +35,7 @@ $text='';
                     </div>
                     <div class="row align-items-center">
                         <div class="col-md-4 col-12 ms-auto  d-flex justify-content-center">
-                            <img src="{{ asset('assets/img/order2.avif') }}" alt="Image" class="img-formorder">
+                            <img src="{{ asset('images/website_images/svg/delivery.svg') }}" alt="Image" class="img-formorder">
                         </div>
                         <div class="col-md-8 col-12  " >
                             {{-- name  --}}

@@ -11,6 +11,9 @@
           <div class="col-md-4 ms-auto order-2">
             <h2 class="mb-4">{{ __('main.kioskinfo_title') }}</h2>
             <p class="mb-4">{{ __('main.kioskinfo_text') }}</p>
+            <div class="d-flex justify-content-center align-items-center">
+                <button onclick="scrollToSection('order-section')">{{ __('main.ordernow') }}</button>
+            </div>
           </div>
           <div class="col-md-6 kioskinfoslider" data-aos="fade-right">
             <div class="owl-carousel owl-theme">
@@ -40,7 +43,12 @@
 <script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js') }}"></script>
 
 <script>
-
+function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
