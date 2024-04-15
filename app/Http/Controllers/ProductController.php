@@ -63,13 +63,17 @@ class ProductController extends Controller
             'total' => $order->total/* ... */// Calculate the order total
         ];
 
-
-        // Send email notification to sales
+            try {
+                // Send email notification to sales
         $recipientEmail = env('SALES_EMAIL', 'info@formshub.net');
 
         Mail::to($recipientEmail)->send(new OrderNotification($orderData));
         // Send email notification to customer
         Mail::to($order->email)->send(new OrderCustomerNotification($orderData));
+            } catch (\Throwable $th) {
+                //throw $th;
+            }
+
 
         return redirect()->back()->with(
             ['success_title'=>trans('main.orderplaced'),

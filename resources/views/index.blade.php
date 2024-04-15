@@ -93,6 +93,26 @@
       </div>
     </section>
 
+    {{--  video --}}
+    <section class="section">
+        <div class="container" >
+
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-5" data-aos="fade-up">
+            <h2 class="section-heading">{{ __('main.tools_home_title') }}</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center mb-5" data-aos="fade">
+            <div class="">
+                <video class="video_signature" autoplay muted loop >
+                    <source src="{{ asset('/videos/signature.mp4')}}" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        </div>
+    </section>
+    {{-- steps --}}
     <section class="section">
 
       <div class="container">
@@ -114,7 +134,7 @@
             <div class="step">
               <span class="number">02</span>
               <h3>{{ __('main.step2_title') }}</h3>
-              <p>{{ __('main.step2_text') }}<a class="link" href="{{ route('products') }}">{{ __('main.ordernow') }}</a></p>
+              <p>{{ __('main.step2_text') }}<a class="link" href="{{ route('kiosk') }}">{{ __('main.ordernow') }}</a></p>
             </div>
           </div>
           <div class="col-md-4">

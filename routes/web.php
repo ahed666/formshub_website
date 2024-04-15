@@ -33,8 +33,11 @@ Route::get('/knowledgebase/{id?}', [App\Http\Controllers\KnowledgeBaseController
 // send email
 Route::post('/sendemail', [App\Http\Controllers\ContactController::class,'sendEmail'])->name('sendemail');
 
-// products
-Route::get('/products', [App\Http\Controllers\ProductController::class,'index'])->name('products');
+// kiosks
+Route::get('/kiosk', [App\Http\Controllers\ProductController::class,'index'])->name('kiosk');
+Route::get('/kiosk/#order-now', [App\Http\Controllers\ProductController::class,'index'])->name('make-order');
+
+
 Route::post('/neworder', [App\Http\Controllers\ProductController::class,'orderProduct'])->name('neworder');
 
 Route::post('/orderproduct', [App\Http\Controllers\ProductController::class,'orderProduct'])->name('orderproduct');

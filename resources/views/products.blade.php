@@ -1,11 +1,11 @@
 @extends('layouts.app')
-@section('title', 'Products - you can order online')
+@section('title', 'Kiosk - you can order online')
 @section('meta_description', 'Discover our range of interactive kiosks designed to enhance customer engagement. Our kiosks are user-friendly, customizable, and perfect for various industries.')
 
 @section('content')
 
 @php
-$title=trans('main.products_title');
+$title=trans('main.kiosk_title');
 $text='';
 
 @endphp
@@ -19,7 +19,7 @@ $text='';
     </section>
       {{-- order products --}}
 
-    <section class="section " id="order-section">
+    <section class="section " id="order-now">
         <div class="row justify-content-center text-center mb-5">
             <div class="col-md-5 aos-init aos-animate" data-aos="fade-up">
               <h2 class="section-heading">{{ __('main.ordernow') }}</h2>
@@ -106,70 +106,87 @@ $text='';
                     <div class="info-section fs-3 text-black  d-flex justify-content-start align-items-start">
                        {{ __('main.orderinfo') }}
                     </div>
-                    {{-- devices --}}
+
                     <div class="container">
                     <div class="  row   mb-3 ">
-                        @foreach ($devicesModels as $device )
-                          {{-- with stand  --}}
+                        <div class="col-lg-8 col-sm-12 col-md-12 row">
+                            {{-- devices --}}
+                            @foreach ($devicesModels as $device )
 
-                            {{-- with stand --}}
-                            <div class="col-lg-2 col-sm-12 col-md-12  align-items-center mx-2 my-1 my-sm-auto">
-                                <input type="checkbox" class="btn-check" name="items[]" onchange="toggleBorder(this,{{ $device->id }},{{ $device->price }},'{{ $device->name }}')" value="{{ $device->id }}" id="item_{{ $device->id }}" autocomplete="off" >
-                                <label class="btn border border-1 border-dark d-flex justify-content-center items-center" for="item_{{ $device->id }}">
-                                    <img width="100" height="100" class="orderkiosk_image" src="{{ asset($device->image) }}" alt="">
-                                </label>
-                                <div data-bs-toggle="tooltip"  data-bs-html="true" title="{{$device->device_model}} {{$device->name }}" class="custom-element
-                                    d-flex justify-content-center align-items-center product_name_div   ">
-                                    <span class="fs-5 product_name ">{{$device->device_model  }} {{ $device->name }}</span>
-                                </div>
-                                {{-- price --}}
-                                <div class="d-flex justify-content-center mt-2 align-items-center">
-                                    <span class="fs-6">{{ $device->price }}{{ __(' AED') }} <span class="vat">{{ __('+VAT') }}</span></span>
-                                </div>
-                                {{-- quantity --}}
-                                <div id="quantityDiv_{{ $device->id }}" class="d-flex justify-content-center my-2 align-items-center hidden ">
-                                    <label class="fs-6"  for="quantity_with_stand_{{ $device->id }}">{{ __('QTY: ') }}</label>
+                                <div class="col-lg-3 col-sm-12 col-md-12  align-items-center mx-2 my-1 my-sm-auto">
+                                    <input type="checkbox" class="btn-check" name="items[]" onchange="toggleBorder(this,{{ $device->id }},{{ $device->price }},' {{$device->device_model }}{{ $device->name }}')" value="{{ $device->id }}" id="item_{{ $device->id }}" autocomplete="off" >
+                                    <label class="btn border border-1 border-dark d-flex justify-content-center items-center" for="item_{{ $device->id }}">
+                                        <img width="100" height="100" class="orderkiosk_image" src="{{ asset($device->image) }}" alt="">
+                                    </label>
+                                    <div data-bs-toggle="tooltip"  data-bs-html="true" title="{{$device->device_model}} {{$device->name }}" class="custom-element
+                                        d-flex justify-content-center align-items-center product_name_div   ">
+                                        <span class=" product_name ">{{$device->device_model  }} {{ $device->name }}</span>
+                                    </div>
+                                    {{-- price --}}
+                                    <div class="d-flex justify-content-center mt-2 align-items-center">
+                                        <span class="fs-6">{{ $device->price }}{{ __(' AED') }} <span class="vat">{{ __('+VAT') }}</span></span>
+                                    </div>
+                                    {{-- quantity --}}
+                                    <div id="quantityDiv_{{ $device->id }}" class="d-flex justify-content-center my-2 align-items-center hidden ">
+                                        <label class="fs-6"  for="quantity_with_stand_{{ $device->id }}">{{ __('QTY: ') }}</label>
 
-                                    <div class=" inline-group">
-                                        <div class="input-group-prepend">
-                                          <button type="button" onclick="upQuantity({{ $device->id }})" class="btn-minus">
-                                            +
-                                          </button>
+                                        <div class=" inline-group">
+                                            <div class="input-group-prepend">
+                                            <button type="button" onclick="upQuantity({{ $device->id }})" class="btn-minus">
+                                                +
+                                            </button>
+                                            </div>
+
+                                            <input  class="product_qty quantity w-30  border border-1    " readonly type="number" name="quantity_{{ $device->id }}" id="quantity_{{ $device->id }}" value="1" min="1" max="20" onchange="changeQuantity(this,{{ $device->id }})">
+
+                                            <div class="input-group-append">
+                                            <button type="button" onclick="downQuantity({{ $device->id }})" class="btn-plus">
+                                                -
+                                            </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            @endforeach
+                        </div>
+                        {{-- summary order --}}
+                        <div class="col-lg-4 col-sm-12 col-md-12 summary_order container" style="border-radius:10%;">
+                            <div class="d-grid w-100 align-items-center  container   my-1 p-2  "  >
+                                {{-- items --}}
+
+                                    <div id="invoice_description" class="invoice_description  p-2  "  >
+                                        <div class="d-flex justify-content-center items-center">{{ __('main.noitems') }}</div>
+
+                                    </div>
+                                    <div id="total_desc" class="hidden "  >
+                                        <div  class=" vat_div d-flex   justify-content-between align-items-center p-2">
+                                            <span>{{ __('VAT @ 5.00%') }}</span>
+                                            <span>AED<span id="total_vat" class="total_vat mx-2">0</span></span>
                                         </div>
 
-                                        <input  class="product_qty quantity w-30  border border-1    " readonly type="number" name="quantity_{{ $device->id }}" id="quantity_{{ $device->id }}" value="1" min="1" max="20" onchange="changeQuantity(this,{{ $device->id }})">
+                                        <div class=" d-grid mt-4 justify-content-start align-items-center">
+                                            <span class="mx-2">{{ __('main.totalprice') }}</span>
+                                           <span class="total_price">AED<span id="total_price" class="mx-1">0</span></span>
 
-                                        <div class="input-group-append">
-                                          <button type="button" onclick="downQuantity({{ $device->id }})" class="btn-plus">
-                                            -
-                                          </button>
+                                        </span>
                                         </div>
-                                      </div>
-                                </div>
+                                    </div>
+
+
 
                             </div>
 
 
-
-
-
-                       @endforeach
-                    </div>
-                    </div>
-                    <div class="d-grid justify-content-start align-items-center  border border-1  rounded my-3 p-2  " style="height: auto" >
-                        <div id="invoice_description" class="hidden border-bottom border-1 border-dark">
-
+                            <div class="d-flex justify-content-center align-items-center my-2"  >
+                            <button type="submit" class="btn btn-sendorder">{{ __('main.sendorder') }}</button>
+                            </div>
                         </div>
 
-                      <div class="d-flex justify-content-start align-items-center">
-                        <span class="mx-2">{{ __('main.totalprice') }}</span>
-                        <span id="total_price" class="total_price">0</span><span class="mx-2">{{ __(' AED ') }} <span class="vat">{{ __('+VAT') }}</span></span>
-                      </div>
+                    </div>
                     </div>
 
-                    <div class="d-flex justify-content-center align-items-center" >
-                    <button type="submit" class="btn btn-primary">{{ __('main.sendorder') }}</button>
-                    </div>
                 </form>
 
           </div>
@@ -182,6 +199,18 @@ $text='';
   <!-- ======= Footer ======= -->
   <script src="{{ asset('https://cdn.jsdelivr.net/npm/sweetalert2@11') }}"></script>
   <script src="{{ asset('https://code.jquery.com/jquery-3.6.4.min.js') }}"></script>
+  {{-- go to form --}}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.location.hash) {
+            var element = document.getElementById(window.location.hash.substring(1));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
+</script>
     @if ($errors->any())
     <script>
         Swal.fire({
@@ -192,9 +221,14 @@ $text='';
     </script>
     @endif
     <script>
+          var translations = @json(__('main'));
+         var vatValue=0.05;
+         var  desc=document.getElementById('invoice_description');
+         var  total_desc=document.getElementById('total_desc');
+
 
         var selectedItems=[];
-
+        var nonEmptyItems = selectedItems.filter(item => item !== undefined && item !== null);
         $(document).ready(function () {
             $('#contactForm').submit(function () {
                 $('#submitButton').prop('disabled', true);
@@ -264,18 +298,39 @@ $text='';
 
    function updateInvoice(){
     total_price=0;
-    desc=document.getElementById('invoice_description');
-    desc.classList.remove('hidden');
-    desc.innerHTML=``;
+
+    toggleInvoiceDiv();
+
     index=0;
     selectedItems.forEach(function(element,i) {
             elementprice=element.price*element.count;
         total_price+=elementprice;
-        desc.innerHTML+=`<div class="my-1">${index+1}) ${element.name}: ${element.count} * ${element.price}=${elementprice}</div>`;
+        desc.innerHTML+=`<div class="my-1 d-flex justify-content-between items-center item_desc">
+             <span>${index+1}) ${element.name}</span>
+             <span>${element.count} * ${element.price} <span class="mx-2">AED ${elementprice}</span></span>
+            </div>`;
         index+=1;
      });
-     document.getElementById('total').value=total_price;
-     document.getElementById('total_price').innerText=total_price;
+
+     vat=total_price*vatValue;
+     total=total_price+vat;
+     document.getElementById('total_vat').innerText=vat;
+     document.getElementById('total_price').innerText=total;
+     document.getElementById('total').value=total;
+
+   }
+   function toggleInvoiceDiv(){
+    nonEmptyItems = selectedItems.filter(item => item !== undefined && item !== null);
+    if(nonEmptyItems.length>0){
+
+        total_desc.classList.remove('hidden');
+        desc.innerHTML='';
+    }
+    else{
+        desc.innerHTML=`<div class="d-flex justify-content-center items-center">${translations.noitems}</div>`;
+
+        total_desc.classList.add('hidden');
+    }
    }
     </script>
 

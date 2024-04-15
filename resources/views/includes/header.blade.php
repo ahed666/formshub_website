@@ -12,27 +12,31 @@
           <li><a class="{{ (request()->routeIs('home')) ? 'active' : '' }}" href="{{ route('home') }}">{{ __('main.home') }}</a></li>
           <li><a class="{{ (request()->routeIs('features')) ? 'active' : '' }}" href="{{ route('features') }}">{{ __('main.features') }}</a></li>
           <li><a class="{{ (request()->routeIs('pricing')) ? 'active' : '' }}" href="{{ route('pricing') }}">{{ __('main.pricing') }}</a></li>
-          <li><a class="{{ (request()->routeIs('products')) ? 'active' : '' }}" href="{{ route('products') }}">{{ __('main.products') }}</a></li>
-          <li><a class="{{ (request()->routeIs('knowledgebase')) ? 'active' : '' }}" href="{{ route('knowledgebase') }}">{{ __('main.knowledgebase') }}</a></li>
-          <li><a class="{{ (request()->routeIs('contact')) ? 'active' : '' }}" href="{{ route('contact') }}">{{ __('main.contactus') }}</a></li>
+          <li><a class="{{ (request()->routeIs('kiosk')) ? 'active' : '' }}" href="{{ route('kiosk') }}">{{ __('main.kiosk') }}</a></li>
+
+          <li>
+            <div class="dropdown dropdown_help">
+                <a class="btn dropdown-toggle navbar_submenu_help" href="#" role="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    {{ __('main.help') }}
+                </a>
+                <ul class="dropdown-menu d-none " aria-labelledby="languageDropdown">
+                    <li >
+                      <a class="submenu_item"  href="{{ route('knowledgebase') }}">{{ __('main.knowledgebase') }}</a>
+
+                    </li>
+                    <li>
+                        <a class="submenu_item"  href="{{ route('contact') }}">{{ __('main.contactus') }}</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+
+          {{-- <li><a class="{{ (request()->routeIs('knowledgebase')) ? 'active' : '' }}" href="{{ route('knowledgebase') }}">{{ __('main.knowledgebase') }}</a></li>
+          <li><a class="{{ (request()->routeIs('contact')) ? 'active' : '' }}" href="{{ route('contact') }}">{{ __('main.contactus') }}</a></li> --}}
 
 
 
-            {{-- <li class="btn-group">
-                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    @if(App::getLocale()=="ar")
-                    English
-                    @else
-                    العربية
-                    @endif
-                </button>
-                <div class="dropdown-menu">
-                    <a  href="{{ route('setLocale','en') }}">English</a>
-                    <a  href="{{ route('setLocale','ar') }}">العربية</a>
 
-                </div>
-
-           </li> --}}
 
 
            <li class="gotoapp_navbar">

@@ -20,11 +20,12 @@ return [
     'home' => 'Home',
     'features'=>'Features',
     'pricing'=>'Pricing',
-    'products'=>'Products',
+    'kiosk'=>'Kiosk',
     'knowledgebase'=>'KnowledgeBase',
     'contactus'=>'Contact Us',
     'termsandconditions'=>'Terms and Conditions',
     'privacypolicy'=>'Privacy Policy',
+    'help'=>'Help',
 
 
     //footer
@@ -120,8 +121,7 @@ return [
     'getpremium'=>'Get Premium',
 
     //products
-    'products_title'=>'Kiosk',
-    'products_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    'kiosk_title'=>'Kiosk',
     'kioskinfo_title'=>'Why Forms Hub Kiosk',
     'ordernow'=>'Order Now',
     'kioskinfo_text'=>'Forms Hub kiosk is designed to meet your business expectations and to be as easy as 1 step setup.
@@ -140,11 +140,11 @@ return [
     'orderinfo'=>'Order Info',
     'quantity'=>'Quantity',
     'totalprice'=>'Total : ',
-    'sendorder'=>'Send Order',
-    'items_required'=>'Please select at least one product.',
+    'sendorder'=>'Place Order',
+    'items_required'=>'Please select at least one kiosk.',
     'ordersendsuccess'=>'Thank you for placing your order. We have received it and our sales team will be contacting you shortly.',
     'orderplaced'=>'Order Placed',
-
+    'noitems'=>'No items selected',
 
     //kb
     'kb_title'=>'KnowledgeBase',

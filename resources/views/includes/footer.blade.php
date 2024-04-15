@@ -19,7 +19,7 @@
                 <li><a href="{{ route('pricing') }}">{{ __('main.pricing') }}</a></li>
                 <li><a href="{{ route('features') }}">{{ __('main.features') }}</a></li>
                 <li><a href="{{ route('contact') }}">{{ __('main.contactus') }}</a></li>
-                <li><a href="{{ route('products') }}">{{ __('main.products') }}</a></li>
+                <li><a href="{{ route('kiosk') }}">{{ __('main.kiosk') }}</a></li>
 
               </ul>
             </div>
@@ -83,6 +83,9 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js') }}"></script>
+<script src="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js') }}"></script>
+
   <script src="{{ asset('assets/vendor/aos/aos.js') }} "></script>
   <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
   <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>

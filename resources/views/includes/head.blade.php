@@ -1,6 +1,6 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="keywords" content="Forms Hub App,UAE,Feedback web app in UAE,Feedback software,Customer satisfaction tool,Online feedback form,Feedback management system,Feedback app for businesses,
+  <meta name="keywords" content="Forms Hub App,UAE,feadback  with kiosk UAE,Feedback web app in UAE | Dubai | Abu Dhabi | Sarjah | Ajman | Al ain | alfujairah  | alfujairah |alfujairah,Feedback software,Customer satisfaction tool,Online feedback form,Feedback management system,Feedback app for businesses,
   Feedback survey tool,Best feedback tool,Feedback tool comparison,Feedback tool features,Customer feedback analytics,Real-time feedback tool,
   Feedback tool integration,Feedback tool pricing,Feedback tool for small businesses,Enterprise feedback management,Mobile feedback app,
   Web-based feedback tool,Feedback tool for websites,Feedback tool for employee engagement, الإمارات العربية المتحدة, تطبيق ويب للمراجعة في الإمارات العربية المتحدة

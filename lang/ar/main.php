@@ -20,12 +20,12 @@ return [
    'home' => 'الرئيسية',
    'features'=>'السمات',
    'pricing'=>'الأسعار',
-   'products'=>'المنتجات',
+   'kiosk'=>'الجهاز',
    'knowledgebase'=>'قاعدة المعرفة',
    'contactus'=>'اتصل بنا',
    'termsandconditions'=>'الأحكام والشروط',
    'privacypolicy'=>'سياسة الخصوصية',
-
+   'help'=>'مساعدة',
 
    //footer
 
@@ -61,11 +61,11 @@ return [
     'ordernow'=>'اطلب الآن',
     'readmore'=>'اقرأ المزيد',
 
-    'signedpdf_count'=>'',
-    'responses_count'=>'',
-    'createdforms_count'=>'',
-    'linkedkiosks_count'=>'',
-    'createdaccount_count'=>'',
+    'signedpdf_count'=>'مستند موقع',
+    'responses_count'=>'رد',
+    'createdforms_count'=>'نموذج',
+    'linkedkiosks_count'=>'جهاز مرتبط',
+    'createdaccount_count'=>'حساب',
     //features
     'feature1_title'=>'البساطة',
     'feature1_text'=>'نحن نعتقد أن البساطة هي الذكاء
@@ -115,7 +115,7 @@ return [
 
      //products
 
-    'products_title'=>'الجهاز',
+    'kiosk_title'=>'الجهاز',
     'kioskinfo_title'=>'لماذا جهاز فورمز هب؟',
     'ordernow'=>'اطلب الأن',
 
