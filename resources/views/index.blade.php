@@ -93,13 +93,13 @@
       </div>
     </section>
 
-    {{--  video --}}
+    {{-- Digital Signature  video --}}
     <section class="section">
         <div class="container" >
 
         <div class="row justify-content-center text-center mb-5">
             <div class="col-md-5" data-aos="fade-up">
-            <h2 class="section-heading">{{ __('main.tools_home_title') }}</h2>
+            <h2 class="section-heading">{{ __('main.digitalsignature_title') }}</h2>
             </div>
         </div>
         <div class="row justify-content-center text-center mb-5" data-aos="fade">
@@ -112,16 +112,39 @@
         </div>
         </div>
     </section>
+    {{-- forms  video --}}
+    <section class="section">
+        <div class="container" >
+
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-5" data-aos="fade-up">
+            <h2 class="section-heading">{{ __('main.customform_title') }}</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center mb-5" data-aos="fade">
+            <div class="">
+                <video class="video_signature" autoplay muted loop >
+                    <source src="{{ asset('/videos/questionsform.mp4')}}" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        </div>
+    </section>
     {{-- steps --}}
     <section class="section">
 
       <div class="container">
-        <div class="row justify-content-center text-center mb-5" data-aos="fade">
+        {{-- <div class="row justify-content-center text-center mb-5" data-aos="fade">
           <div class="col-md-6 mb-5">
             <img src="assets/img/undraw_svg_1.svg" alt="Image" class="img-fluid">
           </div>
+        </div> --}}
+        <div class="row justify-content-center text-center mb-5">
+            <div class="col-md-5" data-aos="fade-up">
+            <h2 class="section-heading">{{ __('main.howstart') }}</h2>
+            </div>
         </div>
-
         <div class="row">
           <div class="col-md-4">
             <div class="step">
@@ -159,10 +182,7 @@
             <x-facts :facts="$facts" />
         </div>
     </section>
-    {{-- gallary --}}
-     <section class="section">
-    <x-gallary  :gallaryimages="$gallaryImages" />
-     </section>
+
 
 
 

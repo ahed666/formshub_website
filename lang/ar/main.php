@@ -66,6 +66,10 @@ return [
     'createdforms_count'=>'نموذج',
     'linkedkiosks_count'=>'جهاز مرتبط',
     'createdaccount_count'=>'حساب',
+    'customform_title'=>'النموذج المخصص',
+    'digitalsignature_title'=>'التوقيع إلكتروني',
+    'howstart'=>'كيف يمكنك البدء؟',
+
     //features
     'feature1_title'=>'البساطة',
     'feature1_text'=>'نحن نعتقد أن البساطة هي الذكاء

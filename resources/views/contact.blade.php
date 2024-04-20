@@ -37,7 +37,7 @@
               </li> --}}
               <li class="mb-3">
                 <strong class="d-block mb-1">{{ __('main.email') }}</strong>
-                <span>{{ __('info@formshub.net') }}</span>
+                <span>{{ __('contact@formshub.net') }}</span>
               </li>
             </ul>
           </div>

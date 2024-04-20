@@ -27,7 +27,7 @@ class ContactController extends Controller
 
 
         $contactData = $request->all(); // You might want to sanitize and validate the data
-        $recipientEmail = env('MAIL_RECIPIENT_EMAIL', 'info@formshub.net');
+        $recipientEmail = env('MAIL_RECIPIENT_EMAIL', 'contact@formshub.net');
 
         Mail::to($recipientEmail)->send(new ContactFormMail($contactData));
 

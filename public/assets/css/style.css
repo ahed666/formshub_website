@@ -118,7 +118,7 @@ section {
 }
 
 .section {
-  padding: 7rem 0;
+  padding: 6rem 0;
 }
 
 .section-heading {
@@ -819,8 +819,8 @@ font-weight: bold !important;
 signature video
 */
 .video_signature{
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: auto;
 }
 @media (max-width: 991px) {
     .video_signature{

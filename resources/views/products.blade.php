@@ -193,6 +193,11 @@ $text='';
         </div>
     </section>
 
+    {{-- gallary --}}
+    <section class="section">
+        <x-gallary  :gallaryimages="$gallaryImages" />
+    </section>
+
 
 
 

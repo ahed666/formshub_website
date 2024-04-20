@@ -9,12 +9,18 @@ use App\Models\TypeDevice;
 use App\Models\Order;
 use App\Models\OrderProduct;
 use App\Mail\OrderNotification;
+use App\Models\GallaryImages;
+
 use App\Mail\OrderCustomerNotification;
 use Illuminate\Support\Facades\Mail;
 use Spatie\SchemaOrg\Schema;
 
 class ProductController extends Controller
 {
+    public function getAllImagesGallary()
+    {
+        return GallaryImages::all();
+    }
     public function index(){
 
         $schemaMarkup = Schema::webPage()
@@ -23,8 +29,8 @@ class ProductController extends Controller
         ->url(url()->current());
         $cities=Cities::all();
         $devicesModels=DeviceModel::join('type_of_devices','type_of_devices.model_id','=','devices_models.id')->select('devices_models.*','type_of_devices.*')->get();
-
-        return view('products',compact('cities','devicesModels','schemaMarkup'));
+        $gallaryImages=$this->getAllImagesGallary();
+        return view('products',compact('cities','gallaryImages','devicesModels','schemaMarkup'));
     }
 
 
@@ -65,7 +71,7 @@ class ProductController extends Controller
 
             try {
                 // Send email notification to sales
-        $recipientEmail = env('SALES_EMAIL', 'info@formshub.net');
+        $recipientEmail = env('SALES_EMAIL', 'contact@formshub.net');
 
         Mail::to($recipientEmail)->send(new OrderNotification($orderData));
         // Send email notification to customer
