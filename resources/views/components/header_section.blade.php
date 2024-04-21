@@ -1,5 +1,5 @@
 <section class="hero-section inner-page">
-    <div class="wave">
+    {{-- <div class="wave">
 
       <svg width="1920px" height="265px" viewBox="0 0 1920 265" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -9,7 +9,7 @@
         </g>
       </svg>
 
-    </div>
+    </div> --}}
 
     <div class="container">
       <div class="row align-items-center">
