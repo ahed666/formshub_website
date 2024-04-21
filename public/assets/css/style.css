@@ -709,6 +709,28 @@ section {
 .dropdown_help{
     padding-left: 15px;
 }
+@media screen and (max-width: 992px)
+{
+    .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+        background-color: var(--secondary_blue) !important;
+    }
+    .btn-check:hover+.btn, .btn.active, .btn.show, .btn:first-child:hover, :not(.btn-check)+.btn:hover{
+        background-color: var(--secondary_blue) !important;
+    }
+
+    .dropdown_help ul li{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+    }
+    .dropdown_help{
+        margin-bottom: 25px;
+    }
+    .gotoapp_navbar{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
 .submenu_item:hover{
 font-weight: bold !important;
 }
@@ -1292,6 +1314,9 @@ display: flex;
     }
     .countdiv{
         font-size:xx-large;
+    }
+    .facts{
+        display: grid !important;
     }
    }
 

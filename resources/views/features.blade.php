@@ -38,7 +38,7 @@ $text='' ;
 <section class="section">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-7 ms-auto order-2">
+            <div class="col-md-7 ms-auto order-md-2 ">
                 <h2 class="mb-4">{{ __('main.feature2_title') }}</h2>
                 <p class="mb-4">{{ __('main.feature2_text') }}.</p>
 
@@ -68,7 +68,7 @@ $text='' ;
 <section class="section">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-7 ms-auto order-2">
+            <div class="col-md-7 ms-auto order-md-2">
                 <h2 class="mb-4">{{ __('main.feature4_title') }}</h2>
                 <p class="mb-4">{{ __('main.feature4_text') }}</p>
             </div>
