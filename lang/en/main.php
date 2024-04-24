@@ -171,7 +171,8 @@ return [
     'email_value'=>'youremail@domain.com',
     'success'=>'Success',
     'error'=>'Error',
-    'successmessagesend'=>'Email sent successfully.',
+
+    'successmessagesend'=>' Contact form successfully sent, we will get back to you soon.',
     'errorsendmessage'=>'Failed to send email.',
     'contactusnow'=>' Contact us ',
 

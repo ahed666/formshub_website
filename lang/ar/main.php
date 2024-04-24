@@ -162,7 +162,7 @@ return [
      'email_value'=>'youremail@domain.com',
      'success'=>'تمت العملية بنجاح',
      'error'=>'فشلت العملية',
-     'successmessagesend'=>'تم إرسال البريد الإلكتروني بنجاح',
+     'successmessagesend'=>'تم إرسال الرسالة بنجاح، وسنعود إليك قريبًا.',
      'errorsendmessage'=>'فشل إرسال البريد الإلكتروني',
      'contactusnow'=>' تواصل معنا   ',
 
