@@ -168,13 +168,13 @@ section {
   padding: 15px 30px !important;
 }
 
-.btn.btn-outline-white {
+.btn .btn-outline-white {
   border: 2px solid #fff;
   background: none;
   color: #fff;
 }
 
-.btn.btn-outline-white:hover {
+.btn .btn-outline-white:hover {
   background: #fff !important;
   color: var(--secondary_blue);
 }
