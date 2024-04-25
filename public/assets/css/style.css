@@ -175,7 +175,7 @@ section {
 }
 
 .btn.btn-outline-white:hover {
-  background: #fff;
+  background: #fff !important;
   color: var(--secondary_blue);
 }
 
@@ -1034,6 +1034,9 @@ signature video
 @media screen and (max-width: 992px) {
   .hero-section .iphone-wrap {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -1066,9 +1069,9 @@ signature video
 
 @media screen and (max-width: 992px) {
   .hero-section .iphone-wrap .phone-1 {
-    margin-left: 25%;
     object-fit: contain;
     height: 400px;
+    width: 100%;
   }
 }
 
