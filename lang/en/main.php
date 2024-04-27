@@ -109,7 +109,7 @@ return [
     'createuptodoforms'=>'Create up to :num forms',
     'connectuptokiosks'=>'Connect up to :num kiosks',
     'getupresponses'=>'Get :num free responses (max)',
-    'getflexableresponses'=>' Get flexible responses option',
+    'getflexableresponses'=>'Get :num free responses (:max max)',
     'addquestionsperform'=>'Add up to :num questions per form',
     'multilangaugeform'=>'Multi-languages form',
     'useproquestions'=>'Use pro question types',

@@ -103,7 +103,7 @@ return [
     'createuptodoforms' => 'إنشاء ما يصل إلى :num نموذجًا',
     'connectuptokiosks' => 'الاتصال بما يصل إلى :num جهاز',
     'getupresponses' => 'احصل على :num الردود المجانية (الحد الأقصى)',
-    'getflexableresponses' => 'الحصول على خيارات ردود مرنة',
+    'getflexableresponses' => 'احصل على:num ردود مجانية (أضف ما يصل إلى:max)',
     'addquestionsperform' => 'إضافة ما يصل إلى :num أسئلة لكل نموذج',
     'multilangaugeform' => 'نموذج متعدد اللغات',
     'useproquestions' => 'استخدام أنواع الأسئلة المحترفة',

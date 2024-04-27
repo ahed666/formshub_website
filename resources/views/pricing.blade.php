@@ -53,7 +53,7 @@
                             <li class="subscription_feature   ">
 
                                 <x-subscriptionfeature_svg :colorid="0" />
-                                <span class="subscription_text" >{{ __('main.getflexableresponses') }}</span>
+                                <span class="subscription_text" >{{ __('main.getflexableresponses',['num'=>env('NUM_OF_RESPONSES_PREMIUM',30000),'max'=>$type->num_responses]) }}</span>
                             </li>
                         @endif
                         {{--  num of questions --}}
