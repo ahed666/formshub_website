@@ -1198,7 +1198,7 @@ signature video
 }
 .subscription_text {
     font-size: 1.125rem; /* Equivalent to Tailwind CSS text-md */
-    white-space: normal; /* Equivalent to Tailwind CSS whitespace-normal */
+
     margin-left: 1px;
     margin-right: 1px;
     text-align: left;
@@ -1509,10 +1509,7 @@ display: flex;
     .sliver{
         color: #718096;
     }
-    .subscription_text{
-        font-size: 1.125rem;
-        white-space: normal;
-    }
+
 
     /* go to app button */
 
