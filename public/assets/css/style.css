@@ -1202,6 +1202,7 @@ signature video
     margin-left: 1px;
     margin-right: 1px;
     text-align: left;
+    white-space: nowrap;
   }
 .subscription_feature {
     display: flex;
