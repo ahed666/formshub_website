@@ -108,7 +108,7 @@ return [
 
     'createuptodoforms'=>'Create up to :num forms',
     'connectuptokiosks'=>'Connect up to :num kiosks',
-    'getupresponses'=>'Get up to :num responses per year ',
+    'getupresponses'=>'Get :num free responses (max)',
     'getflexableresponses'=>' Get flexible responses option',
     'addquestionsperform'=>'Add up to :num questions per form',
     'multilangaugeform'=>'Multi-languages form',

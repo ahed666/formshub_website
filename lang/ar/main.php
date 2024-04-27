@@ -102,7 +102,7 @@ return [
     'signpdf'=>'PDF توقيع  ',
     'createuptodoforms' => 'إنشاء ما يصل إلى :num نموذجًا',
     'connectuptokiosks' => 'الاتصال بما يصل إلى :num جهاز',
-    'getupresponses' => 'الحصول على ما يصل إلى :num ردود في السنة',
+    'getupresponses' => 'احصل على :num الردود المجانية (الحد الأقصى)',
     'getflexableresponses' => 'الحصول على خيارات ردود مرنة',
     'addquestionsperform' => 'إضافة ما يصل إلى :num أسئلة لكل نموذج',
     'multilangaugeform' => 'نموذج متعدد اللغات',

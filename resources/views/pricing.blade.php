@@ -46,7 +46,7 @@
                             <li class="subscription_feature  ">
 
                                 <x-subscriptionfeature_svg :colorid="0" />
-                                <span class="subscription_text" >{{ __('main.getupresponses',['num'=>number_format($type->num_responses, 0, '.', ',')]) }}</span>
+                                <span class="subscription_text" >{{ __('main.getupresponses',['num'=>env('NUM_OF_RESPONSES_FREE',10000)]) }}</span>
 
                             </li>
                         @else
