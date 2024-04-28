@@ -34,7 +34,7 @@ class OrderCustomerNotification extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'New Order Notification from FormsHub',
+            subject: 'Order Placed',
         );
     }
 
