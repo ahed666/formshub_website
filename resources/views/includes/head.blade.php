@@ -38,7 +38,6 @@
 
   <!-- Favicons -->
   <link rel="icon" href="{{ asset('assets/img/logos/favicon.ico') }}" type="image/x-icon" >
-  <link href="{{ asset('assets/img/logos/favicon.ico') }}" rel="apple-touch-icon">
 
 
   <!-- Google Fonts -->
