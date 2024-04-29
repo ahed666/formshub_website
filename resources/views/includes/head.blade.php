@@ -37,8 +37,9 @@
 
 
   <!-- Favicons -->
-  <link href="{{ asset('assets/img/logos/favicon.ico') }}" rel="icon">
+  <link rel="icon" href="{{ asset('assets/img/logos/favicon.ico') }}" type="image/x-icon" >
   <link href="{{ asset('assets/img/logos/favicon.ico') }}" rel="apple-touch-icon">
+
 
   <!-- Google Fonts -->
     <link href=" {{ asset('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i') }}" rel="stylesheet">
