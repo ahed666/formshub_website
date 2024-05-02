@@ -26,6 +26,7 @@ return [
     'termsandconditions'=>'Terms and Conditions',
     'privacypolicy'=>'Privacy Policy',
     'help'=>'Help',
+    'blog'=>'Blog',
 
 
     //footer
@@ -54,6 +55,7 @@ return [
      'tool2_text'=>' Need a customer feedback survey? customer registration? or data collection? We got you! create your own with various types of questions and more.',
      'tool3_title'=>'Data Show',
      'tool3_text'=>'Why use a paper catalogue? make it digital, upload and edit your media from around the world, for your customers to view.',
+
 
 
 
@@ -123,6 +125,8 @@ return [
     'start'=>'Start',
     'getpremium'=>'Get Premium',
 
+    'chargedannually'=>'(Charged Annually :price AED)',
+
     //products
     'kiosk_title'=>'Kiosk',
     'kioskinfo_title'=>'Why Forms Hub Kiosk',
@@ -171,10 +175,15 @@ return [
     'email_value'=>'youremail@domain.com',
     'success'=>'Success',
     'error'=>'Error',
-
     'successmessagesend'=>' Contact form successfully sent, we will get back to you soon.',
     'errorsendmessage'=>'Failed to send email.',
     'contactusnow'=>' Contact us ',
+
+    //  blogs
+    'blogs_title'=>'Blog Posts',
+
+
+
 
     //privacy policy
     'privacypolicy_title'=>'Privacy Policy',

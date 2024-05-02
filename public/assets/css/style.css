@@ -297,6 +297,10 @@ section {
 }
 
 /* Pricing */
+
+.list-unstyled{
+    min-height: 400px;
+}
 .pricing {
   padding: 50px;
   background: linear-gradient(-45deg, var(--primary_blue), var(--secondary_blue));
@@ -307,26 +311,28 @@ section {
   color: #000000;
   background: #fff;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+  min-height: 800px;
+  max-height: 800px;
 }
 
 .pricing h3 {
   color: var(--secondary_blue);
 }
 
-.pricing .price-cta {
-  text-decoration: none;
-  position: absolute;
+.pricing .startedplan-div {
+
   bottom: 50px;
   width: 100%;
   text-align: center;
   left: 0;
 }
-
-.pricing .price-cta .price {
+.pricing .startedplan-div .price-div{
+    display: grid;
+}
+.pricing .startedplan-div .price-div .price {
   display: block;
-  margin-bottom: 20px;
+
   font-size: 2rem;
-  font-weight: 300;
 }
 
 .pricing .popularity {
@@ -373,9 +379,19 @@ section {
   color: #fff;
   background: none;
 }
+.price-div{
+    min-height: 100px;
+}
 
 .pricing.popular .btn-white {
   border: 2px solid var(--secondary_blue);
+}
+
+.price-duration_month{
+ font-size: 15px;
+}
+.price-currency_month{
+    font-size: 25px;
 }
 
 /* CTA Section */
@@ -485,36 +501,85 @@ section {
 }
 
 /* Blog */
+.blog{
+
+  background-color: var(--primary_blue);
+  padding: 10px;
+  border-radius: 1rem;
+  margin: 0 0 1.5em;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+@media screen and (max-width: 992px)
+{
+    .blog{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+.post-text{
+
+    height: 100px;
+    max-height: 100px;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+
+
+}
+.blog .post-entry .blog-image-div{
+    max-width: 100%;
+    max-height: 300px;
+    height: 300px;
+}
+.blog  .blog-image-div img{
+    max-width: 100%;
+    max-height: 260px;
+    object-fit: initial;
+    border-radius: 1rem;
+}
+.blog-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid ;
+    padding-top: 10px;
+}
 .post-entry {
   margin-bottom: 60px;
 }
 
-.post-entry .post-text .post-meta {
+ .post-meta {
   text-decoration: none;
-  color: #ccc;
+
   font-size: 13px;
-  display: block;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.post-meta .author{
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.post-meta .blog-date{
+    margin-left: 4px;
+  margin-right: 4px;
 }
 
-.post-entry .post-text h3 {
+
+ .post-text h3 a {
+  text-decoration: none;
   font-size: 20px;
-  color: #000000;
+  color: black;
+
+
 }
 
-.post-entry .post-text h3 a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.post-entry .post-text h3 a:hover {
+ .post-text h3 a:hover {
   text-decoration: none;
   color: var(--secondary_blue);
 }
 
-.post-entry .post-text .readmore {
-  color: var(--secondary_blue);
-}
+
 
 .sidebar-box {
   margin-bottom: 30px;

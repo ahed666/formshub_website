@@ -13,6 +13,7 @@
           <li><a class="{{ (request()->routeIs('features')) ? 'active' : '' }}" href="{{ route('features') }}">{{ __('main.features') }}</a></li>
           <li><a class="{{ (request()->routeIs('pricing')) ? 'active' : '' }}" href="{{ route('pricing') }}">{{ __('main.pricing') }}</a></li>
           <li><a class="{{ (request()->routeIs('kiosk')) ? 'active' : '' }}" href="{{ route('kiosk') }}">{{ __('main.kiosk') }}</a></li>
+          <li><a class="{{ (request()->routeIs('blogs.index')) ? 'active' : '' }}" href="{{ route('blogs.index') }}">{{ __('main.blog') }}</a></li>
 
           <li>
             <div class="dropdown dropdown_help">

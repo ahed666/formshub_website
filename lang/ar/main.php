@@ -26,6 +26,7 @@ return [
    'termsandconditions'=>'الأحكام والشروط',
    'privacypolicy'=>'سياسة الخصوصية',
    'help'=>'مساعدة',
+   'blog'=>'المدونة',
 
    //footer
 
@@ -116,6 +117,8 @@ return [
     'getpremium'=>'الإشتراك الأن',
 
 
+    'chargedannually' => '(يُفرض سنويًا :price درهم)',
+
 
      //products
 
@@ -165,6 +168,10 @@ return [
      'successmessagesend'=>'تم إرسال الرسالة بنجاح، وسنعود إليك قريبًا.',
      'errorsendmessage'=>'فشل إرسال البريد الإلكتروني',
      'contactusnow'=>' تواصل معنا   ',
+
+
+      //  blogs
+    'blogs_title'=>'منشورات المدونة',
 
 
      //privacy policy

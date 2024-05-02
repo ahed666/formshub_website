@@ -43,6 +43,12 @@ Route::post('/neworder', [App\Http\Controllers\ProductController::class,'orderPr
 Route::post('/orderproduct', [App\Http\Controllers\ProductController::class,'orderProduct'])->name('orderproduct');
 
 
+// blogs
+
+Route::get('/blogs', [App\Http\Controllers\BlogsController::class,'index'])->name('blogs.index');
+Route::get('/blogs/{id}', [App\Http\Controllers\BlogsController::class,'detailsBlog'])->name('blogs.details_blog');
+
+
   // change language
   Route::post('setlocale/{locale}',[App\Http\Controllers\LocaleController::class, 'setLocale'])->name('setLocale');
 

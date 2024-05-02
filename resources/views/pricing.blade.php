@@ -27,7 +27,7 @@
             @foreach ($types as $type )
 
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="pricing h-100 text-center">
+                    <div class="pricing  text-center">
                     <span>&nbsp;</span>
                     <h3>{{ $type->subscription_type }}</h3>
                     <ul class="list-unstyled">
@@ -129,15 +129,28 @@
                             </li>
                         @endif
                     </ul>
-                    <div class="price-cta">
-                        <strong class="price">{{ $type->price }}{{ __(' AED') }}</strong>
+                    <div class="startedplan-div">
 
-                        @if($type->subscription_type=="Free")
-                        <p><a href="{{ config('app.sub_domain_name') }}" class="btn btn-white" target="_blank">{{ __('main.start') }}</a></p>
-                        @else
-                        <p><a href="{{ config('app.sub_domain_subscriptions_name') }}" class="btn btn-white" target="_blank">{{ __('main.getpremium') }}</a></p>
+                        <div class="price-div">
+                            @if($type->subscription_type=="Free")
+                            <strong class="price">{{ number_format($type->price, 2) }}{{ __(' AED') }}</strong>
+                            @else
+                            <strong class="price">{{ number_format($type->price/12, 2) }}
+                                <span class="price-currency_month">{{ __(' AED') }}</span><span class="price-duration_month">{{ __('/Month') }}</span>
+                            </strong>
+                            <span>{{ __('main.chargedannually',['price'=>number_format($type->price, 2)]) }}</span>
+                            @endif
+                        </div>
 
-                        @endif
+
+                        <div class="started-buttons">
+                            @if($type->subscription_type=="Free")
+                            <p><a href="{{ config('app.sub_domain_name') }}" class="btn btn-white" target="_blank">{{ __('main.start') }}</a></p>
+                            @else
+                            <p><a href="{{ config('app.sub_domain_subscriptions_name') }}" class="btn btn-white" target="_blank">{{ __('main.getpremium') }}</a></p>
+
+                            @endif
+                        </div>
                     </div>
                     </div>
                 </div>
