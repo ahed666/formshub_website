@@ -43,7 +43,7 @@
            <li class="gotoapp_navbar">
 
                 <a href="{{ config('app.sub_domain_name') }}" class=" gotoapp_navbar_button">{{ __('main.gotoapp_button') }}</a>
-                <a href="{{ config('app.sub_domain_name') }}" class=" orderkiosk_navbar_button">{{ __('main.orderkiosk') }}</a>
+                <a href="{{ route('make-order') }}" class=" orderkiosk_navbar_button">{{ __('main.orderkiosk') }}</a>
 
           </li>
         </ul>
