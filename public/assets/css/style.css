@@ -199,7 +199,6 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     border-radius: 10px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 
@@ -217,14 +216,7 @@ section {
     max-width: 80%;
     text-align: justify;
 }
-@media screen and (max-width: 992px)
-{
-    .feature .text{
 
-        max-width: 70%;
-
-    }
-}
 .feature .wrap-icon {
   height: 100px;
   width: 100px;
@@ -235,7 +227,18 @@ section {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 992px)
+{
+    .feature .text{
 
+        max-width: 70%;
+
+    }
+    .feature .wrap-icon {
+        height: 70px;
+        width: 70px;
+    }
+}
 .feature .wrap-icon.icon {
   background: var(--secondary_blue);
 }
