@@ -23,7 +23,7 @@
 
               <x-blog :blog="$blog" />
           @endforeach
-          {{ $blogs->links() }}
+
 
 
         </div>

@@ -69,6 +69,7 @@ return [
       'step3_text'=>'Manage, edit, and monitor your data and devices worldwide, with a user-friendly dashboard. ',
       'createone'=>' Create One',
       'ordernow'=>' Order Now',
+      'orderkiosk'=>'Order Kiosk',
       'readmore'=>' Read More',
       'facts'=>'Facts',
       'signedpdf_count'=>'Signed PDF',

@@ -30,7 +30,10 @@
             <div class="col-lg-8 text-center text-lg-start">
               <h1 data-aos="fade-right">{{ __('main.home_header_title') }}</h1>
               <p class="mb-5" data-aos="fade-right" data-aos-delay="100">{{ __('main.home_header_text') }}<a class="" style="color:white;margin-left:2px; margin-right:2px;"  href="{{ config('app.sub_domain_name') }}">{{ __('main.readmore') }}</a></p>
-              <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="{{ config('app.sub_domain_name') }}" class="btn btn-outline-white">{{ __('main.home_header_button') }}</a></p>
+              <p class="d-flex space-x-1" data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500">
+                <a  href="{{ config('app.sub_domain_name') }}" class="btn btn-outline-white mx-1">{{ __('main.home_header_button') }}</a>
+                <a  href="{{ route('make-order') }}" class="btn btn-outline-white mx-1">{{ __('main.orderkiosk') }}</a>
+            </p>
             </div>
             <div class="col-lg-4 iphone-wrap">
               {{-- <img src="assets/img/phone_1.png" alt="Image" class="phone-1" data-aos="fade-right">
@@ -50,45 +53,36 @@
       <div class="container" >
 
         <div class="row justify-content-center text-center mb-5">
-          <div class="col-md-5" data-aos="fade-up">
+          <div class="col-md-8" data-aos="fade-up">
             <h2 class="section-heading">{{ __('main.tools_home_title') }}</h2>
           </div>
         </div>
-        <div class="row justify-content-center text-center mb-5" data-aos="fade">
+        <div class="d-flex justify-content-between text-center mb-5" data-aos="fade-right">
             <div class="">
               <img src="{{ asset('images/website_images/second_section_home.png') }}" alt="Image" class="img-second_section_home ">
             </div>
+            <div class="grid tools ">
+                 @php
+                     $title=trans('main.tool1_title');
+                     $text=trans('main.tool1_text');
+                 @endphp
+                <x-tool :icon="'bi-highlighter'" :animate="'fade-left'" :title="$title" :text="$text" />
+                @php
+                    $title=trans('main.tool2_title');
+                    $text=trans('main.tool2_text');
+                @endphp
+               <x-tool :icon="'bi-clipboard-check'" :animate="'fade-right'" :title="$title" :text="$text" />
+                @php
+                    $title=trans('main.tool3_title');
+                    $text=trans('main.tool3_text');
+                @endphp
+                <x-tool :icon="'bi-graph-up-arrow'" :animate="'fade-left'" :title="$title" :text="$text" />
+
+
+            </div>
         </div>
 
-        <div class="row tools">
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="">
-            <div class="feature-1 text-center">
-              <div class="wrap-icon icon-1">
-                <i class="bi bi-highlighter"></i>
-              </div>
-              <h3 class="mb-3">{{ __('main.tool1_title') }}</h3>
-              <p>{{ __('main.tool1_text') }}</p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="feature-1 text-center">
-              <div class="wrap-icon icon-1">
-                <i class="bi bi-clipboard-check"></i>
-              </div>
-              <h3 class="mb-3">{{ __('main.tool2_title') }}</h3>
-              <p>{{ __('main.tool2_text') }}</p>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="feature-1 text-center">
-              <div class="wrap-icon icon-1">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
-              <h3 class="mb-3">{{ __('main.tool3_title') }}</h3>
-              <p>{{ __('main.tool3_text') }}</p>
-            </div>
-          </div>
-        </div>
+
 
       </div>
     </section>
@@ -98,22 +92,34 @@
         <div class="container" >
 
         <div class="row justify-content-center text-center mb-5">
-            <div class="col-md-5" data-aos="fade-up">
+            <div class="col-md-8" data-aos="fade-in">
             <h2 class="section-heading">{{ __('main.digitalsignature_title') }}</h2>
             </div>
         </div>
-        <div class="row justify-content-center text-center mb-5" data-aos="fade">
-            <div class="">
+        <div class="video-section " >
+            <div class=" card video-card" data-aos="fade-left">
                 <video class="video_signature" autoplay muted loop >
                     <source src="{{ asset('/videos/signature.mp4')}}" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
+                <div class="video-section-title" data-aos="fade-down">
+                    <span>{{ __('Signature Video') }}</span>
+                </div>
+            </div>
+            <div class=" card video-card" data-aos="fade-right">
+                <video class="video_signature" autoplay muted loop >
+                    <source src="{{ asset('/videos/questionsform.mp4')}}" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-section-title" data-aos="fade-down">
+                    <span>{{ __('Custom form Video') }}</span>
+                </div>
             </div>
         </div>
         </div>
     </section>
     {{-- forms  video --}}
-    <section class="section">
+    {{-- <section class="section">
         <div class="container" >
 
         <div class="row justify-content-center text-center mb-5">
@@ -130,7 +136,7 @@
             </div>
         </div>
         </div>
-    </section>
+    </section> --}}
     {{-- steps --}}
     <section class="section">
 
@@ -141,7 +147,7 @@
           </div>
         </div> --}}
         <div class="row justify-content-center text-center mb-5">
-            <div class="col-md-5" data-aos="fade-up">
+            <div class="col-md-8" data-aos="fade-up">
             <h2 class="section-heading">{{ __('main.howstart') }}</h2>
             </div>
         </div>
@@ -175,7 +181,7 @@
     <section class="section facts_section">
         <div class="container">
             <div class="row justify-content-center text-center mb-5">
-                <div class="col-md-5" data-aos="fade-up">
+                <div class="col-md-8" data-aos="fade-up">
                   <h2 class="section-heading">{{ __('main.facts') }}</h2>
                 </div>
             </div>

@@ -124,7 +124,7 @@ section {
 .section-heading {
   font-size: 3rem;
   font-weight: 700;
-  background: linear-gradient(-45deg, var(--primary_blue), var(--secondary_blue));
+  background: var(--secondary_blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -174,7 +174,7 @@ section {
   color: #fff !important;
 }
 
-.btn .btn-outline-white:hover {
+ .btn-outline-white:hover {
   background: #fff !important;
   color: var(--secondary_blue) !important;
 }
@@ -192,34 +192,57 @@ section {
 }
 
 /* Feature 1 */
-.feature-1 .wrap-icon {
-  margin: 0 auto;
+.feature{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid var(--secondary_blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+
+}
+.feature:hover{
+    background-color: var(--primary_blue);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+
+.feature .text{
+    margin:  0 4px;
+    display: grid;
+    max-width: 80%;
+    text-align: justify;
+}
+.feature .wrap-icon {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   position: relative;
-  margin-bottom: 30px;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  margin:  0 4px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-.feature-1 .wrap-icon.icon-1 {
-  background: linear-gradient(-45deg, var(--primary_blue), var(--secondary_blue));
+.feature .wrap-icon.icon {
+  background: var(--secondary_blue);
 }
 
-.feature-1 .wrap-icon i {
+.feature .wrap-icon i {
   font-size: 40px;
   line-height: 0;
   color: #fff;
 }
 
-.feature-1 h3 {
+.feature h3 {
   font-size: 20px;
 }
 
-.feature-1 p {
+.feature p {
   color: #b1b1b1;
 }
 
@@ -844,6 +867,7 @@ font-weight: bold !important;
 .navbar .active:focus,
 .navbar li:hover>a {
   color: #fff;
+  font-weight: bold;
 }
 .dropdown{
     border: none;
@@ -905,6 +929,28 @@ font-weight: bold !important;
 /*
 signature video
 */
+.video-section{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: var(--primary_blue);
+   padding: 20px;
+   border: 1px solid var(--secondary_blue);
+   border-radius: 0.375rem;
+}
+.video-card{
+    border: 1px solid var(--secondary_blue);
+    padding: 20px;
+    margin: 0 4px 0 4px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.video-section-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .video_signature{
     width: 500px;
     height: auto;
@@ -1161,12 +1207,10 @@ signature video
 }
 .img-second_section_home{
     object-fit: contain;
-    width: 1100px;
-    height: 450px;
+    width: 100%;
+    height:100%;
 }
-.tools{
-    margin-top: 90px;
-}
+
 
 @media screen and (max-width: 992px) {
     .img-second_section_home{
@@ -1581,6 +1625,7 @@ display: flex;
     .gotoapp_navbar{
       margin-left: 20px;
       margin-right: 20px;
+      display: flex;
     }
 
     @keyframes pulse-animation {
@@ -1603,29 +1648,35 @@ display: flex;
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
-
+        margin: 0 20px 0 20px;
 
     }
+    .orderkiosk_navbar_button{
+        border: 2px solid var(--primary_blue);
+        background: none;
+        color: var(--primary_blue) !important;
+        font-style: bold;
+        padding: 10px 20px !important ;
+        border-radius: 0.375rem;
+        box-shadow: 0px 0px 1px 1px #0000001a;
+        animation: pulse-animation 2s infinite;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 20px 0 20px;
+    }
 
-    .gotoapp_navbar_button:hover{
+    .orderkiosk_navbar_button:hover,.gotoapp_navbar_button:hover{
         border: 2px solid var(--secondary_blue);
         background: var(--primary_blue);
         color: var(--secondary_blue)!important;
         padding: 10px 20px !important ;
         border-radius: 0.375rem;
 
-    }
-
-    .gotoapp_navbar_button{
-        background: var(--secondary_blue);
-        width: 150px;
-        margin: 0px 10px !important;
-        border-radius: 0.375rem;
-        color: #fff !important;
-
-
 
     }
+
+
 
 
 
