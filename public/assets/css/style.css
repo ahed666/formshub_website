@@ -217,6 +217,14 @@ section {
     max-width: 80%;
     text-align: justify;
 }
+@media screen and (max-width: 992px)
+{
+    .feature .text{
+
+        max-width: 70%;
+
+    }
+}
 .feature .wrap-icon {
   height: 100px;
   width: 100px;
@@ -961,6 +969,9 @@ signature video
         width: 100%;
         height: auto;
     }
+    .video-section{
+       display: grid;
+    }
 }
 
 /**
@@ -1212,7 +1223,9 @@ signature video
     height:100%;
 }
 
-
+.tools-div{
+    display: flex;
+}
 @media screen and (max-width: 992px) {
     .img-second_section_home{
         object-fit: contain;
@@ -1221,6 +1234,9 @@ signature video
     }
     .tools{
         margin-top: 40px;
+    }
+    .tools-div{
+        display: grid;
     }
 }
 

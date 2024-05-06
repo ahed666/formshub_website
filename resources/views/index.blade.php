@@ -57,7 +57,7 @@
             <h2 class="section-heading">{{ __('main.tools_home_title') }}</h2>
           </div>
         </div>
-        <div class="d-flex justify-content-between text-center mb-5" data-aos="fade-right">
+        <div class="tools-div justify-content-between text-center mb-5" data-aos="fade-right">
             <div class="">
               <img src="{{ asset('images/website_images/second_section_home.png') }}" alt="Image" class="img-second_section_home ">
             </div>
