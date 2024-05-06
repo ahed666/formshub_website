@@ -77,8 +77,9 @@ return [
       'createdforms_count'=>'Created Forms',
       'linkedkiosks_count'=>'Linked Kiosks',
       'createdaccount_count'=>'Created Accounts',
-      'customform_title'=>'Custom Form',
-      'digitalsignature_title'=>'Digital Signature',
+      'customformvideo_title'=>'Custom Form',
+      'digitalsignaturevideo_title'=>'Digital Signature',
+      'howworks_title'=>'How it works!',
       'howstart'=>'How you can start ?',
     //features
     'features_title'=>'Features',

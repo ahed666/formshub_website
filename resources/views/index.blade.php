@@ -93,7 +93,7 @@
 
         <div class="row justify-content-center text-center mb-5">
             <div class="col-md-8" data-aos="fade-in">
-            <h2 class="section-heading">{{ __('main.digitalsignature_title') }}</h2>
+            <h2 class="section-heading">{{ __('main.howworks_title') }}</h2>
             </div>
         </div>
         <div class="video-section " >
@@ -103,7 +103,7 @@
                     Your browser does not support the video tag.
                 </video>
                 <div class="video-section-title" data-aos="fade-down">
-                    <span>{{ __('Signature Video') }}</span>
+                    <span>{{ __('main.digitalsignaturevideo_title') }}</span>
                 </div>
             </div>
             <div class=" card video-card" data-aos="fade-right">
@@ -112,7 +112,7 @@
                     Your browser does not support the video tag.
                 </video>
                 <div class="video-section-title" data-aos="fade-down">
-                    <span>{{ __('Custom form Video') }}</span>
+                    <span>{{ __('main.customformvideo_title') }}</span>
                 </div>
             </div>
         </div>

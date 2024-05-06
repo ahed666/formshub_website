@@ -67,8 +67,9 @@ return [
     'createdforms_count'=>'نموذج',
     'linkedkiosks_count'=>'جهاز مرتبط',
     'createdaccount_count'=>'حساب',
-    'customform_title'=>'النموذج المخصص',
-    'digitalsignature_title'=>'التوقيع إلكتروني',
+    'customformvideo_title'=>'نموذج مخصص',
+    'digitalsignature_title'=>'التوقيع الرقمي',
+    'howworks_title'=>'كيف تعمل!',
     'howstart'=>'كيف يمكنك البدء؟',
 
     //features
