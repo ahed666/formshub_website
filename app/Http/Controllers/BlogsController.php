@@ -17,7 +17,7 @@ class BlogsController extends Controller
     ->description('Explore our latest blog posts for insightful articles on formshub.  Stay informed and inspired with our expertly crafted content.')
     ->url(url()->current());
 
-    $blogs = Blog::with('details')->all();
+    $blogs = Blog::with('details')->get();
 
     return view('blog',['blogs' => $blogs,'schemaMarkup'=>$schemaMarkup]);
 
