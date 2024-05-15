@@ -234,7 +234,7 @@ $text='';
 
 
     {{-- clients --}}
-    @if(count($clients)>=1)
+    @if(count($clients)>=3)
         <x-clients :clients="$clients"/>
     @endif
 
