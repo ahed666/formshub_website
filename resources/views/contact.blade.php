@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Contact Us - Leave a message ')
+@section('title', trans('main.contact_tab'))
 @section('meta_description', 'Contact us to get in touch with our team. Leave us a message and we will get back to you as soon as possible.')
 
 @section('content')

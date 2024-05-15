@@ -1,0 +1,7 @@
+
+.subscription_text {
+    font-size: 1.125rem; /* Equivalent to Tailwind CSS text-md */
+
+
+    text-align: right;
+  }

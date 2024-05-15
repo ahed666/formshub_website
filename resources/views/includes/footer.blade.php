@@ -10,31 +10,31 @@
             <a href="#"><span class="bi bi-linkedin"></span></a>
           </p> --}}
         </div>
-        <div class="col-md-7 ms-auto">
+        <div class="col-md-8 ms-auto">
           <div class="row site-section pt-0">
-            <div class="col-md-4 mb-4 mb-md-0">
+            <div class="col-md-6 mb-4 mb-md-0 d-grid  ">
               <h3>{{ __('main.navigation') }}</h3>
               <ul class="list-unstyled">
 
                 <li><a href="{{ route('pricing') }}">{{ __('main.pricing') }}</a></li>
-                <li><a href="{{ route('features') }}">{{ __('main.features') }}</a></li>
+                <li><a href="{{ route('whyformshub') }}">{{ __('main.whyformshub') }}</a></li>
                 <li><a href="{{ route('contact') }}">{{ __('main.contactus') }}</a></li>
                 <li><a href="{{ route('kiosk') }}">{{ __('main.kiosk') }}</a></li>
-
-              </ul>
-            </div>
-            <div class="col-md-4 mb-4 mb-md-0">
-              <h3>{{ __('main.services') }}</h3>
-              <ul class="list-unstyled">
                 <li><a href="{{ route('knowledgebase') }}">{{ __('main.knowledgebase') }}</a></li>
                 <li><a href="{{ route('terms_conditions') }}" target="_blank">{{ __('main.termsandconditions') }}</a></li>
                 <li><a href="{{ route('privacypolicy') }}" target="_blank">{{ __('main.privacypolicy') }}</a></li>
-
               </ul>
             </div>
-            <div class="col-md-4 mb-4 mb-md-0 dropdown">
+            {{-- <div class="col-md-4 mb-4 mb-md-0">
+              <h3>{{ __('main.services') }}</h3>
+              <ul class="list-unstyled">
 
-                <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+              </ul>
+            </div> --}}
+            <div class="col-md-6 mb-4 mb-md-0 dropdown d-grid ">
+                <div class="d-flex justify-content-center align-items-center mb-2">
+                <a class=" dropdown-toggle dropdown-langauge" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     @if(App::getLocale()=="ar")
                     العربية
                     @else
@@ -56,6 +56,14 @@
 
 
                 </ul>
+                </div>
+                <div>
+                    <!-- TrustBox widget - Review Collector -->
+                    <div class="trustpilot-widget" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="663cd67ae4a435815eeccd3a" data-style-height="52px" data-style-width="100%">
+                        <a href="https://www.trustpilot.com/review/formshub.net" target="_blank" rel="noopener">Trustpilot</a>
+                    </div>
+                    <!-- End TrustBox widget -->
+                </div>
 
             </div>
           </div>

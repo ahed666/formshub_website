@@ -22,10 +22,11 @@ use Illuminate\Support\Facades\Redirect;
 Route::get('/',[App\Http\Controllers\IndexController::class,'index'])->name('home');
 // pricing
 Route::get('/pricing', [App\Http\Controllers\PricingController::class,'index'])->name('pricing');
-// features
-Route::get('/features', function () {
-    return view('features');
-})->name('features');
+// why forms hub
+Route::get('/whyformshub',[App\Http\Controllers\FeaturesController::class,'index'])->name('whyformshub');
+//  types of question
+Route::get('/typesofquetions',[App\Http\Controllers\TypesQuestionsController::class,'index'])->name('typesofquetions');
+
 // contact us
 Route::get('/contact', [App\Http\Controllers\ContactController::class,'index'])->name('contact');
 // knowledgebase

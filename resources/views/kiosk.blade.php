@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Kiosk - you can order online')
+@section('title',  trans('main.kiosk_tab'))
 @section('meta_description', 'Discover our range of interactive kiosks designed to enhance customer engagement. Our kiosks are user-friendly, customizable, and perfect for various industries.')
 
 @section('content')
@@ -12,17 +12,46 @@ $text='';
 @section('schema_markup')
 {!! $schemaMarkup->toScript() !!}
 @endsection
-<x-header_section :title="$title" :text="$text" />
 
-    <section class="section">
-      <x-kiosk_info_slider />
+    <section class="section info_kiosk">
+      <x-kiosk_info_slider :clients="$clients" />
     </section>
+
+
+
+    {{-- reseller --}}
+    @if(count($resellers)>0)
+    <section class="section" id="order-now">
+        <div class="row justify-content-center text-center mb-5">
+            <div class="d-grid col-md-5 aos-init aos-animate" data-aos="fade-up">
+              <h2 class="section-heading">{{ __('main.resellers') }}</h2>
+              <h6 class="section-shorttext">{{ __('main.resellers_text') }}</h6>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row gy-4">
+                @foreach ($resellers as $reseller )
+
+                <x-resller :reseller="$reseller" />
+
+                @endforeach
+
+
+            </div>
+        </div>
+
+    </section>
+    @endif
       {{-- order products --}}
 
-    <section class="section " id="order-now">
+    <section class="section " >
         <div class="row justify-content-center text-center mb-5">
-            <div class="col-md-5 aos-init aos-animate" data-aos="fade-up">
+            <div class="d-grid col-md-5 aos-init aos-animate" data-aos="fade-up">
               <h2 class="section-heading">{{ __('main.ordernow') }}</h2>
+              <h6 class="section-shorttext">{{ __('main.ordernow_text') }}</h6>
+
             </div>
           </div>
         <div class="container">
@@ -116,7 +145,7 @@ $text='';
                                 <div class="col-lg-3 col-sm-12 col-md-12  align-items-center mx-2 my-1 my-sm-auto">
                                     <input type="checkbox" class="btn-check" name="items[]" onchange="toggleBorder(this,{{ $device->id }},{{ $device->price }},' {{$device->device_model }}{{ $device->name }}')" value="{{ $device->id }}" id="item_{{ $device->id }}" autocomplete="off" >
                                     <label class="btn border border-1 border-dark d-flex justify-content-center items-center" for="item_{{ $device->id }}">
-                                        <img width="100" height="100" class="orderkiosk_image" src="{{ asset($device->image) }}" alt="">
+                                        <img width="100" height="100" class="orderkiosk_image" src="{{ env('WEBAPP_URL') }}{{ __('/') }}{{ $device->image }}" alt="">
                                     </label>
                                     <div data-bs-toggle="tooltip"  data-bs-html="true" title="{{$device->device_model}} {{$device->name }}" class="custom-element
                                         d-flex justify-content-center align-items-center product_name_div   ">
@@ -124,7 +153,17 @@ $text='';
                                     </div>
                                     {{-- price --}}
                                     <div class="d-flex justify-content-center mt-2 align-items-center">
-                                        <span class="fs-6">{{ $device->price }}{{ __(' AED') }} <span class="vat">{{ __('+VAT') }}</span></span>
+                                        <div class="price">
+                                            @if($device->price_prev)
+                                            <del>
+                                              <span class="amount">{{ $device->price_prev }}{{ __(' AED') }}</span>
+                                            </del>
+                                            @endif
+                                            <ins>
+                                              <span class="amount">{{ $device->price }}{{ __(' AED') }}</span>
+                                            </ins>
+                                          </div>
+
                                     </div>
                                     {{-- quantity --}}
                                     <div id="quantityDiv_{{ $device->id }}" class="d-flex justify-content-center my-2 align-items-center hidden ">
@@ -193,11 +232,11 @@ $text='';
         </div>
     </section>
 
-    {{-- gallary --}}
-    <section class="section">
-        <x-gallary  :gallaryimages="$gallaryImages" />
-    </section>
 
+    {{-- clients --}}
+    @if(count($clients)>=1)
+        <x-clients :clients="$clients"/>
+    @endif
 
 
 

@@ -8,29 +8,27 @@ use App\Models\DeviceModel;
 use App\Models\TypeDevice;
 use App\Models\Order;
 use App\Models\OrderProduct;
+use App\Models\Client;
 use App\Mail\OrderNotification;
-use App\Models\GallaryImages;
-
+use App\Models\Reseller;
 use App\Mail\OrderCustomerNotification;
 use Illuminate\Support\Facades\Mail;
 use Spatie\SchemaOrg\Schema;
 
 class ProductController extends Controller
 {
-    public function getAllImagesGallary()
-    {
-        return GallaryImages::all();
-    }
+
     public function index(){
 
         $schemaMarkup = Schema::webPage()
-        ->name('Products')
-        ->description('Discover our range of products and find the perfect solution for your needs.')
+        ->name('Kiosk')
+        ->description('Discover our range of kiosks and find the perfect solution for your needs.')
         ->url(url()->current());
         $cities=Cities::all();
         $devicesModels=DeviceModel::join('type_of_devices','type_of_devices.model_id','=','devices_models.id')->select('devices_models.*','type_of_devices.*')->get();
-        $gallaryImages=$this->getAllImagesGallary();
-        return view('products',compact('cities','gallaryImages','devicesModels','schemaMarkup'));
+        $resellers=Reseller::all();
+        $clients=Client::all();
+        return view('kiosk',compact('cities','clients','resellers','devicesModels','schemaMarkup'));
     }
 
 

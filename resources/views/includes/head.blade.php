@@ -1,3 +1,4 @@
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="keywords" content="Forms Hub App,UAE,feadback  with kiosk UAE,Feedback web app in UAE | Dubai | Abu Dhabi | Sarjah | Ajman | Al ain | alfujairah  | alfujairah |alfujairah,Feedback software,Customer satisfaction tool,Online feedback form,Feedback management system,Feedback app for businesses,
@@ -27,7 +28,7 @@ customer feedback
 
   ">
 
-  <title>{{ env('APP_NAME') }} - @yield('title', 'Default Title')</title>
+  <title>@yield('title', 'Default Title')</title>
   <meta name="description" content="@yield('meta_description','Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers')">
   <meta property="og:title" content="{{ env('APP_NAME') }}">
   <meta property="og:description" content="Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers">
@@ -64,12 +65,21 @@ customer feedback
     <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+
+    @if (App::getLocale() == 'ar')
+
+        <link href="{{ asset('assets/css/style_ar.css') }}" rel="stylesheet">
+    @endif
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JLCD364YJW"></script>
+    <!-- TrustBox script -->
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+<!-- End TrustBox script -->
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}

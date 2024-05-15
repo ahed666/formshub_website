@@ -1,5 +1,11 @@
-<!doctype html >
-<html lang="{{ App::getLocale() }}" >
+<!doctype html  >
+<html lang="{{ App::getLocale() }}"
+@if (App::getLocale()=='ar')
+dir="rtl"
+@else
+dir="ltr"
+@endif
+>
 <head>
    @include('includes.head')
 </head>

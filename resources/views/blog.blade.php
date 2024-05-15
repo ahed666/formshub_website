@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Blog Posts')
+@section('title', trans('main.blog_tab'))
 @section('meta_description', 'Explore our latest blog posts for insightful articles on formshub.  Stay informed and inspired with our expertly crafted content.')
 
 @section('content')
@@ -17,7 +17,7 @@
 
     <section class="section">
       <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 bg-posts-row row-cols-md-3 mb-2">
+        <div class="row row-cols-2 row-cols-lg-3 row-cols-sm-2 bg-posts-row row-cols-md-3 mb-2">
 
           @foreach ($blogs as $blog )
 

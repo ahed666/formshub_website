@@ -1,4 +1,4 @@
-<div class=" feature" data-aos="{{ $animate }}" data-aos-delay="">
+<div class=" tool" data-aos="{{ $animate }}" data-aos-delay="{{ $delay }}">
 
 
 

@@ -18,7 +18,7 @@ return [
 
      //  navbar
     'home' => 'Home',
-    'features'=>'Features',
+    'whyformshub_header'=>'Why Forms Hub',
     'pricing'=>'Pricing',
     'kiosk'=>'Kiosk',
     'knowledgebase'=>'KnowledgeBase',
@@ -27,7 +27,8 @@ return [
     'privacypolicy'=>'Privacy Policy',
     'help'=>'Help',
     'blog'=>'Blog',
-
+    'webapp'=>'Web App',
+    'typesofquetions'=>'Types Of Questions',
 
     //footer
     'aboutformshub'=>'About Formshub',
@@ -45,7 +46,7 @@ return [
 
     //home
      'home_header_title'=>'It\'s Time To Make It Classy',
-     'home_header_text'=>'Enjoy various features created to improve your business, digitize your forms, signatures, surveys, database collection',
+
      'home_header_button'=>'Get Started',
      'gotoapp_button'=>'Go To App',
      'tools_home_title'=>'Save your time, money, and effort using Forms Hub',
@@ -71,6 +72,7 @@ return [
       'ordernow'=>' Order Now',
       'orderkiosk'=>'Order Kiosk',
       'readmore'=>' Read More',
+      'startnow'=>'Start Now',
       'facts'=>'Facts',
       'signedpdf_count'=>'Signed PDF',
       'responses_count'=>'Responses',
@@ -81,9 +83,13 @@ return [
       'digitalsignaturevideo_title'=>'Digital Signature',
       'howworks_title'=>'How it works!',
       'howstart'=>'How you can start ?',
-    //features
-    'features_title'=>'Features',
-    'features_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      'whyformshub'=>'Why Forms Hub ?',
+      'showmore'=>'Show More',
+      'home_header_text'=>'Explore various features created to elevate your business, create custom forms and surveys, integrate digital signatures, establish a comprehensive customer database and more',
+    //why formshub
+    'whyformshub_title'=>'Why Forms Hub ?',
+    'whyformshub_text'=>'Forms Hub kiosk is designed to meet your business expectations and to be as easy as (1 step) setup. Whether you need customer feedback, data collection, custom forms, or digital signatures, the Forms Hub kiosk will do it for you.
+    Your business deserves such investment !!',
     'feature1_title'=>'Simplicity',
     'feature1_text'=>'We believe simplicity is smart
     One of our main goals is to keep Forms Hub simple and easy to use, without affecting features and quality, you can start using Forms Hub with easy 4 steps.
@@ -106,7 +112,7 @@ return [
 
     //pricing
     'pricing_title'=>'Pricing',
-    'pricing_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+    'pricing_text' => 'We\'ve got you covered! Break free from limitations and elevate your experience with our premium subscription. You deserve access to exclusive features that will enhance your productivity. take your choice now and unlock the full potential of our platform.',
     'chooseplan_title'=>'Compare Subscriptions',
     'chooseplan_text'=>'Whatever you are looking for, we\'ve got you! unlock the limitation now and upgrade to the premium subscription. compared with the free subscription, and make your choice.',
 
@@ -133,13 +139,8 @@ return [
     'kiosk_title'=>'Kiosk',
     'kioskinfo_title'=>'Why Forms Hub Kiosk',
     'ordernow'=>'Order Now',
-    'kioskinfo_text'=>'Forms Hub kiosk is designed to meet your business expectations and to be as easy as 1 step setup.
 
-    Whether you need customer feedback, data collection, or digitalise your documents, the Forms Hub kiosk will do it for you.
-
-    You may set up a kiosk and connect to your account by the unique device ID which will be automatically generated once you power it on.
-
-    Once your kiosk is added to your account, congratulations!! you may use it from around the world.',
+    'kioskinfo_text'=>'The Forms Hub kiosk is meticulously engineered to not only meet but surpass your business expectations, boasting a seamless one-step setup process. Whether you require streamlined customer feedback, efficient data collection, custom forms, or digital signatures, count on the Forms Hub kiosk to effortlessly fulfil your needs.',
     'ordernow'=>'Order Now',
     'firstname'=>'First Name',
     'lastname'=>'Last Name',
@@ -154,7 +155,9 @@ return [
     'ordersendsuccess'=>'Thank you for placing your order. We have received it and our sales team will be contacting you shortly.',
     'orderplaced'=>'Order Placed',
     'noitems'=>'No items selected',
-
+    'resellers'=>'Resellers',
+    'resellers_text'=>'You can contact one of the authorized resellers in your city, check the list below',
+    'ordernow_text'=>'Or submit an order online, your order will be forwarded to one of our resellers',
     //kb
     'kb_title'=>'KnowledgeBase',
     'kb_text'=>'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -172,7 +175,7 @@ return [
     'message'=>'Message',
     'sendmessage'=>'Send Message',
     'address'=>'Address',
-    'address_value'=>'UAE - Abu Dhabi - Al Ain City',
+    'address_value'=>'UAE - Abu Dhabi',
     'phone'=>'Phone',
     'email_value'=>'youremail@domain.com',
     'success'=>'Success',
@@ -194,5 +197,27 @@ return [
     //terms and conditions
     'termsandconditions_title'=>'Terms and Conditions',
     'termsandconditions_text'=>'',
+
+
+
+    // types of questions
+    'typesofquestions_title'=>'Question Types',
+    'typesofquestions_text'=>'Craft A Tailored Feedback Form Encompassing Diverse Question Types That Align With Your Expectations, Ensuring Precise Feedback Acquisition For Optimal Insights. Brows Our Question Types Bellow',
+
+    // clients section
+    'clients'=>'Who trusted Forms Hub',
+
+
+    // tabs titles
+    'home_tab'=>'Forms Hub - The Smart Custom Forms Platform',
+    'contact_tab'=>'Forms Hub - Contact Us',
+    'blogs_tab'=>' Forms Hub - Blogs',
+    'whyformshub_tab'=>'Forms Hub - Learn More About Forms Hub Platform Merits',
+    'kiosk_tab'=>' Forms Hub - Order Your Kiosk Now',
+    'pricing_tab'=>'Forms Hub - Platform Pricing',
+    'knowledgebase_tab'=>'Forms Hub - Knowledgebase',
+    'terms_tab'=>'Forms Hub - Terms & Conditions ',
+    'privacy_tab'=>'Forms Hub - Privacy Policy',
+    'types_questions'=>'Forms Hub - Types Of Questions',
 
 ];

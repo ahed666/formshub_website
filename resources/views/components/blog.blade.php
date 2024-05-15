@@ -2,7 +2,7 @@
 <article class=" blog">
     <div class="post-entry">
       <a href="{{ route('blogs.details_blog',$blog->id) }}" class="blog-image-div d-block mb-4">
-        <img width="400" height="260" src="{{asset($blog->details->image1)  }}" alt="Image" class="" title="image-{{ $blog->title }}">
+        <img  src="{{asset($blog->details->image1)  }}" alt="Image" class="" title="image-{{ $blog->title }}">
       </a>
     </div>
       <div class="post-text">
