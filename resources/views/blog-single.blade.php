@@ -31,7 +31,7 @@
                 @endif
             </p>
 
-            @if ($blog->details->image1==null)
+            @if ($blog->details->image2==null)
 
                 <div class="row mb-5">
                     <div class="col-md-12 d-flex justify-content-center align-items-center">
