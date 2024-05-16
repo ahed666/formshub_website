@@ -35,7 +35,7 @@
 
                 <div class="row mb-5">
                     <div class="col-md-12 d-flex justify-content-center align-items-center">
-                   <img src="{{asset($blog->details->image1)  }}" alt="{{ $blog->title }}" title="{{ $blog->title }}" class="img-fluid">
+                   <img src="{{asset($blog->details->image1)  }}" alt="{{ $blog->title }}" title="{{ $blog->title }}" class="img-fluid blog-img">
 
 
                     </div>
@@ -44,11 +44,11 @@
              @else
                 <div class="row mb-5">
                     <div class="col-md-6">
-                    <img src="{{asset($blog->details->image1)  }}" alt="{{ $blog->title }}" title="{{ $blog->title }}" class="img-fluid">
+                    <img src="{{asset($blog->details->image1)  }}" alt="{{ $blog->title }}" title="{{ $blog->title }}" class="img-fluid blog-img">
 
                     </div>
                     <div class="col-md-6">
-                    <img src="{{asset($blog->details->image2)  }}" alt="{{ $blog->title }}" title="{{ $blog->title }}" class="img-fluid">
+                    <img src="{{asset($blog->details->image2)  }}" alt="{{ $blog->title }}" title="{{ $blog->title }}" class="img-fluid blog-img">
 
                     </div>
                 </div>
