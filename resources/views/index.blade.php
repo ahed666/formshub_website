@@ -24,8 +24,8 @@
 
               </p>
               <p class="d-flex justify-content-center align-items-center space-x-1" data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500">
-                <a  href="{{ config('app.sub_domain_name') }}" class="btn btn-hero-section mx-1">{{ __('main.home_header_button') }}</a>
-                <a  href="{{ route('kiosk') }}" class="btn btn-hero-section mx-1">{{ __('main.orderkiosk') }}</a>
+                <a  href="{{ config('app.sub_domain_name') }}" class=" button mx-1">{{ __('main.home_header_button') }}</a>
+                <a  href="{{ route('kiosk') }}" class="button mx-1">{{ __('main.orderkiosk') }}</a>
             </p>
             </div>
             <div class="col-lg-4 iphone-wrap">
@@ -105,7 +105,7 @@
 
             </div>
             <div class="show-more-btn-div col-12 col-lg-12 col-md-12 col-sm-12">
-                <a  href="{{route('whyformshub') }}" class="btn btn-showmore mx-1">{{ __('main.showmore') }}</a>
+                <a  href="{{route('whyformshub') }}" class="button mx-1">{{ __('main.showmore') }}</a>
 
             </div>
         </div>

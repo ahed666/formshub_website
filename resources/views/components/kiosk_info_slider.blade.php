@@ -19,7 +19,7 @@
                 <h2 class="mb-4 title">{{ __('main.kioskinfo_title') }}</h2>
                 <p class="mb-4">{{ __('main.kioskinfo_text') }}</p>
                 <div class="d-flex justify-content-center align-items-center">
-                    <button type="button" class="btn btn-primary" onclick="scrollToSection('order-now')">{{ __('main.ordernow') }}</button>
+                    <button type="button" class="button" onclick="scrollToSection('order-now')">{{ __('main.ordernow') }}</button>
                 </div>
            </div>
 

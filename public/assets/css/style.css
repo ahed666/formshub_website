@@ -188,13 +188,13 @@ section {
 
 
 
-.btn.btn-primary {
+.btn .btn-primary {
   background: var(--secondary_blue);
   background:var(--secondary_blue);
   color: #fff;
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.15);
 }
-.btn.btn-primary:hover{
+.btn .btn-primary:hover{
     background:var(--primary_blue);
     color: var(--secondary_blue);
     border: 1px solid var(--secondary_blue);
@@ -468,15 +468,7 @@ section {
 
 }
 
-.btn-showmore{
-    background-color: var(--secondary_blue);
-    color: white;
-}
-.btn-showmore:hover{
-    background-color: white;
-    color: var(--secondary_blue);
-    border: 1px solid var(--secondary_blue);
-}
+
 @media  screen and (max-width: 992px) {
     .whyformshub_home::before {
         background-attachment:fixed;
@@ -713,17 +705,7 @@ section {
   margin-bottom: 10px;
 }
 
-.pricing .btn_subscription {
-  background: var(--secondary_blue);
-  color: #fff;
-}
 
-.pricing .btn_subscription:hover {
-    background: #fff;
-  color: var(--secondary_blue);
-  border:1px solid var(--secondary_blue);
-  border-radius: 10px;
-}
 
 .pricing.popular {
   background: #fff;
@@ -1446,15 +1428,19 @@ max-width: 1600px !important;
   height: 35vh;
   min-height: 0;
 }
-.btn-hero-section {
+.button {
     background: var(--secondary_blue) !important;
     color: #fff !important;
+    padding: 15px 30px !important;
+    border-radius: 8px;
+    border: 1px solid var(--secondary_blue);
+
   }
 
-   .btn-hero-section:hover {
+   .button:hover {
     background: #fff !important;
     color: var(--secondary_blue) !important;
-    border: 1px solid var(--secondary_blue);
+
   }
 
 .hero-section.inner-page .hero-text {
@@ -1775,9 +1761,14 @@ text-align: initial;  }
   .item_desc{
     font-weight: bold;
   }
-  .btn-sendorder{
-       background-color: var(--primary_blue);
-       color: var(--secondary_blue);
+
+  .btn-sendorder {
+    background: #fff !important;
+    color: var(--secondary_blue) !important;
+    padding: 15px 30px !important;
+    border-radius: 8px;
+    border: 1px solid var(--secondary_blue);
+
   }
   .invoice_description{
           border-bottom: 1px solid hsl(206, 20%, 93%,0.4) ;
@@ -1794,8 +1785,8 @@ text-align: initial;  }
   .btn-sendorder:hover{
    font-weight: bold;
    font-size: large;
-   background-color: var(--primary_blue);
-       color: var(--secondary_blue);
+   background-color: var(--primary_blue) !important;
+       color: var(--secondary_blue) !important;
 }
   .kioskinfoslider{
     border: 3px solid #1277d1;

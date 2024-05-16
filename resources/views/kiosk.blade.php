@@ -219,7 +219,7 @@ $text='';
 
 
                             <div class="d-flex justify-content-center align-items-center my-2"  >
-                            <button type="submit" class="btn btn-sendorder">{{ __('main.sendorder') }}</button>
+                            <button type="submit" class="button btn-sendorder">{{ __('main.sendorder') }}</button>
                             </div>
                         </div>
 
