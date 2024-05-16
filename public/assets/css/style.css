@@ -1084,7 +1084,7 @@ font-weight: bold !important;
 }
 
 
-@media (max-width: 1366px) {
+@media (max-width:  992px) {
 
     .dropdown{
         border: none;
@@ -1171,7 +1171,7 @@ font-weight: bold !important;
     font-weight: bold;
     font-size: 25px;
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .video_signature{
         width: 100%;
         height: auto;
@@ -1285,7 +1285,7 @@ font-weight: bold !important;
   transition: 0.5s;
 }
 
-@media (max-width: 991px) {
+@media (max-width:  992px) {
   .mobile-nav-toggle {
     display: block;
   }
