@@ -859,6 +859,9 @@ section {
 }
 .post-entry {
   margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
  .post-meta {
