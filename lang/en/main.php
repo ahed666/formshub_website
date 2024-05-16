@@ -211,7 +211,7 @@ return [
     // tabs titles
     'home_tab'=>'Forms Hub - The Smart Custom Forms Platform',
     'contact_tab'=>'Forms Hub - Contact Us',
-    'blogs_tab'=>' Forms Hub - Blogs',
+    'blog_tab'=>' Forms Hub - Blogs',
     'whyformshub_tab'=>'Forms Hub - Learn More About Forms Hub Platform Merits',
     'kiosk_tab'=>' Forms Hub - Order Your Kiosk Now',
     'pricing_tab'=>'Forms Hub - Platform Pricing',
