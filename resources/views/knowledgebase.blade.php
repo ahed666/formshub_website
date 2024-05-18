@@ -44,7 +44,7 @@
                                 $text = str_replace('__PRICING_ROUTE__',route('pricing'), $text);
                                 $text = str_replace('__KIOSK_ROUTE__',route('kiosk'), $text);
                                 $text = str_replace('__KB_ROUTE__',route('knowledgebase'), $text);
-                                $text = str_replace('__TERMS_ROUTE__',route('terms_conditions'), $text);
+                                $text = str_replace('__TERMS_ROUTE__',route('termsandconditions'), $text);
                                 $text = str_replace('__PP_ROUTE__',route('privacypolicy'), $text);
 
                             @endphp
@@ -55,7 +55,7 @@
                                 $text = str_replace('__PRICING_ROUTE__',route('pricing'), $text);
                                 $text = str_replace('__KIOSK_ROUTE__',route('kiosk'), $text);
                                 $text = str_replace('__KB_ROUTE__',route('knowledgebase'), $text);
-                                $text = str_replace('__TERMS_ROUTE__',route('terms_conditions'), $text);
+                                $text = str_replace('__TERMS_ROUTE__',route('termsandconditions'), $text);
                                 $text = str_replace('__PP_ROUTE__',route('privacypolicy'), $text);
                             @endphp
                             {!! $text !!}
