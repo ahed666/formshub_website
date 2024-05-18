@@ -6,7 +6,16 @@
       </a>
     </div>
       <div class="post-text">
-        <h3 class="blog-title"><a href="{{ route('blogs.details_blog',$blog->id) }}">{{ $blog->title }}</a></h3>
+        <h3 class="blog-title">
+            <a href="{{ route('blogs.details_blog',$blog->id) }}">
+                @if (App::getLocale() == 'en')
+                {{ $blog->title }}
+           @else
+           {{ $blog->title_ar }}
+           @endif
+
+        </a>
+        </h3>
 
 
       </div>
