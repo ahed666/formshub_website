@@ -5,7 +5,13 @@
 @section('content')
 
     @php
+    @if (App::getLocale() == 'en')
     $title=$blog->title;
+                @else
+                $title=$blog->title_ar;
+                @endif
+
+
     // $blog->created_at.'.By'.$blog->created_by
     $text=$blog->created_at->format('Y-m-d').' .By '.$blog->created_by;
     @endphp
