@@ -5,11 +5,11 @@
 @section('content')
 
     @php
-    @if (App::getLocale() == 'en')
+    if (App::getLocale() == 'en')
     $title=$blog->title;
-                @else
+                else
                 $title=$blog->title_ar;
-                @endif
+
 
 
     // $blog->created_at.'.By'.$blog->created_by
