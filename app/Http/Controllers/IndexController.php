@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Spatie\SchemaOrg\Schema;
 use App\Models\Fact;
+use Carbon\Carbon;
 
 use Illuminate\Support\Facades\Redirect;
 
@@ -18,10 +19,37 @@ class IndexController extends Controller
             // Redirect to the URL without the trailing slash
             return Redirect::to(rtrim($request->url(), '/'), 301);
         }
-        $schemaMarkup=Schema::webPage()
+        $firstVideo = Schema::videoObject()
+        ->name("Questions form Video")
+        ->description("Proccess of make responses on question form using FormsHub.")
+        ->uploadDate(Carbon::parse('2024-05-18T08:00:00+08:00'))
+        ->duration("PT1M33S")
+        ->contentUrl("https://formshub.net/videos/questionsform.mp4")
+        ->interactionCount(1234)
+        ->publication(Schema::broadcastEvent()
+            ->isLiveBroadcast(false)
+            ->startDate(Carbon::parse('2024-05-18T08:00:00+08:00'))
+            ->endDate(Carbon::parse('2024-05-18T09:00:00+08:00'))
+        );
+
+    $secondVideo = Schema::videoObject()
+        ->name("Signature Video ")
+        ->description("A comprehensive guide on how to use digital signatures for secure document signing.")
+        ->uploadDate(Carbon::parse('2024-05-19T08:00:00+08:00'))
+        ->duration("PT2M45S")
+        ->contentUrl("https://formshub.net/videos/signature.mp4")
+        ->interactionCount(5678)
+        ->publication(Schema::broadcastEvent()
+            ->isLiveBroadcast(false)
+            ->startDate(Carbon::parse('2024-05-19T08:00:00+08:00'))
+            ->endDate(Carbon::parse('2024-05-19T09:00:00+08:00'))
+        );
+        $schemaMarkupWeb=Schema::webPage()
         ->name('Home')
         ->description('Welcome to our website. Explore our products and services.')
         ->url(url()->current());
+        $schemaMarkup = Schema::collection([$firstVideo, $secondVideo,$schemaMarkupWeb]);
+
 
         $facts=Fact::first();
 
