@@ -216,7 +216,7 @@ section {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 
 }
 .tool:last-child {
@@ -224,7 +224,7 @@ section {
 }
 .tool:hover{
     background-color: var(--primary_blue);
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
 
