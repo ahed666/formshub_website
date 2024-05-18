@@ -21,7 +21,7 @@
                 <li><a href="{{ route('contact') }}">{{ __('main.contactus') }}</a></li>
                 <li><a href="{{ route('kiosk') }}">{{ __('main.kiosk') }}</a></li>
                 <li><a href="{{ route('knowledgebase') }}">{{ __('main.knowledgebase') }}</a></li>
-                <li><a href="{{ route('terms_conditions') }}" target="_blank">{{ __('main.termsandconditions') }}</a></li>
+                <li><a href="{{ route('termsandconditions') }}" target="_blank">{{ __('main.termsandconditions') }}</a></li>
                 <li><a href="{{ route('privacypolicy') }}" target="_blank">{{ __('main.privacypolicy') }}</a></li>
               </ul>
             </div>

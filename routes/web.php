@@ -60,7 +60,7 @@ Route::get('/termsandconditions',function()
 
      return view('termsandconditions');
 }
-)->name('terms_conditions');
+)->name('termsandconditions');
 //privacy policy
 Route::get('/privacypolicy',function()
 {
