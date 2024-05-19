@@ -15,10 +15,13 @@ dir="ltr"
 
    <main id="main">
            @yield('content')
+
+           {{-- offer --}}
+           <x-offerModal/>
    </main>
 
-       @include('includes.footer')
+    @include('includes.footer')
 
-</div>
+
 </body>
 </html>

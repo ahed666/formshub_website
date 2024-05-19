@@ -183,6 +183,9 @@ return [
     'clients'=>'من يثق بـ فورمز هب',
 
 
+    // offer
+    'specialoffer_modal_title'=>'عرض خاص',
+
     // tabs titles
     'home_tab'=>'فورمز هب - منصة النماذج المخصصة الذكية',
     'contact_tab'=>'فورمز هب - تواصل معنا',

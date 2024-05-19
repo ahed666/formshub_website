@@ -1434,17 +1434,19 @@ max-width: 1600px !important;
 .button {
     background: var(--secondary_blue) !important;
     color: #fff !important;
-    padding: 15px 30px !important;
+    padding: 15px 30px ;
     border-radius: 8px;
     border: 1px solid var(--secondary_blue);
 
   }
+
 
    .button:hover {
     background: #fff !important;
     color: var(--secondary_blue) !important;
 
   }
+
 
 .hero-section.inner-page .hero-text {
   transform: translateY(-150px);
@@ -1577,6 +1579,21 @@ max-width: 1600px !important;
     }
   }
 
+/*--------------------------------------------------------------
+# Offer Modal
+--------------------------------------------------------------*/
+.close{
+    background-color: red;
+    border: 0px;
+    border-radius: 4px;
+    color: white;
+  }
+  .button-offer{
+    padding: 10px !important;
+  }
+  .modal-body{
+    padding: 0px !important;
+  }
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/

@@ -207,6 +207,9 @@ return [
     // clients section
     'clients'=>'Who trusted Forms Hub',
 
+    // offer
+    'specialoffer_modal_title'=>'Special Offer',
+
 
     // tabs titles
     'home_tab'=>'Forms Hub - The Smart Custom Forms Platform',
