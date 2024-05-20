@@ -32,7 +32,7 @@ customer feedback
   <meta name="description" content="@yield('meta_description','Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers')">
   <meta property="og:title" content="{{ env('APP_NAME') }}">
   <meta property="og:description" content="Gather valuable insights and feedback from your customers with our intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers">
-  <meta property="og:image" content="{{ asset('assets/img/logos/logo.png') }}">
+  <meta property="og:image" content="{{ asset('assets/img/logos/logo2.png') }}">
   <meta property="og:url" content="{{ URL::current() }}">
   <meta property="og:type" content="website">
 
@@ -41,7 +41,7 @@ customer feedback
   <meta name="twitter:card" content="FormsHub">
   <meta name="twitter:title" content="{{ trans('main.home_tab') }}">
   <meta name="twitter:description" content="Gather valuable insights and feedback from your customers with FormsHub, the intuitive feedback web app. Easily create surveys, collect responses, and analyze data to improve your products and services. Sign up today and start listening to your customers!">
-  <meta name="twitter:image" content="{{ asset('assets/img/logos/logo.png') }}">
+  <meta name="twitter:image" content="{{ asset('assets/img/logos/logo2.png') }}">
   <meta name="twitter:site" content="{{ URL::current() }}">
 
   <link rel="canonical" href="{{ url()->current() }}" />
