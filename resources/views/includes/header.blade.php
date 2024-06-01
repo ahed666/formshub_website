@@ -2,7 +2,7 @@
     <div class="container d-flex justify-content-between align-items-center navmobile">
 
       <div class="logo">
-        <a href="{{ route('home') }}"><img  src="{{ asset('assets/img/logos/logo.png') }}" alt="main logo"></a>
+        <a href="{{ route('home') }}"><img  src="{{ asset('assets/img/logos/logo.png') }}" alt="About Forms Hub"></a>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>

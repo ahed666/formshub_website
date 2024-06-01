@@ -422,6 +422,7 @@ section {
 
 .feature{
     min-height: 400px;
+    padding: 14px !important;
 }
 
 .feature .icon{
@@ -1156,6 +1157,8 @@ font-weight: bold !important;
   padding: 20px;
   border-top-left-radius: 80px;
   border-bottom-right-radius: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
 
   box-shadow: 5px 10px var(--secondary_blue);
 
